@@ -1,14 +1,18 @@
 # Workstream Archive
 
-`docs/progress.md` is the only active standard workstream by default. This directory holds the reusable scaffold and final snapshots so important decisions and verification evidence remain findable without turning the active file into an endless journal.
+`docs/progress.md` is the only active standard or high-risk workstream by default. This directory contains the one reusable workstream scaffold and final snapshots of closed work.
+
+The lifecycle policy is canonical in [Documentation Workflow](../README.md). This file defines only the scaffold and archive conventions unique to this directory.
 
 ## Starting a Workstream
 
 1. Confirm there is no unresolved active workstream.
-2. Copy `WORKSTREAM_TEMPLATE.md` to `docs/progress.md`.
-3. Investigate and replace every relevant placeholder with evidence-backed content.
-4. Classify the work and set its initial status.
+2. Copy `WORKSTREAM_TEMPLATE.md` over `docs/progress.md`.
+3. Investigate and replace every prompt with evidence-backed content.
+4. Classify the work and set its truthful initial status.
 5. For standard or high-risk work, publish the plan and stop at `Awaiting plan approval`.
+
+`WORKSTREAM_TEMPLATE.md` is the only repeatedly instantiated scaffold. Context, roadmap, and technical debt are singleton live documents and are not copied per workstream.
 
 Do not create active workstream files in this directory preemptively.
 
@@ -42,4 +46,4 @@ After archiving, initialize `docs/progress.md` for the next workstream or set it
 
 ## Concurrency
 
-One active workstream is the default because it keeps authority obvious. If genuinely concurrent development becomes routine, revise the workflow deliberately so `docs/progress.md` becomes a dashboard linking to multiple active workstream files. Do not introduce parallel active documents ad hoc.
+One active workstream is the default because it keeps authority obvious. If genuinely concurrent approved development becomes routine, revise the workflow deliberately so `docs/progress.md` becomes a dashboard linking to `docs/workstreams/active/<slug>.md`. Do not introduce parallel active documents ad hoc.

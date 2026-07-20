@@ -38,6 +38,7 @@ The coding agent owns the accuracy of the active workstream while working:
 - Propose roadmap changes, but do not treat roadmap entries as implementation authorization.
 - Record accepted-but-postponed engineering recommendations in `docs/techdebt.md`, but do not treat debt entries as implementation authorization.
 - When technical debt is selected, revalidate it and promote it into `docs/progress.md` before implementation.
+- Keep workflow policy canonical in `docs/README.md`; keep `progress.md`, `context.md`, `roadmap.md`, and `techdebt.md` focused on current project state rather than copying lifecycle instructions into them.
 
 Do not turn documentation into a tool-call transcript. Preserve decisions, evidence, outcomes, and actionable next steps.
 
@@ -69,6 +70,7 @@ Use specialist review or testing agents when they materially improve quality. Th
 - Never write secrets, tokens, private keys, credential values, sensitive payloads, or raw production logs into maintained docs.
 - Prefer reusable placeholders over personal machine paths, IP addresses, hostnames, or key names.
 - Store each reusable procedure once and link to it elsewhere.
+- Keep `docs/workstreams/WORKSTREAM_TEMPLATE.md` as the sole repeatedly instantiated workflow scaffold unless observed project needs justify another template.
 - Preserve unrelated user changes and historical archives.
 - Do not create Markdown tables. Prefer headings, short prose, numbered steps, bullets, and compact `Label: value` lines.
 - When materially editing a section that already contains a Markdown table, convert that table to readable prose or lists as part of the edit. Do not perform unrelated bulk conversions unless they are in scope.
