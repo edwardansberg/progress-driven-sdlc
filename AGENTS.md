@@ -33,7 +33,7 @@ Conceptual questions need only relevant evidence. Clearly requested isolated, re
 
 ## Commit Attribution
 
-When a commit is authorized, use author `Codex <codex@local.invalid>` unless the repository defines another agent attribution policy; preserve the configured committer and authenticated pusher. Follow the canonical [attribution procedure](docs/README.md#commit-attribution), including metadata verification before push. Do not alter Git identity, signing, or credentials to achieve attribution. Do not rewrite another actor's attribution unless that actor explicitly requests it.
+For authorized commits created by Codex, use author `Codex <codex@local.invalid>` unless the repository defines another agent attribution policy. Humans and other agents follow their explicitly adopted policy; do not invent identities or require them to impersonate Codex. Preserve the configured committer and authenticated pusher. Follow the canonical [attribution procedure](docs/README.md#commit-attribution), including applicable metadata verification before an authorized push. Do not alter Git identity, signing, or credentials to achieve attribution. Do not rewrite another actor's attribution unless that actor explicitly requests it.
 
 ## Documentation Hygiene
 

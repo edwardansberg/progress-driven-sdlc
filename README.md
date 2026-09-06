@@ -42,6 +42,12 @@ Before copying or merging anything, inspect the target repository, its applicabl
 4. Retain verified application memory and historical archives. Add missing structure only where needed; do not replace live documents with upstream placeholders or import upstream approvals.
 5. Verify the merged links, setup comments, instructions, and relevant contract scenarios. Updating policy alone grants no authority to implement application roadmap or debt items.
 
+### Activating updated guidance
+
+Editing `AGENTS.md`, overrides, or referenced policy on disk does not establish that a running session refreshed its loaded instructions. Use the tool's documented reload/new-session behavior when relevant; preserve the handoff first and do not automatically interrupt active work. Tool-specific discovery details are in the [source note](docs/README.md#source-note).
+
+Reading amended files is distinct from demonstrating automatic instruction loading or compliant behavior. A self-reported summary is limited evidence, not enforcement. A future proportionate read-only setup check can identify accessible instruction sources and explain plan/delivery boundaries from the intended repository and directory. Keep that check user-owned when the agent cannot observe the environment, and record it as unperformed until evidence is available. Do not assume a Markdown link loads its target: retain explicit canonical-policy reading for substantial work.
+
 ## Use the Workflow
 
 Conceptual discussion and clearly requested quick changes stay lightweight. Substantial work follows [context review and work classes](docs/README.md#work-classes), an investigated plan, and [scoped approval](docs/README.md#approval-scope), including the explicit direct-execution exception. Continue authorized steps without unnecessary pauses.

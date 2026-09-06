@@ -22,9 +22,11 @@ Repository: <!-- Repository identity, without credentials or personal paths -->
 
 Branch: <!-- Branch name or detached state -->
 
-HEAD or base commit: <!-- Exact inspected revision -->
+Implementation base: <!-- Original starting revision; retain when later observations change -->
 
-Snapshot: <!-- Relevant staged/unstaged/untracked state and pre-existing work; identify supplied evidence and inspection limits -->
+Last inspected HEAD: <!-- Observed revision, not this document's future containing commit -->
+
+Snapshot observation: <!-- Date or capture reference, actor/source, snapshot ID and patch/bundle base; relevant staged/unstaged/untracked state and pre-existing work. Distinguish materially changed artifacts and retain historical observations. -->
 
 Plan revision: <!-- Revision or equivalent identifier; update when the plan changes -->
 
@@ -121,7 +123,7 @@ Check: <!-- What is tested or inspected -->
 
 Basis: <!-- Command, files, supplied artifact, or observation; performer/source -->
 
-Scope: <!-- Revision/snapshot and environment where relevant -->
+Scope: <!-- Artifact or revision/snapshot and environment where relevant -->
 
 Result: Pending <!-- Passed, Failed, Skipped, or Pending, with factual outcome -->
 
@@ -129,7 +131,7 @@ Limitations: <!-- What remains unverified and why -->
 
 ### User Validation Checklist
 
-- [ ] <!-- Outcome or important edge/failure case; leave pending until user evidence or confirmation -->
+- [ ] <!-- Outcome or important edge/failure case; identify the artifact covered by user evidence/confirmation and return affected checks to Pending after changes -->
 - [ ] <!-- Relevant rollback/containment or review check -->
 
 ## Delivery Permissions
@@ -167,6 +169,9 @@ Not delivered yet.
 <!-- Use canonical Handoff and resumption: reference current metadata rather than
 maintaining another status block; identify changed/reviewed material including
 relevant untracked files, authorization versus pending choices, actual checks and
-their sources, user validation, risks, rollback, and remaining action/owner.
+their sources/artifact scope, user validation, risks, rollback, and remaining action/owner.
+Keep separately observed publication/delivery evidence here when relevant, with
+target, exact commit/artifact, observation date, and source. Scope action reports
+to their reporting actor/task; publication alone is not acceptance or authority.
 Record exact delivery/acceptance evidence at the appropriate gate; do not claim a
 terminal outcome or archive while required validation/release remains outstanding. -->

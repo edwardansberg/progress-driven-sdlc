@@ -37,4 +37,11 @@ docs/workstreams/archive/2027/2027-02-11-docs-usage-guide.md
 - Resolve follow-ups or place confirmed direction and accepted postponed debt according to the [closing policy](../README.md#closing-and-archiving-a-workstream).
 - Sanitize secrets, sensitive payloads, raw logs, and unnecessary terminal dumps before preserving the snapshot. Do not rewrite earlier archived workstreams to fit a new scaffold.
 
-After preserving the terminal workstream, set `docs/progress.md` to `No active workstream` or initialize the next requested effort under its actual authorization. Pending user validation is not closure.
+### Preserve references at closure
+
+1. Choose an unused archive path; do not overwrite an existing archive. Before producing the first archived copy, identify the intended targets of relative links and images, including reference-style destinations and fragments. Rebase them for the destination directory or use an appropriate stable reference. Do not blindly rewrite code examples or repository-relative path labels.
+2. Preserve workstream identity, terminal outcome, approvals, and evidence. Prefer revision-pinned references when mutable source content serves as historical proof; an ordinary navigational link is not automatically such evidence. Self-links to the closing workstream follow its archived copy.
+3. Validate links and fragments from the archive location, not only from `docs/progress.md`. For example, `README.md#approval-scope` in `docs/progress.md` must become `../../../README.md#approval-scope` in `docs/workstreams/archive/2026/example.md` to retain the canonical-policy target.
+4. Before reusing `docs/progress.md`, update maintained references intended to identify the just-closed workstream (such as resolved-debt or delivered-roadmap evidence) to its stable archived location. Leave links intentionally meaning "the current active workstream" pointing to `docs/progress.md`.
+
+Then set `docs/progress.md` to `No active workstream` or initialize the next requested effort under its actual authorization. Pending user validation is not closure. These steps preserve the first archive copy and its references; do not rewrite older archives to fit a new scaffold.
