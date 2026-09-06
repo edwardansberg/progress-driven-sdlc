@@ -11,12 +11,16 @@ You decide · Web plans and reviews · Codex builds and verifies
 </div>
 
 <a id="use-the-workflow"></a>
-<a id="operating-model"></a>
-<a id="collaborate-across-sessions-and-tools"></a>
 
 **Plan → Approve → Build → Review → Accept**
 
+<a id="collaborate-across-sessions-and-tools"></a>
+
 Keep decisions in conversation and evidence in your repository. Human relay is normal; automation is optional and Off by default.
+
+<a id="operating-model"></a>
+
+[Roles and handoffs](docs/README.md#human-coordinated-collaboration) · [Policy and project memory](docs/README.md#documentation-layers)
 
 <a id="adopt-or-update-the-framework"></a>
 <a id="new-project"></a>
@@ -24,7 +28,7 @@ Keep decisions in conversation and evidence in your repository. Human relay is n
 
 ## Start in Codex
 
-Open Codex in the intended project directory and paste:
+Open Codex in the intended project directory and paste this as your request. [Fresh setup and existing-project migration](docs/ops/adopt-framework.md#3-choose-the-safe-adoption-path) use different safeguards.
 
 ```text
 Adopt https://github.com/edwardansberg/progress-driven-sdlc in this
