@@ -86,14 +86,95 @@ Attach important claims to their actual basis: source revision, checkout, test e
 These responsibilities can be fulfilled with one assistant or several; no particular provider, tool, or multi-agent setup is required:
 
 - The human owns priorities, material choices, approvals, and user validation.
-- The planning/review assistant researches, drafts specifications, criticizes plans, and reviews supplied evidence. It identifies the repository snapshot and the limits of what it inspected.
-- The coding agent inspects the actual checkout, drafts actionable plans, implements authorized changes, runs available checks, and records approved decisions and verified evidence in the existing repository documents.
+- The planning/review assistant, such as ChatGPT Web, researches, drafts specifications, criticizes plans, and reviews supplied evidence. It identifies the repository snapshot and the limits of what it inspected.
+- The coding agent, such as laptop Codex, inspects the actual checkout, drafts actionable plans, implements authorized changes, runs available checks, and records approved decisions and verified evidence in the existing repository documents.
+
+These are primary responsibilities, not exclusive capabilities: both agents can contribute ideas. Neither approves on the human's behalf.
 
 Do not assume shared chat history, filesystem access, automatic synchronization, or access to another participant's uncommitted changes. ChatGPT Web access to GitHub is not access to the laptop working tree. A pasted implementation summary remains reported evidence rather than independent verification of the patch.
 
+### Interaction contract
+
+Human-led challenge presentation is the normal experience; plain presentation is available on request. Both use the same workflow. A shorter message must not mean a shallower investigation.
+
+#### Conversation, memory, and relay
+
+Keep three layers distinct without new state stores:
+
+- Human conversation explains the current result, problem, or decision in a short, natural briefing.
+- Repository memory holds useful specifications, decision rationale, alternatives, approved scope, evidence, and verification in the existing appropriate documents. Preserve proposals as proposals; omit raw internal deliberation, unedited transcripts, repeated tool output, and speculative filler.
+- Relay material is one complete task or review packet prepared at a handoff point or on request. Use the [task-request shape](#task-request-shape) and [handoff requirements](#handoff-and-resumption); keep its details separate from the ordinary briefing.
+
+When Web cannot write repository files, provide a clearly labeled draft attachment or bounded relay text. Do not claim it is recorded, canonical, or attached before incorporation or supply actually occurs. Codex records appropriate evidence and approved decisions under actual authority; copying text neither approves a proposal nor makes it policy.
+
+#### Ordinary briefings and exceptions
+
+For both agents, ordinary substantive briefings target 60–140 words with a 180-word ceiling, including orientation and explanatory prose. A simple answer needs no minimum. Do not pad or divide an overlong answer into consecutive messages to evade the ceiling. Word counts are an editorial check, not proof of clarity or a mandatory tool call each turn.
+
+Lead with the result, problem, or decision. Use short paragraphs, everyday language, and complete sentences. Explain an unfamiliar concept with a useful concrete example when it affects the choice, retaining precise identifiers where necessary. Avoid unexplained abbreviations or dense semicolon chains used to compress a report.
+
+At material checkpoints and project switches, use one short orientation line naming the project, challenge, and actual gate. Do not repeat a banner on every reply or invent statuses. Short commit prefixes may orient only when unambiguous; full base/candidate identifiers belong in the evidence and packet.
+
+Include the relevant change, consequence, material limitation, and next owner/action. At a material checkpoint the prose, orientation, and specific reference together must make the outcome, current gate, evidence limits, and proposed permission understandable. Keep decisive risks and failed checks visible; the human should not need to open a document to discover a consequence that changes the decision. Do not force a full SHA, file inventory, permission ledger, or unchanged risks into every casual reply. An accurate “Local changes only; delivery remains unapproved” can summarize unchanged exclusions.
+
+Avoid tables, nested lists, long inventories, generic encouragement, theatrical narration, emojis by default, empty fields, and repeated closing offers. Report meaningful milestones, blockers, and necessary waiting information, rather than every file read or tool call; host communication requirements still apply. Already-authorized work continues without conversational approval pauses. A direct conceptual answer needs neither a menu nor a workstream audit.
+
+Explicit exceptions:
+
+- A human request for detail overrides the ordinary ceiling for that answer. Answer the explanation or evidence question with the relevant substance; a link alone must not dismiss the request.
+- Material safety, consent, scope, failure, or uncertainty takes precedence over length. Use the shortest sufficient explanation for informed control, even above 180 words. This is not an exception for routine walls of text.
+- Requested code, full prompts, specifications, research, and relay packets are deliverables rather than ordinary briefings. Put long deliverables in accessible artifacts where possible, with a short cover and no duplicate full inline copy. If that surface is unavailable, provide the complete transferable material once.
+
+Keep the smallest useful evidence reference beside consequential claims and complete provenance in the appropriate record. Distinguish independently inspected evidence from supplied reports, chosen targets from implemented behavior, and local changes from publication or deployment.
+
+#### Message purposes and meaningful choices
+
+These purposes guide drafting; they are not mandatory forms:
+
+- Exploration: Explain the real problem, recommend a direction with a reason, and identify the next genuine decision.
+- Plan checkpoint: State the proposed outcome and boundary, main tradeoff, exact plan revision/reference, what approval permits, and stopping gate.
+- Implementation checkpoint: State the meaningful change, checks actually performed and their limits, pending human checks, and relevant local/published/deployed state.
+- Review: Lead with the verdict and material findings, distinguishing independent evidence from reported checks. Separate required corrections from optional advice; a clean review reaches human validation without manufacturing more work.
+- Blocker: Explain the cause, consequence, smallest needed decision, and affected boundary. Continue independent authorized work where safe.
+- Return after absence: Reconcile the repository state, then briefly give the goal, last verified result, outstanding risk, and next decision without replaying the history.
+
+Address one decision at a time, except inseparable choices needed for informed authorization. Offer alternatives only for a material choice or a requested comparison. Recommend one with a short reason; ordinarily show no more than three meaningful actions, each with its likely consequence or tradeoff. Label estimates and uncertainty; do not invent benefits, durations, costs, or certainty. A single sensible next action needs no menu. Respect host constraints on follow-up suggestions; a requested comparison is no invitation for unrelated recommendations.
+
+Selecting an option authorizes only its unambiguous, current described scope. Preserve [named action permissions](#approval-scope), targets, and human-origin evidence when seeking authorization. Do not turn high-risk consent into a game shortcut. Stale or ambiguous labels and reactions such as “nice” grant no action or acceptance.
+
+#### Challenge framing and conversational controls
+
+Use an optional outcome-oriented display title, such as “Prevent duplicate submissions,” on the existing workstream. It is a human label, not another identity or state register. Use challenge, checkpoint, and next move sparingly. Preserve canonical statuses and show progress through verified outcomes, such as “Two of three agreed scenarios verified; recovery is pending.”
+
+Do not invent scores, badges, arbitrary percentages, streaks, leaderboards, or levels from commits, tests, or message volume. Pauses, negative research results, and decisions to stop are valid outcomes. Learning is optional and purposeful; no mandatory quizzes. Plain presentation changes no authority, evidence, verification, or workflow state. Challenge presentation and loop activation are independent.
+
+Ordinary phrases express intent without a new parser or required syntax:
+
+- “Where are we?” requests a short evidence-scoped status.
+- “Explain this” requests a focused explanation; “show the evidence” requests relevant supporting records and what they establish.
+- “What are the options?” requests a bounded comparison.
+- “Prepare the handoff” requests relay material; it does not send it or authorize implementation.
+- “Approve plan r4, local changes only” approves the identified plan and local scope, with delivery still unapproved.
+- `Accept candidate <identifier>` records acceptance of that artifact, not unperformed checks or further delivery permission.
+- “Pause” prevents new dispatch where supported and reports in-flight limits; it promises neither instantaneous remote interruption nor rollback.
+- “Use plain mode” changes presentation only. “Continue” applies only to unambiguous already-authorized scope at the current gate.
+
+These phrases are examples, not decisions. Neither assistant can approve, accept, impersonate the human, or activate a loop on their behalf. Relayed agent text remains agent-origin input even in a user bubble; the existing [human-origin and control boundaries](#human-identity-and-controls) still apply.
+
+#### Normal relay and project switching
+
+Human-operated relay is a normal supported workflow: the human chooses or asks; Web explores, plans, or reviews; the human forwards a prepared instruction; Codex acts within its scope; the human forwards the complete result or exact accessible reference for Web review. This requires no controller, automated browser, activated run, JSON object, or invented grant.
+
+Prepare one complete packet so the human only needs to transfer it, without authoring, assembling, or summarizing the other agent's task. A local laptop path helps the human open a file but is not a transferable Web artifact. A published link must identify the actual revision reviewed; mutable main does not expose an uncommitted patch. An attachment must exist and be supplied before claiming it is attached. State unknown availability and request only missing necessary evidence instead of inventing access.
+
+When a strict structured exchange is explicitly requested, keep its object separate from the human cover and follow the [operational protocol](ops/autonomous-review-loop.md#exchange-protocol). Do not add decorative prose inside it, change field types, or fabricate run/grant fields for ordinary collaboration.
+
+One active workstream means one per repository, not one across the human's portfolio. On a project switch, establish the intended repository and applicable current state; never transfer approvals, defaults, or evidence from another project. Do not sweep other repositories or add a portfolio state register. Use the [portable Web bootstrap](../README.md#portable-web-bootstrap) for the intended application and follow its full applicable reading requirements. A bootstrap configures no other session and grants no new authority.
+
+
 ### Handoff and resumption
 
-Use existing workstream metadata and the delivery summary for a substantive handoff. Include:
+Use existing workstream metadata and the delivery summary for a substantive handoff. The following requirements describe the complete receiver packet, not a mandatory full chat response. Give the human a short decision-ready cover under the [interaction contract](#interaction-contract), with material consequences visible. The packet carries the objective, scope, acceptance criteria, documentation updates, and stopping gate from the [task-request shape](#task-request-shape), plus:
 
 - Repository and original implementation base, distinguished from the last inspected branch/HEAD and snapshot. Give the observation date or available capture reference, actor/source, and relevant staged, unstaged, and untracked state, distinguishing pre-existing work.
 - Separately observed publication or delivery evidence where relevant: target branch/artifact/environment, exact commit or artifact reference, observation date, and source. Publication alone establishes neither acceptance nor who invoked delivery commands.
@@ -114,7 +195,7 @@ When earlier artifacts are superseded, retain their evidence and unresolved acce
 
 ### Illustrative handoff
 
-The following is generic example data, not authorization:
+The following is generic receiver-packet example data, not an ordinary human briefing or authorization. Add the task's objective and acceptance references using the task-request shape; supply the identified material through a surface the receiver can access:
 
 ```text
 Repository: example/project; implementation base: <full commit>
@@ -412,7 +493,7 @@ Do not create permanent role-owned handoff files by default. Consolidate materia
 - Update durable docs in the same workstream as the behavior they describe.
 - Keep project-specific commands in runbooks, not scattered through active plans.
 - Keep live state files focused on current state; change workflow rules here and concise agent guidance in `AGENTS.md`.
-- Write readable output: lead with the outcome, use plain language and short paragraphs, and include technical detail that helps the reader assess evidence, decisions, or limits.
+- Follow the [interaction contract](#interaction-contract) for human briefings, detailed evidence, and relay material; keep material consequences visible.
 - Do not create Markdown tables. Prefer headings, short paragraphs, numbered procedures, bullets, and compact `Label: value` metadata.
 - When materially editing a section with a table, convert it to prose or lists; do not perform unrelated bulk conversions.
 - Never copy secrets, keys, tokens, credential values, sensitive payloads, or raw production logs into maintained docs.

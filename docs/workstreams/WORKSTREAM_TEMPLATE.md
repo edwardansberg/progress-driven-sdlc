@@ -8,6 +8,8 @@ Paths in this scaffold are repository-relative; adapt links when instantiating. 
 
 # Active workstream: <!-- short-slug -->
 
+Display title: <!-- Optional real outcome, e.g. Prevent duplicate submissions; a human label, not another identity or status. Omit if unnecessary. -->
+
 Workstream class: <!-- Quick, Standard, or High-risk -->
 
 Risk: <!-- Low, Medium, or High, with reason -->
@@ -190,12 +192,11 @@ and whether renewed approval applies. -->
 
 Not delivered yet.
 
-<!-- Use canonical Handoff and resumption: reference current metadata rather than
-maintaining another status block; identify changed/reviewed material including
-relevant untracked files, authorization versus pending choices, actual checks and
-their sources/artifact scope, user validation, risks, rollback, and remaining action/owner.
-Keep separately observed publication/delivery evidence here when relevant, with
-target, exact commit/artifact, observation date, and source. Scope action reports
-to their reporting actor/task; publication alone is not acceptance or authority.
-Record exact delivery/acceptance evidence at the appropriate gate; do not claim a
-terminal outcome or archive while required validation/release remains outstanding. -->
+<!-- Follow docs/README.md#interaction-contract and #handoff-and-resumption.
+Human cover: decisive result, material limitation, next owner/action, and accessible
+evidence reference. Complete relay packet: use the canonical task-request shape and
+handoff requirements, including relevant untracked material; reuse metadata rather
+than creating a second status block. A laptop path is not an accessible Web packet.
+Keep separately observed publication/delivery and acceptance evidence here when
+relevant, identifying artifact, date, source, and scope. Scope action reports to
+their reporting actor/task. No terminal outcome while required gates remain pending. -->

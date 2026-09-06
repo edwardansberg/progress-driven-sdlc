@@ -25,6 +25,7 @@ Conceptual questions need only relevant evidence. Clearly requested isolated, re
 
 ## Keep Evidence and Memory Current
 
+- Follow the [interaction contract](docs/README.md#interaction-contract): give short, natural, decision-ready human briefings, keep material risks and failed checks visible, and link accessible detailed evidence. Human relay is normal; a laptop path is not Web access. Keep complete relay material separate from its short cover, and continue routine authorized work without unnecessary approval pauses.
 - Keep the one active workstream's metadata, scoped decisions, plan, evidence, and next owner current at material milestones. Use its delivery summary for [handoffs and resumption](docs/README.md#handoff-and-resumption), including relevant untracked material.
 - Apply [Verification and User Validation](docs/README.md#verification-and-user-validation): run the smallest meaningful set plus required project checks; record actual outcomes and limitations. A wait timeout is not proof of process failure or success.
 - Leave user-owned checks pending until user evidence or confirmation. Provide a tailored review checklist and rollback considerations.
