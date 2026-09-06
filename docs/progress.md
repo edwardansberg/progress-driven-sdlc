@@ -1,16 +1,16 @@
 # Active workstream: human-coordinated-agentic-development
 
-Display title: Make project progress easy to follow
+Display title: Shrink the policy without changing the workflow
 
 Workstream class: High-risk
 
-Risk: Communication rules can obscure evidence or consent; r4 changes presentation while preserving those boundaries.
+Risk: Compression can omit or weaken workflow and consent rules; compare every original normative section before the validation handoff.
 
 Status: Ready for user validation
 
-Current gate: Usability trial pending; r4 documentation baseline accepted
+Current gate: Ready for user validation
 
-Next action: Human provides usability-trial feedback when available. No new implementation round or autonomous continuation is authorized.
+Next action: Human reviews C5 and provides feedback or acceptance. The usability trial remains Pending; no further implementation round follows automatically.
 
 Loop control: Off
 
@@ -24,31 +24,50 @@ Original implementation base: dfe3667ea37b41ba6de948ca1253930a23d7d093
 
 R4 implementation base: 9fd19708ec94cf91bc28d373faefd9442d9b95ce
 
-Last inspected HEAD: 24511fb6a7c9d887df2bb9f30b0a457d67d2b401
+Last inspected HEAD: 8191ad88decaa8f95daa85763b6342c8c09acd69
 
-Checkout observation: A4, 2026-09-06, Codex; main at the accepted commit was clean before this acceptance-record update, with no staged, unstaged, untracked, or pre-existing changes. This task changes only docs/progress.md locally. The commit contains the six-file r4 amendment; no remote publication or command actor is inferred from that local observation.
+Checkout observation: C5-final, 2026-09-06, Codex; main/HEAD unchanged, with only docs/README.md and docs/progress.md modified and unstaged, no staged or untracked material. C5-start was clean, with no pre-existing work; only the A4 progress record had changed since the accepted r4 commit. No remote publication or command actor is inferred from this local observation.
 
 Historical checkout observation: I4-final, 2026-09-06, Codex; branch and HEAD were unchanged at the r4 implementation base, with exactly the six approved files modified and unstaged, no staged or untracked material. I4-start at that same commit was clean. The original disposable review export was outside this repository.
 
-Snapshot: Accepted r4 documentation baseline at 24511fb6a7c9d887df2bb9f30b0a457d67d2b401 under A4. F4 identifies the earlier local implementation handoff, and P4 the earlier plan; their original observations remain historical. The present local patch records acceptance only.
+Snapshot: C5, local policy-compression patch against 8191ad88decaa8f95daa85763b6342c8c09acd69. The r4 baseline at 24511fb6a7c9d887df2bb9f30b0a457d67d2b401 remains accepted under A4; C5 acceptance is Pending.
 
-Plan revision: r4, approved under D4; editorial refinements from the same human instruction clarify decision context, accessibility, and consolidation without a new workstream or scope expansion.
+Plan revision: r5, scoped direct execution under D5; r4 and its acceptance remain historical baseline evidence.
 
 Started: 2026-09-06
 
-Last substantive update: 2026-09-06 by Codex; recorded human acceptance A4 of the exact r4 baseline
+Last substantive update: 2026-09-06 by Codex; completed C5 compression, semantic comparison, independent review, and consistency checks
 
-Delivery target: R4 documentation baseline accepted under A4. The real-exchange usability trial remains Pending; the workstream stays open without another implementation round or delivery action.
+Delivery target: Reviewable local C5 policy refactor at Ready for user validation. No commit, push, archive, runtime work, or loop activation; usability trial remains Pending.
 
 Workflow: [Documentation Workflow](README.md)
 
 ## Outcome and Implementation
+
+C5 compresses docs/README.md from 7,269 to 3,812 whitespace-delimited words (47.56% fewer). Global policy remains canonical; duplicated operational detail now uses mandatory references to the unchanged loop guide. No policy change or operational implementation is intended. The section comparison and actual C5 checks are recorded under Verification.
+
+Historical r4 outcome:
 
 F4 adopts the [interaction contract](README.md#interaction-contract): short, natural, decision-ready briefings for human/Web/Codex collaboration, detailed useful memory in existing documents, and complete prepared relay material. Human relay needs no controller or enabled loop. Challenge framing is a display choice; it changes no authority, lifecycle, or evidence requirement.
 
 The approved tradeoff is brevity versus enough context for informed control. Material risks remain visible and requested explanations are answered substantively; detailed specifications and evidence stay accessible without a duplicate inline report. Better comprehension, scalability, and enjoyment remain hypotheses awaiting real human feedback.
 
 ## Decisions and Authorization
+
+Current authority D5: The direct human request “Next challenge: shrink the canonical policy without changing the workflow,” received 2026-09-06, authorizes this bounded documentation refactor and necessary progress.md upkeep. It supersedes A4's no-new-round restriction only for this identified refactor; A4 acceptance remains intact. Production scope is docs/README.md only. No other maintained file, new concept/status, policy change, delivery action, automation, or runtime work is authorized. Loop remains Off. This record and the quoted task wording do not independently grant authority.
+
+Investigated r5 plan: The original canonical policy is 7,269 whitespace-delimited words at the inspected base. Repeated authority/evidence statements and operational procedure copies create the main reduction opportunity. Preserve all existing headings/anchors, consolidate each rule at its owning section, and replace only already-covered operational detail with mandatory references to the unchanged ops contract. Keep unique grant fields/defaults, publication preconditions, control meanings, stop transitions, and non-convergence bounds canonical to avoid circular references.
+
+- [x] Compress policy: 47.56% fewer words, preserving rules over a token-size guess. Exact token measurement is unavailable locally.
+- [x] Compare every original normative section with its compressed destination and existing operational support; reconcile a bounded independent read-only review. V1 and the ops protocol are unchanged.
+- [x] Check all repository links/anchors, complete two-file diff, scope, hygiene, exact word reduction, available token measurement, and Git whitespace checks; actual results and referenced operational detail are recorded below.
+- [x] Stop at Ready for user validation with C5 acceptance Pending, accepted r4 unchanged, and usability trial Pending. No further round follows automatically.
+
+R5 acceptance criteria: Substantial measured reduction; no meaningful rule removed, weakened, or strengthened; one canonical statement per rule with resolvable references; all original normative sections mapped; only docs/README.md and necessary progress.md changes; no broken anchors, invented verification, new runtime behavior, or inferred acceptance/delivery.
+
+R5 verification approach: Compare original and compressed text against independently inventoried obligations, including unchanged operational dependencies. Count words consistently using non-whitespace tokens; report token counts only if a local tokenizer is available without installation. Use document-level walkthroughs and read-only link/scope/whitespace checks, not live agent evaluations. Rollback, if requested, is limited to C5's two local files after preserving intervening work; no reset or history rewrite.
+
+The following D4/A4 decisions and implementation records retain their original scope and source. They do not describe current C5 authorization or acceptance.
 
 Implementation approval D4: The direct human instruction “Implement the reviewed r4 plan,” received 2026-09-06, approves [r4 at 9fd1970](https://github.com/edwardansberg/progress-driven-sdlc/blob/9fd19708ec94cf91bc28d373faefd9442d9b95ce/docs/progress.md), especially Proposed Interaction Contract, File-by-file Consolidation Map, Implementation Plan After Approval, and AC1–AC9, plus the drafting refinements in that instruction. Authority comes from the human's submission, not the quoted review, this record, or the policy being amended. Recorded before normative edits.
 
@@ -64,6 +83,10 @@ A4 boundary: Keep the usability trial Pending and Loop control Off. Do not start
 
 ## Context and Evidence
 
+Current C5 basis: The inspected 8191ad8 checkout was clean and differs from accepted r4 only in the acceptance record. The canonical policy and operational reference are the same normative baseline used for compression. Full required policy, progress, singleton, onboarding, scaffold/archive, and relevant operations/security guidance were read; the repository still defines no executable test/build/lint/CI checks. Existing heading references can be preserved without changing other files.
+
+The following evidence describes the earlier r4 implementation, not rerun C5 checks:
+
 Verified current behavior: Codex read all 14 tracked Markdown documents in full, including applicable AGENTS, root/canonical/progress, singleton memory, scaffold/archive, operational reference, and directory guidance. No additional applicable ancestor/default-home override or repository-owned skill was found. The repository is documentation-only; its inventory and runbooks define no executable build/test/lint/CI commands.
 
 Checkout comparison: The exact reviewed 9fd1970 commit changes only progress.md from a9f3379ff42d115f46788a6c0a785f9f2cdb7ad9. It publishes the P4 plan, not the interaction policy. No newer change needed reconciliation and no unrelated work was replaced. Prior historical progress objects were verified locally retrievable; this does not establish current remote visibility.
@@ -72,9 +95,11 @@ Chosen target behavior: D4 selects the r4 interaction design and its existing AC
 
 Inference requiring validation: A short briefing with accessible detail may reduce reading burden; caps and prescribed forms can instead hide context or feel mechanical. The ordinary-message exceptions and nonmandatory purposes address that risk in text, with usability still to be observed.
 
-Open decision: Actual feedback from the three-exchange usability trial remains Pending. R4 baseline acceptance is recorded under A4; V1 and future runtime/activation/delivery remain separately unapproved.
+Open decision: C5 acceptance and actual feedback from the three-exchange usability trial remain Pending. R4 baseline acceptance is retained under A4; V1 and future runtime/activation/delivery remain separately unapproved.
 
 ## File-by-file Result
+
+C5 changes only docs/README.md and necessary progress.md state/evidence. The six-file result below is historical r4 scope; all other files, including the operational guide, are unchanged by C5.
 
 - [docs/README.md](README.md#interaction-contract): Added the canonical three-layer contract, ordinary limits/exceptions, message purposes, meaningful choices, challenge/plain presentation, natural controls, normal relay, and project switching. Handoff requirements now describe the receiver packet; the old readable-output bullet references the contract.
 - [AGENTS.md](../AGENTS.md#keep-evidence-and-memory-current): Added one concise reminder for short briefings, visible risk, accessible evidence, and separate complete relay material.
@@ -96,6 +121,8 @@ The approved r4 steps are retained here with their completion evidence:
 
 ## Acceptance Criteria
 
+The following are preserved r4 criteria. Current r5 acceptance criteria are recorded with D5 above; compression must preserve these adopted rules without claiming a new usability result.
+
 - AC1: Both agents can find one actionable output contract: 60–140-word target, 180-word ordinary ceiling without padding, concise purposes/choices, and explicit detail/material-risk exceptions.
 - AC2: Manual human relay works as the normal workflow without a controller, browser automation, strict JSON, fabricated run IDs, or loop activation; preparation is separate from sending and authority.
 - AC3: Challenge/plain presentation and display titles change no canonical lifecycle, permissions, evidence requirement, repository identity, or human acceptance.
@@ -115,6 +142,65 @@ V1 remains an unresolved proposed clarification, not accepted debt: the operatio
 The earlier pilot remains unimplemented and unapproved: a proposed one-round, review-only run with a 60-minute limit and manual relay, requiring separately authorized implementation/activation, exact target selection, verified control boundaries, and permitted transport. Its full rationale and capability observations remain in the pinned F3 record.
 
 ## Verification
+
+### C5 section comparison and operational references
+
+Check: Every original normative section against compressed global policy and unchanged operational dependencies.
+
+Basis: Primary Codex read the complete original/current documents and compared the obligations, with a bounded independent read-only reviewer inspecting the same base and draft. The following map covers all 44 original headings (including the document title); headings and their anchors remain unchanged. This is semantic document review, not an automated proof or live agent evaluation.
+
+Scope: C5 against 8191ad88decaa8f95daa85763b6342c8c09acd69. Each grouped section retains its original duties at the named destination unless a specific existing operational reference is identified.
+
+- Documentation Workflow; Start Here: Canonical ownership, light conceptual questions, full substantial context review, checkout/dirty-state protection, compatible resumption, and explicit disposition before replacement remain in the opening sections.
+- Instruction Authority and Evidence: Host/tool limits, guidance rather than enforcement, tool-specific discovery/activation, scoped human authority, evidence versus instructions/state, and concrete conflict reporting remain together here.
+- Documentation Layers; Policy; Live state; Reusable scaffold; History; Document Map: Ownership and singleton/scaffold/history rules remain here; duplicated file inventories now refer to Live Document Contracts. Setup comments still disappear after initialization, and old material is not current truth.
+- Evidence Labels: All four labels and their source/environment/active-workstream scope remain explicit; design/build/agent reports remain distinct from implementation/deployment/independent review.
+- Human-Coordinated Collaboration; Interaction contract; Conversation, memory, and relay: Flexible primary roles, access boundaries, three communication/memory layers, draft incorporation, and no extra state/transcripts remain.
+- Ordinary briefings and exceptions: Target/ceiling/no minimum, orientation line, readable prose, anti-padding/splitting, visible risks, substantive detail/evidence exceptions, full-artifact handling, nearby provenance, and host/milestone requirements remain.
+- Message purposes and meaningful choices: All six purposes and conditional menus/recommendations retain decision consequences, evidence limits, exact scope, no invented estimates, and no routine approval pauses. Approval mechanics refer to Approval Scope.
+- Challenge framing and conversational controls: Display-only titles, verified progress, optional learning/plain mode, every natural control's meaning, and human-origin protection remain; no scores, lifecycle changes, or mandatory quizzes.
+- Normal relay and project switching: Human relay needs no controller/JSON/grant; requested strict exchange refers to the existing protocol. Per-repository state, no approval transfer/sweep, and full application bootstrap reading remain.
+- Handoff and resumption; Illustrative handoff; Task-request shape: Complete receiver packet, local/publication/acceptance observations, missing/untracked material, actor/source/date, no required push/export, exact artifact IDs, no future-containing-hash cycle, affected-only revalidation, and cumulative acceptance remain. The example is shorter, still non-authorizing; field requirements remain in the handoff contract.
+- Work Classes; Quick change; Standard workstream; High-risk workstream: Consequence-based classification, quick eligibility/exclusions/preservation, investigated standard plan/gate, direct-execution exception, high-risk migration/rollback/observability/release detail and justified non-applicability remain.
+- Approval Scope: Revision/criteria/actor/reference, partial/pending/superseded scopes, human-sourced direct execution, routine initiative versus renewed material approval, and separately named delivery actions remain. No permissions arise from omission or non-applicability.
+- Optional Execution and Review Loop; Run authorization: Default Off, complete one-run grant/permission-ledger references, all required fields and proposed limits, one-round first pilot, universal clock accounting, no self-renewal/new task/self-governance changes remain canonical.
+- Review publication: Review-only branch publication before validation, every initial-loop exclusion, publication preconditions/effects, exact cumulative/previous/candidate refs, remote/reviewer visibility, and snapshot semantics remain canonical because ops depends on them.
+- Human identity and controls: Agent-origin user bubbles, no impersonation/clicked approval, direct human provenance checkpoints, Off/Enabled/Paused, Status/Pause/Stop/Resume meanings and budgets remain. Existing local-control procedure supplies channel protection, cooperative-control disclosure, checkpoint summaries, and measured stop behavior through a mandatory reference.
+- Review and stopping invariants; Non-executing activation example: Stop/Off and pause triggers, final-round allowance, two-round non-convergence threshold, human validation versus acceptance, optional-suggestion limits, transport permission, and non-authorizing example remain. Protocol validation/reconciliation and guarded recovery use the existing mandatory operational sections.
+- Workstream Statuses and Gates: All twelve statuses, normal/direct-execution/fix/release/no-release paths, terminal set, loop step relationship, and single authoritative metadata remain. Completed cannot bypass required validation/release; archives retain outcome.
+- Verification and User Validation: Independent expectations, proportionate plus required checks, result/basis/scope/limitations, timeout/reconnect semantics, honest unavailable/waived results, user-owned checks, rollback checklist, and no acceptance/delivery from automated success remain.
+- Live Document Contracts; progress.md: Milestone updates, minimum state/plan/evidence/risks/delivery/next-owner content and truthful checkboxes remain; shared snapshot fields reference Handoff and resumption.
+- context.md: Durable topic/evidence/update responsibilities remain, with context as index when subsystem navigation needs it; no arbitrary-length split rule.
+- roadmap.md: All horizons, confirmed human direction, outcome fields, update triggers, and no invented commitments remain.
+- techdebt.md: Admission criteria, stable ID/identified date and all other fields, five states, promotion/revalidation/delivery flow and review triggers remain; no automatic debt acceptance.
+- Internal Review and Delegation: Optional bounded useful delegation, primary reconciliation, independent-check identification, and no permanent role reports by default remain.
+- Durable Documentation Rules: Ownership/procedure deduplication and same-workstream upkeep, readable metadata/no tables/scoped conversions, sanitation/placeholders remain. Historical truth and terminal conditions refer to their owning sections.
+- Commit Attribution: Codex-specific identity and per-commit command, other actors' policies, committer/pusher preservation, no identity/signing/credential changes to achieve attribution, metadata verification, no actor inference, and explicit actor request for rewriting remain.
+- Automation Threshold: Infrastructure needs observed drift/review cost; candidate checks and lack of runtime-truth authority remain.
+- Closing and Archiving a Workstream: Truthful terminal evidence/acceptance, roadmap/accepted-debt upkeep, link-safe archive before progress reuse, and no reset for packaging remain through the unchanged archive conventions.
+- Source Note: Original dated source observations and adaptation limits remain, including no imported PR/worktree permissions, runtime/model configuration, global changes, or observed instruction compliance.
+
+Intentionally delegated detail, with no destination file edit: The former canonical loop procedure copies now refer to ops/autonomous-review-loop.md sections Exchange Protocol (outside-model validation and reviewer/implementer reconciliation), Controller and Recovery Contract (guarded dispatch, bounded waits, uncertain/duplicate/stale outcomes and recovery), Local controls and private recovery state (protected channel, checkpoint summary, measured stop/cooperative limitations), and Transport Selection (permitted route and separate reviewer alternatives). These obligations already existed there. No unique rule was moved into progress or another new policy owner; canonical grant fields/defaults, publication preconditions, control meanings, stop transitions, and non-convergence threshold remain here to prevent circular delegation. V1 is unchanged.
+
+Result: Primary comparison and independent final document review Passed. Draft precision corrections restored link-loading evidence instead of a universal loading claim, the requested-detail ceiling override, mandatory-only quiz prohibition, quick-path preservation, debt ID/date and confirmed Next qualifiers, original context/delegation/attribution scope, one orientation line, universal clock accounting, and terminal wording. The independent reviewer confirmed all original normative sections against the final policy and unchanged ops reference, with no remaining omission, weakening, or strengthening identified. Its conclusion is separately performed document inspection; the primary reconciled all findings here.
+
+Boundary walkthroughs against original requirements: Conceptual/quick work stays light while standard work awaits approval unless scoped direct execution applies; partial approval excludes pending scope and material changes return to the human; human-option or relay text grants only its actual authority; timeout remains unknown and clean automated review does not complete human checks; loop Off/stop/resume/budgets and no self-governance changes remain; accepted no-release work can Complete while required release and link-safe archiving retain their gates. All six Passed at document level, without executing agents or runtime behavior.
+
+Limitations: Semantic review is reasoned document inspection, not proof of future model compliance. No runtime, live relay, usability trial, or source re-fetch was performed. Accepted r4 and earlier verification retain their original scope; C5 needs its own user acceptance.
+
+### C5 size, links, scope, and whitespace
+
+Check: Consistent size measurement, heading/link preservation, complete diff, and allowed two-file scope.
+
+Basis: Read-only PowerShell counts non-whitespace tokens in git show HEAD:docs/README.md and the local file, compares complete heading sequences, scans all tracked Markdown for local paths/anchors and changed-file hygiene/metadata; Git diff/scope/whitespace checks. Bundled Python/Node metadata probes checked for existing tiktoken, js-tiktoken, and gpt-tokenizer without installation.
+
+Scope: C5 plus all 14 tracked Markdown documents; word count includes headings, code examples, and Markdown destinations consistently.
+
+Result: Passed. 7,269 -> 3,812 words (47.56% reduction); all 44 headings unchanged. The all-document scan covers 14 Markdown files, 110 local links and 67 anchors, with no issues. Complete diff/scope/hygiene review found only the two approved unstaged files, no staged/untracked material, tables, conflict markers, or sensitive-detail additions; all other twelve files remain unchanged. Both git diff --check and git diff --cached --check exit 0. No tokenizer is available, so the ideal 5–6k token target is not independently measured. The final metadata/evidence edit receives the same focused verification before handoff.
+
+Limitations: Word counts are exact under the stated convention, not model-token counts or measured readability. Focused link/pattern checks are not a complete Markdown parser or secret detector. The repository has no executable checks requiring new infrastructure.
+
+### Historical F4 verification
 
 The F4 implementation checks below retain their original snapshot and source; they are not rerun or expanded by A4. The acceptance-record check is recorded separately in the progress log.
 
@@ -199,6 +285,7 @@ Limitations: Export equality establishes content completeness relative to this i
 
 ## User-owned Checks and Real-exchange Trial
 
+- [ ] Review and accept C5's compressed policy, especially semantic preservation and delegated operational references; C5 is not covered by A4 baseline acceptance.
 - [x] Accept the r4 documentation baseline at 24511fb6a7c9d887df2bb9f30b0a457d67d2b401 — direct human confirmation A4, 2026-09-06.
 - [ ] When available, supply actual feedback from three natural exchanges: Web planning/choice, Codex verified handoff, and Web review/human-validation checkpoint.
 
@@ -216,7 +303,7 @@ Rollback, if requested: Reverse only F4's six-file local hunks against 9fd19708e
 
 ## Delivery Permissions
 
-D4 authorizes local implementation and packet/export preparation only. All actions below remain unapproved:
+D5 authorizes this two-file local documentation refactor and verification only. D4's export authority concerned the earlier task. All actions below remain unapproved:
 
 - Staging: Unapproved.
 - Commit: Unapproved.
@@ -279,6 +366,10 @@ recommends human validation and does not begin another improvement round.
 ```
 
 ## Progress Log
+
+2026-09-06, C5: Resumed the compatible workstream under D5; investigated and recorded r5 before edits, compressed only canonical policy, and reconciled every original normative section plus independent review. Preserved all anchors and accepted r4; operational detail is required by reference rather than copied. C5 remains local and uncommitted, with user validation and usability feedback Pending. No staging, commit, push, archive, branch/worktree, runtime, dependency installation, global/configuration, downstream, or loop activation action occurred.
+
+Current C5 handoff: Repository edwardansberg/progress-driven-sdlc, main, base 8191ad88decaa8f95daa85763b6342c8c09acd69, with the exact local two-file diff and complete files available in this checkout. The current scope/authority is D5 and the comparison/evidence is under C5 Verification above. A laptop file link is not Web access; no new export or publication was prepared. Review policy preservation and the explicitly referenced operational sections; return feedback or accept C5. Rollback, if requested, is limited to these two local file hunks after preserving intervening work. No required implementation work or unresolved scope conflict remains.
 
 2026-09-06, r4 planning: Investigated the framework and recorded P4 without normative edits; exact plan/examples and original check outcomes remain at the pinned reviewed commit.
 
