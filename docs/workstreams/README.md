@@ -1,20 +1,17 @@
-# Workstream Archive
+# Workstream Scaffold and Archive
 
-`docs/progress.md` is the only active standard or high-risk workstream by default. This directory contains the one reusable workstream scaffold and final snapshots of closed work.
+`docs/progress.md` holds the one active substantial workstream. This directory contains the sole reusable scaffold and final snapshots of closed work.
 
-The lifecycle policy is canonical in [Documentation Workflow](../README.md). This file defines only the scaffold and archive conventions unique to this directory.
+The lifecycle policy is canonical in [Documentation Workflow](../README.md). This file defines only initialization and archive conventions unique to this directory.
 
 ## Starting a Workstream
 
-1. Confirm there is no unresolved active workstream.
-2. Copy `WORKSTREAM_TEMPLATE.md` over `docs/progress.md`.
-3. Investigate and replace every prompt with evidence-backed content.
-4. Classify the work and set its truthful initial status.
-5. For standard or high-risk work, publish the plan and stop at `Awaiting plan approval`.
+1. Inspect the actual repository and active state. Resume a compatible workstream in place; preserve unrelated dirty files. Do not overwrite an unresolved unrelated workstream without the user's explicit disposition.
+2. When initialization is appropriate, use [WORKSTREAM_TEMPLATE.md](WORKSTREAM_TEMPLATE.md) in `docs/progress.md`. Replace prompts with investigated state and remove setup comments.
+3. Use as many phases as the work needs. Keep current status, gate, and next action/owner only in the metadata; record implementation authorization once with revision/scope and available actor/decision/date reference.
+4. Follow canonical [work classes](../README.md#work-classes) and [approval scope](../README.md#approval-scope). Standard/high-risk plans normally stop at `Awaiting plan approval`; explicit scoped direct execution proceeds after investigation and a written plan with the user's authorization recorded.
 
-`WORKSTREAM_TEMPLATE.md` is the only repeatedly instantiated scaffold. Context, roadmap, and technical debt are singleton live documents and are not copied per workstream.
-
-Do not create active workstream files in this directory preemptively.
+The scaffold is the only repeatedly instantiated workflow template. Context, roadmap, and debt are singleton documents. Do not create parallel active files or separate role/handoff registers. For adoption into another repository, use [safe adoption guidance](../../README.md#adopt-or-update-the-framework); upstream maintenance state is not application state.
 
 ## Archive Convention
 
@@ -24,26 +21,20 @@ Use:
 docs/workstreams/archive/YYYY/YYYY-MM-DD-<type>-<short-slug>.md
 ```
 
-Types normally match conventional change intent: `feat`, `fix`, `docs`, `chore`, `refactor`, or `style`.
+Use the closure date. Types normally match conventional change intent: `feat`, `fix`, `docs`, `chore`, `refactor`, or `style`.
 
-Examples:
+Example:
 
 ```text
-docs/workstreams/archive/2027/2027-02-11-docs-development-workflow.md
-docs/workstreams/archive/2027/2027-03-04-feat-account-export.md
+docs/workstreams/archive/2027/2027-02-11-docs-usage-guide.md
 ```
 
 ## Before Archiving
 
-- Set a truthful terminal status: `Released`, `Rejected`, `Cancelled`, or `Superseded`.
-- Record the final outcome and why the workstream closed.
-- Record checks actually run and leave failed or skipped checks visible.
-- Record relevant commit, pull request, preview, production, migration, and rollback references.
-- Resolve follow-ups or promote them to `docs/roadmap.md` or `docs/techdebt.md`.
-- Ensure no secrets, sensitive payloads, raw logs, or unnecessary terminal dumps are present.
+- Confirm a truthful [terminal outcome](../README.md#workstream-statuses-and-gates): `Completed`, `Released`, `Rejected`, `Cancelled`, or `Superseded`. Preserve that status in the archive; do not replace it with `Archived`.
+- Record why the work closed, and user acceptance for successful work. `Completed` requires an agreed target needing no release; an intended but unverified release cannot use that outcome.
+- Retain checks and evidence, including failed, skipped, or waived checks and their disposition. Include applicable commit, PR, environment, migration, and rollback references; justify non-applicability.
+- Resolve follow-ups or place confirmed direction and accepted postponed debt according to the [closing policy](../README.md#closing-and-archiving-a-workstream).
+- Sanitize secrets, sensitive payloads, raw logs, and unnecessary terminal dumps before preserving the snapshot. Do not rewrite earlier archived workstreams to fit a new scaffold.
 
-After archiving, initialize `docs/progress.md` for the next workstream or set it to `No active workstream`.
-
-## Concurrency
-
-One active workstream is the default because it keeps authority obvious. If genuinely concurrent approved development becomes routine, revise the workflow deliberately so `docs/progress.md` becomes a dashboard linking to `docs/workstreams/active/<slug>.md`. Do not introduce parallel active documents ad hoc.
+After preserving the terminal workstream, set `docs/progress.md` to `No active workstream` or initialize the next requested effort under its actual authorization. Pending user validation is not closure.

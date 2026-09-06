@@ -1,75 +1,49 @@
 # Progress-Driven SDLC
 
-This repository is a reusable starter for evidence-driven software development with a small, durable documentation surface.
+A reusable starter for evidence-driven development with a small, durable documentation surface. It supports a human coordinating research, planning, and review in a Web assistant with local work by a coding agent, and also works with a single assistant.
 
-The workflow deliberately separates stable policy, live project state, reusable scaffolding, and closed history. That separation keeps instructions from being copied into every document and lets each file change at the cadence of the information it owns.
+The human owns priorities and approvals. Assistants work from identified evidence and scoped authority. The [canonical workflow](docs/README.md) defines the process; documentation provides guidance, not mechanical permission enforcement.
 
 ## Operating Model
 
-- Policy: `AGENTS.md` makes the rules enforceable for coding agents, while `docs/README.md` is the canonical human-readable workflow contract.
-- Live state: `docs/progress.md`, `docs/context.md`, `docs/roadmap.md`, and `docs/techdebt.md` contain current project information rather than repeated lifecycle instructions.
-- Reusable scaffold: `docs/workstreams/WORKSTREAM_TEMPLATE.md` is the one file copied whenever a substantial workstream starts.
-- History: closed workstreams move to `docs/workstreams/archive/`.
+- Policy: [docs/README.md](docs/README.md) owns the workflow contract; [AGENTS.md](AGENTS.md) is concise agent guidance.
+- Live state: [progress](docs/progress.md) holds one active workstream; [context](docs/context.md), [roadmap](docs/roadmap.md), and [technical debt](docs/techdebt.md) keep durable facts, confirmed direction, and accepted postponed recommendations separate.
+- Reusable scaffold: [WORKSTREAM_TEMPLATE.md](docs/workstreams/WORKSTREAM_TEMPLATE.md) holds the specification, plan, decisions, verification, user validation, and delivery evidence for a substantial effort.
+- History: terminal workstreams retain their outcomes in [the archive](docs/workstreams/README.md). [docs/old/](docs/old/README.md) is historical reference only.
+- Procedures: [operations runbooks](docs/ops/README.md) and [security documentation](docs/security/README.md) hold reusable project-specific procedures and boundaries.
 
-## Core Principles
+One active workstream keeps authority clear. Handoffs reuse its metadata and delivery summary; there are no separate Web, planner, engineer, QA, or reviewer status files. Context, roadmap, and debt are singleton documents, not templates copied per effort.
 
-- Evidence beats documentation. Verify claims against code, configuration, migrations, tests, Git history, and observed runtime state.
-- Keep one active workstream by default.
-- Plan substantial work before implementation and stop for explicit approval.
-- Keep implementation, commit, push, deployment, migration, destructive cleanup, and production promotion as separate gates.
-- Record completed reality. Failed, skipped, and user-owned checks remain visible.
-- Separate active execution, durable context, product direction, and deferred engineering recommendations.
-- Update durable documentation in the same workstream as the behavior it describes.
-- Archive closed workstreams so the active file stays useful.
+## Collaborate Across Sessions and Tools
 
-## Included Structure
+Use the [collaboration contract](docs/README.md#human-coordinated-collaboration), [illustrative handoff](docs/README.md#illustrative-handoff), and [task-request shape](docs/README.md#task-request-shape). Identify what each participant inspected and supply only the missing evidence needed for the next step.
 
-- `AGENTS.md`: Repository-wide instructions for coding agents.
-- `docs/README.md`: Canonical workflow policy, document contracts, statuses, gates, and lifecycle rules.
-- `docs/progress.md`: The current active-workstream state; initialized with no active work.
-- `docs/context.md`: Verified durable product and system state.
-- `docs/roadmap.md`: Directional product outcomes.
-- `docs/techdebt.md`: Accepted but intentionally postponed engineering work.
-- `docs/workstreams/WORKSTREAM_TEMPLATE.md`: The sole reusable active-workstream scaffold.
-- `docs/workstreams/archive/`: Final snapshots of closed workstreams.
-- `docs/ops/`: Reusable operational runbooks.
-- `docs/security/`: Maintained security boundaries, inventories, and procedures.
-- `docs/old/`: Historical material that is explicitly non-authoritative.
+A Web review of a GitHub commit cannot verify a different uncommitted laptop patch. Transfer a focused sanitized diff and relevant files, including untracked files when needed; no commit or push is required merely to share context.
 
-## Why There Is One Reusable Workstream Template
+## Adopt or Update the Framework
 
-Specification, plan, decisions, risks, implementation progress, verification, user validation, rollback, and delivery state all describe the same active effort. Keeping them in one workstream prevents separate specification, engineering, QA, and handoff files from drifting apart.
+This upstream framework repository and each adopting application have separate repositories, branches, evidence, active state, and permissions. Upstream `docs/progress.md` may contain real framework-maintenance work awaiting review. It is not the adopting application's project state and must not be reset upstream for packaging convenience.
 
-The other live documents are not instantiated per workstream:
+Before copying or merging anything, inspect the target repository, its applicable instructions and local constraints, and its staged, unstaged, and untracked work. Establish the authorized adoption scope and preserve existing files. Framework-policy adoption does not authorize application development, release actions, or resetting live state.
 
-- `context.md` is a singleton that survives many workstreams.
-- `roadmap.md` is a singleton for product direction.
-- `techdebt.md` is a singleton register.
-- `progress.md` is replaced from the workstream scaffold and archived at closure.
+### New project
 
-If genuinely concurrent approved work becomes routine, evolve `progress.md` into a dashboard linking to multiple active files. Do not pay that coordination cost before it is needed.
+1. Select the relevant starter policy, scaffold, and directory guidance for the target; do not copy upstream Git metadata or framework-maintenance state into the application.
+2. Tailor policy deliberately to the project's needs. Keep entry-point instructions concise, with commands and release/recovery procedures in appropriate runbooks.
+3. Initialize application `docs/context.md` from that application's verified evidence, `docs/roadmap.md` from confirmed user direction, and `docs/techdebt.md` only from accepted postponed recommendations. Leave unknowns explicit and remove setup comments when used.
+4. Initialize application `docs/progress.md` as `No active workstream` only if no substantial effort is active. Otherwise record the actual requested effort and its authorization using the sole scaffold.
+5. Follow [workstream initialization](docs/workstreams/README.md#starting-a-workstream): standard/high-risk work normally stops for plan approval, while recorded explicit scoped direct execution can proceed after investigation and a written plan.
 
-## Adopt the Template
+### Existing project or framework upgrade
 
-1. Copy the repository contents into a project root.
-2. Tailor `AGENTS.md` to the project's commands, release process, and attribution rules.
-3. Initialize `docs/context.md` from verified executable and runtime evidence, then remove its setup comment.
-4. Populate `docs/roadmap.md` with confirmed direction and remove its setup comment.
-5. Leave `docs/techdebt.md` empty until the user accepts a verified recommendation and explicitly postpones it.
-6. Keep `docs/progress.md` at `No active workstream` until substantial work actually begins.
-7. To start substantial work, copy `docs/workstreams/WORKSTREAM_TEMPLATE.md` over `docs/progress.md`, replace its prompts, and stop at `Awaiting plan approval`.
-8. Add project-specific runbooks and security documents only when their durable subjects exist.
+1. Compare existing `AGENTS.md`, workflow policy, active workstream, context, roadmap, debt, runbooks, and archives with the proposed framework changes.
+2. Merge policy and entry points deliberately. Preserve project-specific constraints and procedures; resolve genuine conflicts under the target's authority rather than replacing instructions wholesale.
+3. Preserve the active workstream's evidence, approved scope, and pending gates. An incompatible substantial adoption effort requires explicit disposition of that work before replacement. Never blindly copy the scaffold over it.
+4. Retain verified application memory and historical archives. Add missing structure only where needed; do not replace live documents with upstream placeholders or import upstream approvals.
+5. Verify the merged links, setup comments, instructions, and relevant contract scenarios. Updating policy alone grants no authority to implement application roadmap or debt items.
 
-## Day-to-Day Loop
+## Use the Workflow
 
-1. Read the required context in `AGENTS.md`.
-2. Classify the request as quick, standard, or high-risk.
-3. Investigate before planning or changing behavior.
-4. For standard and high-risk work, publish the evidence-backed plan in `docs/progress.md` and obtain approval.
-5. Implement within the approved scope while keeping the workstream current.
-6. Run proportionate checks and record their actual outcomes.
-7. Hand the user a focused smoke-test checklist and rollback considerations.
-8. Obtain separate authorization for each delivery or live-system gate.
-9. Close and archive the workstream when its terminal state is known.
+Conceptual discussion and clearly requested quick changes stay lightweight. Substantial work follows [context review and work classes](docs/README.md#work-classes), an investigated plan, and [scoped approval](docs/README.md#approval-scope), including the explicit direct-execution exception. Continue authorized steps without unnecessary pauses.
 
-The detailed contract is in [docs/README.md](docs/README.md).
+Keep evidence tied to its snapshot, run [proportionate verification](docs/README.md#verification-and-user-validation), and leave user validation to the human. Delivery permissions remain distinct. Successfully accepted work closes as [Completed or Released](docs/README.md#workstream-statuses-and-gates) according to its agreed target; archiving preserves the outcome.
