@@ -8,9 +8,9 @@ Risk: Communication rules can obscure evidence or consent; r4 changes presentati
 
 Status: Ready for user validation
 
-Current gate: Ready for user validation
+Current gate: Usability trial pending; r4 documentation baseline accepted
 
-Next action: Human reviews the complete F4 candidate, supplies the prepared export to Web if desired, and provides feedback or artifact-specific acceptance. Real-exchange usability feedback remains Pending.
+Next action: Human provides usability-trial feedback when available. No new implementation round or autonomous continuation is authorized.
 
 Loop control: Off
 
@@ -22,19 +22,23 @@ Branch: main
 
 Original implementation base: dfe3667ea37b41ba6de948ca1253930a23d7d093
 
-R4 implementation base and last inspected HEAD: 9fd19708ec94cf91bc28d373faefd9442d9b95ce
+R4 implementation base: 9fd19708ec94cf91bc28d373faefd9442d9b95ce
 
-Checkout observation: I4-final, 2026-09-06, Codex; branch and HEAD are unchanged at the implementation base, with exactly the six approved files modified and unstaged, no staged or untracked material. I4-start at that same reviewed commit was clean; there was no pre-existing work to preserve. The disposable review export is outside this repository.
+Last inspected HEAD: 24511fb6a7c9d887df2bb9f30b0a457d67d2b401
 
-Snapshot: F4, the six-file local interaction-policy implementation patch against the r4 implementation base. P4 is the earlier plan artifact, now preserved at that published base; F4 is not published.
+Checkout observation: A4, 2026-09-06, Codex; main at the accepted commit was clean before this acceptance-record update, with no staged, unstaged, untracked, or pre-existing changes. This task changes only docs/progress.md locally. The commit contains the six-file r4 amendment; no remote publication or command actor is inferred from that local observation.
+
+Historical checkout observation: I4-final, 2026-09-06, Codex; branch and HEAD were unchanged at the r4 implementation base, with exactly the six approved files modified and unstaged, no staged or untracked material. I4-start at that same commit was clean. The original disposable review export was outside this repository.
+
+Snapshot: Accepted r4 documentation baseline at 24511fb6a7c9d887df2bb9f30b0a457d67d2b401 under A4. F4 identifies the earlier local implementation handoff, and P4 the earlier plan; their original observations remain historical. The present local patch records acceptance only.
 
 Plan revision: r4, approved under D4; editorial refinements from the same human instruction clarify decision context, accessibility, and consolidation without a new workstream or scope expansion.
 
 Started: 2026-09-06
 
-Last substantive update: 2026-09-06 by Codex; implemented r4, completed document verification, and prepared F4 for human review
+Last substantive update: 2026-09-06 by Codex; recorded human acceptance A4 of the exact r4 baseline
 
-Delivery target: Local documentation candidate and disposable review export; stop at Ready for user validation. Acceptance and the real-exchange trial remain Pending.
+Delivery target: R4 documentation baseline accepted under A4. The real-exchange usability trial remains Pending; the workstream stays open without another implementation round or delivery action.
 
 Workflow: [Documentation Workflow](README.md)
 
@@ -54,7 +58,9 @@ Excluded: Staging, commits, pushes, branch/worktree changes, PR actions, deploym
 
 Review input: The human supplied Web's review of the exact published r4 plan and applicable guidance, with no blocking plan defect identified. That is reported evidence; Web did not inspect this laptop patch, rerun Codex checks, or establish comprehension/enjoyment. No unrelated research report informed F4.
 
-Artifact acceptance: D4 approves implementation, not F4 acceptance or prior user-check completion. F1/F2/F3 acceptance remains unresolved; the human may later give explicit cumulative acceptance of an identified final candidate without pretending historical checks were performed. No repeated historical checklist is required.
+Artifact acceptance A4: On 2026-09-06, the human directly stated, “I accept the r4 documentation candidate at 24511fb6a7c9d887df2bb9f30b0a457d67d2b401 as the baseline,” and requested this progress.md record only. This accepts that exact documentation artifact; it does not establish usability-trial results, individual historical checks, export transfer, or new delivery permission. D4 was implementation approval; A4 is the subsequent artifact acceptance. No further approval of this baseline is requested.
+
+A4 boundary: Keep the usability trial Pending and Loop control Off. Do not start another implementation round, archive the workstream, commit, or push. Only the local acceptance record and proportionate verification are authorized; all other existing exclusions remain in force.
 
 ## Context and Evidence
 
@@ -66,7 +72,7 @@ Chosen target behavior: D4 selects the r4 interaction design and its existing AC
 
 Inference requiring validation: A short briefing with accessible detail may reduce reading burden; caps and prescribed forms can instead hide context or feel mechanical. The ordinary-message exceptions and nonmandatory purposes address that risk in text, with usability still to be observed.
 
-Open decision: Human review/acceptance of F4 and actual feedback from the three-exchange trial. V1 and future runtime/activation/delivery remain separately unapproved.
+Open decision: Actual feedback from the three-exchange usability trial remains Pending. R4 baseline acceptance is recorded under A4; V1 and future runtime/activation/delivery remain separately unapproved.
 
 ## File-by-file Result
 
@@ -109,6 +115,8 @@ V1 remains an unresolved proposed clarification, not accepted debt: the operatio
 The earlier pilot remains unimplemented and unapproved: a proposed one-round, review-only run with a 60-minute limit and manual relay, requiring separately authorized implementation/activation, exact target selection, verified control boundaries, and permitted transport. Its full rationale and capability observations remain in the pinned F3 record.
 
 ## Verification
+
+The F4 implementation checks below retain their original snapshot and source; they are not rerun or expanded by A4. The acceptance-record check is recorded separately in the progress log.
 
 ### Starting state and historical scope
 
@@ -191,10 +199,10 @@ Limitations: Export equality establishes content completeness relative to this i
 
 ## User-owned Checks and Real-exchange Trial
 
-- [ ] Review F4's normal journey, briefing/packet boundary, and exceptions: can you understand the recommendation and material consequence without opening the full report?
-- [ ] Review the bootstrap and complete export for manual transfer, preserved authority, and honest local/reported/published distinctions.
-- [ ] Provide feedback or identify acceptance of F4, including explicit cumulative acceptance if intended. Earlier publication and implementation approval do not complete user checks.
+- [x] Accept the r4 documentation baseline at 24511fb6a7c9d887df2bb9f30b0a457d67d2b401 — direct human confirmation A4, 2026-09-06.
 - [ ] When available, supply actual feedback from three natural exchanges: Web planning/choice, Codex verified handoff, and Web review/human-validation checkpoint.
+
+The baseline review request is satisfied by A4. Individual review exercises and export transfer were not separately reported as performed; acceptance does not fabricate those results or usability evidence.
 
 For each real exchange, record the brief and source artifact, actor and inspected snapshot, what the human says changed, what remains uncertain, what the next decision permits, missing-context requests, and whether the style felt clearer or more enjoyable. Collect feedback conversationally without a quiz, score, fake timing claim, model evaluation, or a staged simulation required for handoff. No qualifying feedback has been supplied; readability/enjoyment remain unmeasured.
 
@@ -233,11 +241,11 @@ These concise summaries preserve original actors, snapshots, evidence, exclusion
 - r3/F3: [Record at a9f3379](https://github.com/edwardansberg/progress-driven-sdlc/blob/a9f3379ff42d115f46788a6c0a785f9f2cdb7ad9/docs/progress.md). Direct execution covered documentation/protocol and a proposed pilot only, against 3d0ee387c9a6b993c1066139c87be58c5eaffcc0. Codex reported six unstaged files plus the new operational reference; 105 links/66 anchors across 14 documents, whitespace/scope/hygiene and ten document scenarios passed. CLI/desktop metadata, help surfaces, GitHub reads, and five official-source reads were observed; no automated relay, control enforcement, instruction-loading evaluation, or runtime implementation was demonstrated. The one-round review-only pilot, service-permission uncertainty, exact-target/control prerequisites, and separate implementation/activation gates remain unapproved.
 - r4/P4: [Reviewed plan at 9fd1970](https://github.com/edwardansberg/progress-driven-sdlc/blob/9fd19708ec94cf91bc28d373faefd9442d9b95ce/docs/progress.md). The planning-only task started on clean main at a9f3379 and reported one unstaged progress.md patch, no staged/untracked work, 86 local links/47 anchors across 14 documents, whitespace/hygiene checks, and eight fictional scenario groups. Its nine message counts were E1 85, E2 87, E3 89, E4 103, E5 88, E6 88, E7a 72, E7b 133 (requested detail), E8 91. These are historical P4 reports, not fresh F4 counts or user-comprehension evidence. The full drafts, proposed contract/map, migration rationale, verification, and originally local-only packet remain at the exact pinned record.
 - P4 observation versus publication: P4's local-only handoff and no-delivery report describe Codex's planning task against a9f3379. The human reports its publication at 9fd1970; Codex now independently inspected that exact containing commit locally and its progress-only delta. No inference is made about who invoked Git commands or whether prior user checks passed. D4 now approves that plan's implementation; it does not retroactively authorize delivery.
-- Current unresolved acceptance: No F1/F2/F3 artifact acceptance or previous user-check completion is inferred. The human can review the cumulative F4 candidate rather than repeating superseded checklists. V1 remains separately unresolved; prior document-level checks are neither invalidated wholesale nor misreported as rerun.
+- Current acceptance boundary: A4 accepts the r4 baseline at its exact commit. Earlier F1/F2/F3 observations retain their original scope; no retrospective check completion is inferred and superseded checklists need not be repeated. The usability trial and V1 remain unresolved; prior document-level checks are neither invalidated wholesale nor misreported as rerun.
 
 ## Delivery Summary and Transferable F4 Review Packet
 
-This is the current implementation handoff; the P4 packet is historical. F4 is the local six-file patch at the inspected base, with complete changed files, tracked diff, approved P4 source, and necessary unchanged guidance in one disposable external review export. A local path alone does not give Web access. Supply the prepared file in the review conversation; no push, controller, JSON protocol, or grant is required.
+Historical F4 implementation handoff: The packet below described the then-local six-file patch against the r4 implementation base, with complete files, diff, P4 source, and guidance in a disposable export. A4 now accepts the identified committed baseline and supersedes this request for candidate review. The packet is retained as historical evidence, not a current instruction to send it or begin another round. No export was regenerated or sent by this acceptance-record task.
 
 Packet preparation: F4-review.md is prepared outside the tracked repository and provided through the task's local file link. Its complete contents are verified as described above. No upload or message sending was performed.
 
@@ -281,3 +289,15 @@ recommends human validation and does not begin another improvement round.
 2026-09-06, I4-final: Completed AC1–AC9 and all eight scenario groups at document level, checked illustrative-message lengths, inspected scope/diff/hygiene/links and preserved policy boundaries, and prepared the complete transferable F4 export. User validation and the real-exchange trial remain Pending; no blocker or scope departure remains.
 
 During this r4 implementation task, Codex performed only the authorized local documentation work, read-only verification, and disposable export. No staging, commit, push, branch/worktree, PR, deployment, live-data, destructive, history/identity/signing/credential/configuration, global instruction/installed-skill, downstream, dependency, runtime/controller, browser automation, model/API evaluation, or loop activation action was performed. No acceptance, release, closure, or archive was inferred.
+
+2026-09-06, A4: Recorded the human's acceptance of r4 at 24511fb6a7c9d887df2bb9f30b0a457d67d2b401 as the baseline. The checkout matched that exact commit and was clean. Updated only this acceptance/state record; retained the Pending usability trial and Loop Off, with no new implementation round, closure, archive, commit, or push.
+
+Check: A4 acceptance-record consistency and scope.
+
+Basis: Codex inspected the complete local diff and Git state; ran `git diff --check`, `git diff --cached --check`, and `git diff --exit-code HEAD -- . ':!docs/progress.md'`; checked unique current metadata, the exact accepted commit, Pending trial, and Loop Off.
+
+Scope: Local acceptance-only progress.md update against 24511fb6a7c9d887df2bb9f30b0a457d67d2b401, 2026-09-06.
+
+Result: Passed. Only progress.md is modified and unstaged; no staged/untracked work or other changed files. Whitespace/scope checks exit 0. Final record verification preserves the same boundaries.
+
+Limitations: Earlier implementation checks were not rerun; no usability exchange, external review, remote publication check, or export transfer was performed by this task. Human acceptance comes from A4, not these checks.
