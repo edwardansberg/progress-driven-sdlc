@@ -1,14 +1,18 @@
 # Active workstream: human-coordinated-agentic-development
 
-Workstream class: Standard
+Workstream class: High-risk
 
-Risk: Medium; these narrow documentation corrections affect interpretation of evidence, archive references, instruction activation, and actor attribution.
+Risk: High; the amendment defines autonomous authority and trust boundaries. This task changes documentation only.
 
 Status: Ready for user validation
 
 Current gate: Ready for user validation
 
-Next action: User reviews F2 using the four-item checklist below and accepts that artifact or requests corrections. Acceptance of F1 remains unresolved; no later delivery action is authorized.
+Next action: User reviews local F3 with the checklist below and accepts the identified cumulative documentation candidate or requests corrections. Runtime implementation and live pilot activation require separate future human orders.
+
+Loop control: Off
+
+Loop step/reason: No run granted; runtime implementation not started; live activation requires a separate explicit human order.
 
 Repository: edwardansberg/progress-driven-sdlc (upstream framework only)
 
@@ -16,382 +20,212 @@ Branch: main
 
 Original implementation base: dfe3667ea37b41ba6de948ca1253930a23d7d093
 
-Follow-up base and last inspected HEAD: 86554d0f2be7c6b947031fc3e27c1d6f0d7a63da
+R3 base and last inspected HEAD: 3d0ee387c9a6b993c1066139c87be58c5eaffcc0
 
-Checkout observation: R2-final, 2026-09-06, Codex in this task; six unstaged modified files, empty index diff, no untracked files. The clean R2-start observation is retained under Context and Evidence.
+Checkout observation: R3-final, 2026-09-06, Codex in this task; six unstaged modified files, empty index diff, and one untracked operational reference. R3-start at the same HEAD was clean with no pre-existing changes. Branch and HEAD remain unchanged and match the supplied Web review base.
 
-Snapshot: F2, the complete six-file local correction diff against the follow-up base, as inspected at R2-final; distinct from historical F1 and the published prior amendment. Files are identified in the r2 handoff below.
+Snapshot: F3, the complete six-file unstaged diff against the R3 base plus the full untracked docs/ops/autonomous-review-loop.md, as inspected at R3-final. This local artifact is distinct from the already-published F1/F2 amendments; a tracked diff alone is incomplete.
 
-Publication observation: 2026-09-06, Codex read-only `git ls-remote origin refs/heads/main` returned 86554d0f2be7c6b947031fc3e27c1d6f0d7a63da. This independently corroborates the user's publication report; it does not establish acceptance, prior permissions, or the actor who invoked Git.
+Publication observation: 2026-09-06, Codex read-only `git ls-remote origin refs/heads/main` returned 3d0ee387c9a6b993c1066139c87be58c5eaffcc0 after sanitized remote inspection. The GitHub connector also retrieved that exact commit in this session. Neither observation establishes human acceptance, earlier command actors, or this Web conversation's access.
 
-Plan revision: r2, 2026-09-06; r1/F1 history retained below
+Plan revision: r3, 2026-09-06
 
 Started: 2026-09-06
 
-Last substantive update: 2026-09-06 by Codex, r2 verification and handoff
+Last substantive update: 2026-09-06 by Codex; r3 contract, verification, and F3 handoff. The investigated plan was recorded before normative edits.
 
-Delivery target: Local uncommitted F2 correction patch for user review; acceptance, release, and archival remain outside this task's stopping gate.
+Delivery target: Local uncommitted documentation/protocol amendment and pilot plan. Stop at Ready for user validation; no runtime, activation, acceptance, release, or archival.
 
 Workflow: [Documentation Workflow](README.md)
 
-## Follow-up r2 — Post-publication Corrections
+## Outcome and Scope
 
-### Context and Evidence
+Add an optional human-granted execution/review loop without changing the default workflow. Specify activation, review publication, exchange validation, human controls, failure handling, and a minimal future pilot. Documentation is the deliverable; an executable controller and live round trip are excluded.
 
-Verified current behavior: At R2-start on 2026-09-06, Codex observed a clean checkout exactly matching the user-reviewed published commit: no staged, unstaged, untracked, or pre-existing changes. All 13 tracked Markdown files and applicable guidance were read; no additional repository-owned skills or agent instructions were found, and ancestor/global instruction checks found no additional files. The existing workstream was compatible and unresolved; it is resumed here without a branch or history change.
+Included: Six existing files (`docs/README.md`, `AGENTS.md`, root `README.md`, `docs/workstreams/WORKSTREAM_TEMPLATE.md`, `docs/ops/README.md`, and this workstream), plus the authorized new operational reference `docs/ops/autonomous-review-loop.md`. Compact earlier records using the pinned sources below; preserve unresolved acceptance locally.
 
-The following findings were independently reproduced in that checkout:
+Excluded: Staging, commits, pushes, branch/worktree changes, PR actions, deployment, live-data operations, destructive cleanup, history rewriting, dependencies, new paid usage, identity/signing/credential changes, global instructions/configuration, installed skills, downstream repositories, live controller construction/launch, automated ChatGPT interaction/extraction, nested model/API evaluations, and background tasks. Context, roadmap, debt, archive guidance, and archives remain intact.
 
-- Metadata conflates the original base and F1 handoff with current state; the prior checklist is still unchecked. F1 remains valid historical reported evidence, not a claim about today's dirty state.
-- Archive conventions omit relocation of links and maintained historical references. An in-memory URI check shows that unchanged `README.md#approval-scope` would target the archive directory's README instead of `docs/README.md`. The archive tree contains only its index, so no existing broken archived workstream was found.
-- Adoption does not distinguish amended files from instructions already loaded in a session. The [official Codex reference](https://developers.openai.com/codex/guides/agents-md), opened 2026-09-06, redirects to ChatGPT Learn and documents instruction-chain construction at run/session startup and restart for stale guidance. This supports a safeguard; no live loading failure was demonstrated.
-- `AGENTS.md` applies the author instruction to any authorized commit, broader than canonical policy's Codex-created-commit condition.
+## Context and Capability Evidence
 
-Chosen target behavior: Distinguish base, dated/source-attributed observations, publication, and artifact-specific evidence; preserve archive targets and historical references; clarify instruction activation; restore actor-specific attribution. Keep existing classes, approval boundaries, lifecycle, and file surface.
+Verified current behavior: All 13 tracked Markdown documents were read, including full policy/progress, scaffold, archive, operations, and security guidance. Root AGENTS.md is the only repository-owned instruction; applicable ancestor/default-home override checks found no additional files or repository skills. The compatible active r2 workstream remains unresolved. All four r2 corrections are present. Tracked inventory and runbooks define no executable tests, CI, dependency manifests, or controller. No custom Git hooks path or non-sample default hooks were found; remote service triggers are not established by this observation.
 
-Inference requiring validation: Document-level consistency is supported by the checks below. Actual instruction loading and live agent compliance remain unverified; the safeguard is not a claim of a reproduced runtime failure.
+Observed local metadata: `codex --version` returned `codex-cli 0.153.4`; `Get-AppxPackage '*Codex*'` returned `OpenAI.Codex 26.901.6511.0`. No nested run was started. Session tool descriptions expose browser control (native app APIs disabled in this surface), app task messaging/waiting/automations, GitHub reads, and shell process interaction. Their presence does not establish a permitted ChatGPT relay, access to the intended account/conversation, or measured interruption. The GitHub connector retrieved the exact published commit; browser, messaging, scheduling, and cancellation interfaces were not exercised. Private browser state, credentials, and accounts were not inspected. This session has unrestricted shell access; no protected controller or human-control channel has been demonstrated. A same-identity pilot would provide cooperative control, not adversarial isolation.
 
-Open decision: User acceptance of F1 was not supplied and is not inferred from publication. F2 acceptance remains pending; the user owns both any acceptance decision and any later delivery authorization.
+Source verification: The five requested official sources were opened on 2026-09-06. Browser support is documented, while Europe Terms restrict automated/programmatic extraction. No applicable exception for this proposed relay was verified. Codex instruction discovery is documented per run; non-interactive structured output and app-server events/approval/cancellation provide possible local interfaces, not access to this Web conversation. See [source observations](ops/autonomous-review-loop.md#source-observations) for exact references, documented behavior, and adaptation limits.
 
-### Scope, Plan, and Authority
+CLI help inspection: `codex app-server --help` advertises stdio and marks the command experimental; `codex exec --help` advertises JSONL, structured output, and sandbox options. Both exited 0 without launching a server or model. This confirms installed command surfaces only, not compatibility, approval-channel isolation, cancellation reliability, or permission to use a Web relay.
 
-Authority: The user's request "Progress-Driven SDLC: focused post-publication corrections," section "Authority and stopping gate," received 2026-09-06, explicitly authorizes this bounded local investigation, written plan, corrections, verification, and documentation upkeep. Plan r2 implements that request; it is not independently user-approved or self-authorizing. The supplied Web review is input, not authorization or a rerun of local checks.
+Chosen target behavior: Default-off bounded grants, exact candidate review, external message/state validation, distinguishable human controls, and fail-closed publication/recovery. These are contract requirements, not implemented runtime properties.
 
-Included: The four corrections in the six expected files: `docs/README.md`, `AGENTS.md`, root `README.md`, `docs/workstreams/WORKSTREAM_TEMPLATE.md`, `docs/workstreams/README.md`, and this workstream.
+Inference requiring validation: A small foreground local coordinator may support the pilot using existing Codex interfaces and manual Web relay. Its enforcement, account/transport permission, stop latency, recovery, and reliability require separate implementation and observed tests.
 
-Excluded: Staging, commits, pushes, PR creation/merge, branch changes, worktrees, deployment, live-data operations, destructive cleanup, history rewriting, Git identity/signing/credential changes, global instructions/configuration, installed skills, nested agent/API evaluations, downstream repositories, new permanent files/tooling, and edits to context, roadmap, debt, or archives.
+Open decision: User review of F3; later runtime implementation scope and separate pilot activation. No run ID, isolated branch, destination binding, grant expiry, or live budget has been approved. Automated Web transport remains unavailable pending verified permission and capability.
 
-Acceptance criteria:
+## Decisions and Authorization
 
-- F1, published commit, and F2 observations remain distinct; evidence and acceptance identify their artifact and source. Metadata does not promise to name its own future containing commit.
-- Archive guidance preserves link/image/reference-style destinations and fragments, validates from the destination, and redirects historical references without redirecting active navigation or overwriting an archive.
-- Activation guidance remains provider-neutral, uses the official source for Codex details, retains explicit canonical-policy reading, and claims no automatic loading or fresh-session evaluation.
-- Only Codex-created commits receive the applicable Codex author rule; other actors retain their adopted policy. No attribution or history changes occur.
-- All six follow-up scenarios have supported decisions; available checks pass; user-owned checks remain pending at `Ready for user validation`.
+Authority: The current user's request "Add an opt-in, human-controlled execution-and-review loop," section "Authority for this task," received 2026-09-06, grants scoped direct execution for this documentation amendment, read-only capability investigation, and offline verification. Plan r3 implements that request; it does not independently authorize itself. An agent relaying the text would not supply human authority. No live loop grant is made by this request.
 
-Implementation and verification plan:
+Scope decision: Keep global authority canonical; put message shapes and operator/failure procedures in the single authorized operations reference. Keep progress as the only human-readable active state. Runtime private recovery data is only a future design, not another project plan or permission source.
 
-- [x] Inspect actual state, required documents, publication evidence, and official guidance; reproduce findings and record r2 before normative edits.
-- [x] Make small canonical, entry-point, adoption, scaffold, and archive refinements; preserve identifiable r1/F1 evidence.
-- [x] Simulate archive relocation in memory using independently specified targets, including fragments, images/reference definitions, self-links, code/path-label exclusions, and historical versus active inbound references.
-- [x] Inspect all changed hunks, links/anchors, metadata, policy consistency, hygiene, and staged/untracked state; run `git diff --check` and any existing applicable repository checks.
-- [x] Record six document-level scenario decisions and actual outcomes, then prepare the F2 handoff at the authorized stopping gate.
+Historical acceptance: No artifact-specific acceptance evidence for F1/F2 has been supplied. Their pending checks are not marked passed. They are superseded review artifacts within this still-active workstream; the human may explicitly accept an identified final cumulative candidate without repeating historical checklists or pretending earlier tests occurred.
 
-Risks and rollback: Historical reports could be mistaken for current facts; label r1/F1 as history and give F2 its own observation. Preserve unaffected evidence only with its original source/scope. Rollback, if requested later, is limited to this follow-up's hunks against 86554d0f2be7c6b947031fc3e27c1d6f0d7a63da, preserving the published r1 patch and intervening unrelated work. Migration, rollout, and runtime observability are not applicable to this local documentation task.
+Delivery Permissions: See the single ledger below. No prior publication or future example grants this task delivery or communication authority.
 
-### Verification
+## Acceptance Criteria
 
-The following checks were performed by Codex in this r2 task on 2026-09-06. They concern F2 and the specified observations, not a rerun of the earlier r1 agent review. The final evidence update passed the focused link/diff/state checks: 13 documents, 93 local links, 58 anchor targets, six expected unstaged files, and zero inspection issues. The final gate/owner annotation changes no policy, links, or evidence basis.
+- AC1: Activation requires a genuine complete bounded human grant; installation, implementation approval, relayed prose, and examples keep the loop off.
+- AC2: Named repeated review-branch actions may be authorized together; review publication is distinct from acceptance/release, and unrelated staged work or consequential triggers prevent unsafe publication.
+- AC3: Bounded request/response fields identify exact artifacts, origin, correlation, evidence, and verdicts; unsupported findings are reconciled and missing/mismatched evidence never authorizes action.
+- AC4: Human provenance, status/pause/stop/resume, limits, no self-modification, and conservative recovery are specified with cooperative-control limitations.
+- AC5: Transport permission and demonstrated reliability remain distinct; manual relay is compatible and no API reviewer silently replaces ChatGPT Web.
+- AC6: Pilot implementation and activation gates, checks, rollback, unresolved targets/permissions, and ten document-level scenarios are reviewable; existing policy and historical evidence remain intact.
 
-Check: Local state, published reference, and complete follow-up diff.
+## Implementation and Verification Plan
 
-Basis: `git rev-parse --show-toplevel`, `git branch --show-current`, `git rev-parse HEAD`, `git status --porcelain=v1 --untracked-files=all`, full `git diff`, `git diff --cached`, `git ls-files --others --exclude-standard`, `git diff --name-status dfe3667ea37b41ba6de948ca1253930a23d7d093 86554d0f2be7c6b947031fc3e27c1d6f0d7a63da`, and read-only `git ls-remote origin refs/heads/main` after sanitized remote-identity inspection.
+- [x] Inspect current state/instructions, historical records, installed metadata, connector visibility, and all five official sources; record r3 authority, scope, and investigated plan before normative edits.
+- [x] Amend canonical authority and review-publication flow; align concise entry points, scaffold, and operations index.
+- [x] Specify bounded messages, controller guard/recovery contract, controls, source limitations, and implementation-ready pilot with manual relay as the current fallback.
+- [x] Walk through all ten requested scenarios against independently specified expected decisions; inspect complete changed/new material, links/anchors, metadata, hygiene, and unchanged contracts.
+- [x] Run applicable existing checks and `git diff --check`; record exact outcomes and limitations, then prepare F3 at the requested stopping gate with user checks pending and loop Off.
 
-Scope: R2-start and local F2; publication observation at the date above.
+## Risks and Rollback
 
-Result: Passed. Local branch/HEAD match the reviewed published snapshot. The correction diff affects only the six expected files; index and untracked inventory are empty. All seven other tracked documents remain intact. The published commit contains the prior six-file amendment, independent of the earlier local dirty-state report.
+Permission drift and spoofed human authority are the central risks. Documentation alone cannot enforce either. Active-run policy changes require a pause and human re-bootstrap; a future controller must assess effects of tests, Git hooks, and publication. Automation must stay off when required provenance or service permission cannot be established.
 
-Limitations: Publication does not establish prior acceptance, permissions, or command actor. F1 evidence retains its original reported source/scope. No new specialist or live agent evaluation was performed.
+Migration, deployment, and runtime observability: Not applicable to this local documentation amendment. Future pilot checks must measure controls and recovery before activation.
 
-Check: Archive relocation and maintained-reference intent.
+Rollback: If later requested, reverse only r3 local hunks against the R3 base and remove only its new reference after inspecting intervening work. Preserve the published F1/F2 policy and all unrelated edits. No rollback is performed now.
 
-Basis: One-off inline PowerShell, entirely in memory, with independently named target files/fragments. Eight inline/image/reference-definition/self/external destinations were resolved at source and archive locations; a negative control copied destinations unchanged. Protected code/path labels and separate delivered-work/current-work inbound links were also checked. Actual progress links were simulated from the nested archive against canonical-policy, root-orientation, and archive-guide targets.
+## Proposed First Pilot
 
-Scope: F2 archive procedure; virtual `docs/progress.md` and `docs/workstreams/archive/2026/example.md`, with real target headings and one virtual image. No maintained fixtures or archive copies were created.
+Proposal only: A one-round review-only pilot of an identified frozen cumulative framework candidate in `edwardansberg/progress-driven-sdlc`. This exercises publication/exchange/control while avoiding an active run that changes its own governing documents. It does not demonstrate autonomous implementation or correction execution; those paths need offline coverage and a later human-selected non-governing change.
 
-Result: Passed. Twenty positive fixture assertions; the unchanged-copy control reproduced six displaced relative destinations. Corrected paths preserved file targets and fragments, reference definitions, images, self-links, and external URLs. Historical inbound references followed the archived work; active navigation stayed on progress. After adding the verification/handoff narrative, a focused final simulation validated all 33 relative progress links against their intended files/fragments; the unchanged fixed fixtures were not rerun.
+Runtime implementation gate: A separate human request must authorize a small foreground local coordinator, implementation location, and bounded development checks. Recommended components are a strict version-1 message validator, one writer lock, private journal/outbox and grant/revocation adapter, local operator console, guarded Git adapter, and manual-relay input/output. Use installed Codex app-server over local stdio for explicit turn events/cancellation if implementation-time compatibility checks confirm it; use non-interactive JSONL only if equivalent control requirements are demonstrated. No agent framework, database, daemon, or automatic browser adapter is needed. Freeze and inspect the coordinator before enabling any run; implementation happens with the loop Off.
 
-Limitations: Document-level path simulation, not a general Markdown rewriting tool, actual closure, or live agent evaluation. The archive still contains only its index; no broken existing historical workstream was alleged or repaired.
+Target and artifacts: Use the current upstream repository only, an exact human-selected base/candidate, and an isolated review branch on the verified `origin`. The branch name has not been selected or authorized; default/release branches are excluded. Do not invent a containing commit for F3 now. Before activation, identify the actual original base, previous reviewed head, candidate and frozen policy revision. The latest supplied Web review currently covers 3d0ee387c9a6b993c1066139c87be58c5eaffcc0; revalidate that reference against any intervening review evidence. The pilot permits no model edits to policy, approval records, controller, or tools; any findings return to the human after its single review.
 
-Check: Link/anchor integrity, scope, metadata, hygiene, and available repository checks.
+Control boundary: The human operates a local console outside model/relay input and project data. The coordinator blocks new dispatch on Pause/Stop, journals revocation, and requests cancellation of a known in-flight turn/process when supported. Measure gate-closure latency, acknowledgement, and in-flight effects at each guarded step using offline fakes before any live side effect. If independent protection from the execution identity cannot be established, declare cooperative control and require direct human checkpoints before consequential actions; do not claim secure unattended enforcement. No local stop measurement has been performed in this task.
 
-Basis: Read-only inline PowerShell inventory via `git ls-files -- '*.md'`, resolution of inline/image/reference-style targets and heading fragments outside code/comments, current-metadata counts, expected changed paths, and table/conflict-marker/credential/personal-detail pattern inspection; manual changed-hunk review for meaning and duplication. `git diff --check` and `git diff --cached --check`; required runbook reads and `git ls-files -- '*.yml' '*.yaml' 'package.json' 'pyproject.toml' 'Makefile' '*test*' '*lint*'` to discover existing checks.
+Transport boundary: Use manually shared version-1 objects in the actual human-selected ChatGPT Web conversation until a supported permitted automated route is verified. The human privately binds a destination alias and confirms exact repository/candidate visibility, source labeling, and allowed public/sanitized data. No conversation URL or account detail belongs here. An API alternative would need explicit reviewer/context/spending choices; it is not assumed to share this conversation.
 
-Scope: All 13 tracked Markdown documents for links, six changed files for follow-up hygiene, and F2 versus the published base for semantic review.
+Proposed run limits: One round, one writer, one outstanding review, 60 minutes total including waits, no new paid services/API spending, and final human validation. Grant start/expiry and control channel must be concrete at activation. Staging, branch creation, commit, push, and reviewer communication each require a named scoped entry, with any permitted repeats bounded by that grant. Hook/CI/deployment/cost effects must be checked before publication; unknown consequential effects block it. Existing publication does not authorize the next one.
 
-Result: Passed. No missing targets/anchors, unexpected files, competing current metadata, table additions, conflict markers, or sensitive-detail findings. Both Git whitespace checks exited 0 without diagnostics. No executable test/lint/build/CI checks are defined; no pre-existing check failures were found. Classes, partial/scoped approval, user validation, and terminal outcomes remain unchanged.
+Verification before activation: Offline fault injection for malformed/stale/duplicate/partial responses, uncertain send/push outcomes, concurrent edits, journal/lock loss, crash/expiry without budget reset, provenance spoofing, and pause/stop at every dispatch boundary. Separately inspect scoped test/credential effects, Git target/attribution, and source-loading behavior from the intended directory. After an explicit activation order, measure one permitted manual round's exact-candidate visibility, correlation, complete response handling, and local stop behavior; report observed latency and residual effects. No second round or post-round fix occurs under the first pilot grant.
 
-Limitations: Focused document inspection, not comprehensive secret detection or runtime testing. The current instruction-discovery reference was opened; unchanged external sources and earlier F1 checks are not reported as re-fetched or rerun. No permanent tooling was added.
+Rollback and recovery: Keep review publication isolated. Stop revokes continuation and preserves the candidate, patch, and recovery evidence; inspect any in-flight side effect before further action. Reversal of pilot hunks, branch disposal, and private-record cleanup each need their actual authorization; no force push, history rewrite, default-branch reset, or destructive automatic cleanup. Runtime implementation rollback is limited to its future approved local files, without global configuration changes.
 
-#### Follow-up Scenario Walkthroughs
+Unresolved activation requirements: Human approval of runtime implementation and subsequent evidence review; exact branch/candidate/scope; private destination/account binding and service permission for any automatic route; a demonstrated local control boundary and stop limits; known publication effects; a complete time-bounded human grant with named permissions. None blocks this documentation handoff, and none is fulfilled merely by accepting F3. Use the [operator procedure](ops/autonomous-review-loop.md#pilot-preparation-activation-and-stop) only after the respective future orders.
 
-Check: Six requested post-publication scenarios.
+## Verification
 
-Basis: The user's independently specified expected decisions and direct reading of the supporting sections below, with the archive simulation as additional evidence.
+Checks below were performed by Codex in r3 on 2026-09-06. F1/F2 evidence retains its original scope/source and is not reported as rerun. The final evidence/metadata update receives a focused consistency and whitespace recheck; no runtime result is inferred.
 
-Scope: F2 written contract; document-level verification only.
+Check: Starting state, capability metadata, source claims, and publication observation.
 
-Result: Passed, six of six supported; no remaining contradiction found.
+Basis: `git rev-parse --show-toplevel`, `git branch --show-current`, `git rev-parse HEAD`, `git status --porcelain=v1 --untracked-files=all`; sanitized remote identity and `git ls-remote origin refs/heads/main`; GitHub connector `github_fetch_commit` for the exact published SHA; `git cat-file -e` for both pinned progress records; all required document reads; `codex --version`, `codex app-server --help`, `codex exec --help`, and `Get-AppxPackage '*Codex*'`; exposed tool descriptions and the five opened official pages.
 
-Limitations: No user acceptance or live instruction-loading/compliance result is implied.
+Scope: R3-start checkout and the dated source/local-metadata observations above.
 
-1. Publication after an uncommitted handoff. Expected: Distinguish historical F1, observed publication, and current F2, leaving acceptance unresolved and command actor unknown. Result: Passed. Support: [Handoff and resumption](README.md#handoff-and-resumption) and this workstream's dated checkout/publication observations and historical preface.
-2. Same-scope correction after review. Expected: Retain valid evidence with its artifact/source, return affected user checks to Pending, and rerun relevant checks without blanket implementation reapproval or a future-commit-hash cycle. Result: Passed. Support: [Handoff and resumption](README.md#handoff-and-resumption), [Approval Scope](README.md#approval-scope), and the scaffold's Last inspected HEAD / verification prompts.
-3. Nested archival and progress reuse. Expected: Rebase links/images/reference destinations while retaining fragments and workstream identity; redirect historical evidence references, retain active navigation, and avoid occupied archive paths. Result: Passed by document review and the in-memory simulation. Support: [Preserve references at closure](workstreams/README.md#preserve-references-at-closure) and [Closing and Archiving](README.md#closing-and-archiving-a-workstream).
-4. Instructions edited during a session. Expected: Separate amended text, documented discovery, and actual observed loading; preserve handoff before any relevant documented restart, with no automatic interruption or evaluation. Result: Passed for the documentation; fresh-session behavior remains unperformed. Support: [Activating updated guidance](../README.md#activating-updated-guidance), [Instruction Authority and Evidence](README.md#instruction-authority-and-evidence), and [Source Note](README.md#source-note).
-5. Codex versus human-created commits. Expected: Only Codex-created commits use its applicable author policy; other actors retain their adopted policy and identities. Result: Passed by reading both attribution sections; no Git identity/history changes performed or command actor inferred. Support: [Commit Attribution](README.md#commit-attribution) and AGENTS.md, Commit Attribution.
-6. Existing planning and delivery gates. Expected: An unapproved standard feature stops; explicit scoped direct execution and partial approvals cover only their scope; green checks neither authorize delivery nor pass user checks. Result: Passed. Support: [Standard workstream](README.md#standard-workstream), [Approval Scope](README.md#approval-scope), and [Verification and User Validation](README.md#verification-and-user-validation).
+Result: Passed for read-only observation. Checkout and remote matched the supplied commit; no pre-existing changes or incompatible workstream. All four r2 corrections are present. Installed version/help surfaces and this session's GitHub commit access were observed; all five official references were accessible.
 
-Fresh-session behavior check: Skipped; this task expressly excludes nested agent/API evaluations. Reading the updated files and official documentation does not demonstrate automatic instruction loading. Any later setup check requires evidence from the intended environment and is not required to finish this documentation patch.
+Limitations: Help/tool descriptions are not operational tests. No Web account/conversation access, automatic instruction loading, protected human channel, reliable relay, or stop latency was demonstrated. Service permission for the automated Web route remains unresolved, keeping it disabled.
 
-### User Review Checklist
+Check: Complete patch scope, preserved state, Markdown links/anchors, metadata, hygiene, and existing checks.
 
-- [ ] Review F1/publication/F2 observation and evidence distinctions; identify any artifact-specific acceptance you intend to provide.
-- [ ] Review archive relocation and historical-reference preservation, including the simulation results.
-- [ ] Review activation guidance and its unperformed fresh-session check limitation.
-- [ ] Review actor-specific attribution and confirm or request corrections to F2.
+Basis: Full tracked diff and original/current progress text review, full new-reference read, `git diff --cached`, `git ls-files --others --exclude-standard`; read-only inline PowerShell inventory of tracked plus untracked Markdown, local path/heading resolution outside examples/comments, single current metadata counts, allowed-path and table/conflict-marker/credential/personal-detail scans. `git diff --exit-code` over the seven untouched documents; `git diff --check`, `git diff --cached --check`; new-file trailing-whitespace/final-newline check. Required runbook/inventory reads and `git ls-files -- '*.yml' '*.yaml' 'package.json' 'pyproject.toml' 'Makefile' '*test*' '*lint*'` established available checks.
 
-All F1 user checks below remain pending; publication is not a substitute for their evidence. F2 changes affect these four review subjects, so no prior check is carried forward as their acceptance.
+Scope: Local F3 against the R3 base, all 14 Markdown documents including the new untracked reference; six modified tracked files and that one new file.
 
-### Delivery Permissions and Handoff
+Result: Passed. The final consistency scan covered 14 documents, 105 local links, and 66 anchor references, with zero issues. No missing local targets/anchors, unexpected paths, competing current metadata, tables, conflict markers, or sensitive-detail findings. Index empty; seven other tracked documents unchanged. Git whitespace checks exited 0; new-file whitespace/newline check passed. No executable repository test/lint/build/CI checks are defined and no pre-existing check failure was found. Exact final inventory is in the handoff observation.
 
-- Staging: Unapproved; excluded for r2.
-- Commit: Unapproved; excluded for r2.
-- Push: Unapproved; excluded for r2.
-- PR creation: Unapproved; excluded for r2.
-- PR merge: Unapproved; excluded for r2.
-- Deployment: Unapproved; excluded for r2.
-- Live-data operations: Unapproved; excluded for r2.
-- Destructive cleanup: Unapproved; excluded for r2.
-- Production promotion: Unapproved; excluded for r2.
+Limitations: Focused inspection is not a comprehensive Markdown parser or secret detector. Existing archived-reference rules were read and preserved; prior archive simulations were not rerun. Local publication hooks inspection does not establish remote trigger/cost effects. No permanent validator, fixtures, runtime files, or dependencies were added.
 
-No prior publication retroactively authorizes this task. F2 is the complete six-file local diff against the follow-up base, with no staged or untracked material. It is separate from both historical F1 and the published prior amendment.
+### Document-level Scenario Walkthroughs
 
-Changed files: `docs/README.md` separates observations/evidence and links the activation/archive details; `AGENTS.md` restores actor-specific attribution; root `README.md` explains instruction activation; `docs/workstreams/WORKSTREAM_TEMPLATE.md` distinguishes base, inspected HEAD, observation, and evidence scope; `docs/workstreams/README.md` preserves archive and maintained-reference targets; this workstream records r2 and retains r1/F1 history.
+Check: Ten requested decisions against the final written contract.
 
-All four wording/procedure gaps were reproduced and corrected within the expected file set. Neither an existing broken archive nor a live instruction-loading failure was demonstrated. F1 acceptance remains unresolved; F2 review is pending using the four-item checklist above. Rollback, if requested, is limited to r2's local hunks against the published base, preserving the earlier amendment and any later unrelated work.
+Basis: The user's independently specified scenarios, manual branch-by-branch policy walkthrough, full new protocol/reference review, and surrounding unchanged policy. No controller, message transport, or model was executed for these cases.
 
-During this r2 task, Codex performed no staging, commit, push, PR action, branch/worktree change, deployment, live-data operation, destructive cleanup, history rewrite, Git identity/signing/credential change, global instruction/configuration or installed-skill edit, nested agent/API evaluation, or downstream edit. No workstream was accepted, released, or archived. The authoritative current gate, observation, and next owner are in the metadata above; no blocker or scope departure remains.
+Scope: F3 policy, entry points, scaffold, and operational target contract.
 
-## Historical r1/F1 Record
+Result: Passed, 10 of 10 supported after clarifying pause versus run termination and last-round completion. No remaining document contradiction found.
 
-Capture/source: Codex's r1 handoff on 2026-09-06 described F1 as six unstaged files against the original implementation base, with no staged/untracked files. It recorded `Ready for user validation` and user review as next action. The record is also preserved in [the published progress document at 86554d0](https://github.com/edwardansberg/progress-driven-sdlc/blob/86554d0f2be7c6b947031fc3e27c1d6f0d7a63da/docs/progress.md).
+Limitations: These are document-level verification, not live agent evaluations, executable controller tests, path-relocation reruns, or measured enforcement. Runtime fault injection remains a future pilot prerequisite.
 
-The sections below retain that earlier plan, decisions, results, and pending checklist. References to "this task," "the base," or "F1" in them concern the r1 handoff, not r2 or subsequent publication. Their document links are navigation; use the pinned published record to inspect the historical material. Earlier checks are not claimed as rerun for F2.
+1. Installation, roadmap entry, or relayed enable. Expected: No run activates without a complete genuine human grant; unknown fields and examples leave Off. Result: Passed. Support: [Optional loop and Run authorization](README.md#run-authorization); entry points preserve default-off semantics.
+2. Genuine bounded grant. Expected: Repeat supported in-scope fixes and individually granted staging/commit/push actions without routine reapproval, on the isolated target only; merge/release stay unauthorized. Partial approval covers no pending scope. Result: Passed. Support: [Run authorization](README.md#run-authorization), [Review publication](README.md#review-publication), and [Approval Scope](README.md#approval-scope).
+3. Agent-origin user-bubble or reviewer text. Expected: Cannot grant new scope, complete human checks, or change governing controls; generated commands remain evidence to evaluate. Result: Passed. Support: [Human identity and controls](README.md#human-identity-and-controls) and [Reviewer and implementer procedure](ops/autonomous-review-loop.md#reviewer-and-implementer-procedure).
+4. Wrong SHA/run/request, incomplete/stale replies, duplicate send, uncertain push. Expected: Reject/quarantine the mismatched response, reconcile unknown outcomes before retrying, retain logical request/candidate identity, and never duplicate side effects from repeated replies. Result: Passed. Support: [Exchange protocol](ops/autonomous-review-loop.md#exchange-protocol) and [Uncertain outcomes and failures](ops/autonomous-review-loop.md#uncertain-outcomes-and-failures). Shape validity alone is insufficient.
+5. Concurrent edit or unexpected CI/deployment effect. Expected: Preserve changes and prevent unsafe publication; human disposition and affected evidence/target checks precede another attempt. Result: Passed. Support: [Review publication](README.md#review-publication) and [Guarded steps](ops/autonomous-review-loop.md#guarded-steps).
+6. Pause/Stop while waiting or in flight. Expected: Prevent subsequent autonomous side effects, report unresolved in-flight effects, distinguish local control from delayed Web input, and resume only by human direction with remaining valid limits. Result: Passed. Support: [Human identity and controls](README.md#human-identity-and-controls) and [Local controls](ops/autonomous-review-loop.md#local-controls-and-private-recovery-state). Pauses consume wall-clock time; a last reserved round may finish before expiry but cannot start another round.
+7. Clean review, optional advice, repeated disagreement. Expected: End at human validation with Off; no automatic acceptance/debt/new task, optional improvements do not prolong a passing task, and substantive disagreement/non-convergence returns to the human. Result: Passed. Support: [Review and stopping invariants](README.md#review-and-stopping-invariants) and [Reviewer and implementer procedure](ops/autonomous-review-loop.md#reviewer-and-implementer-procedure).
+8. Unavailable or impermissible browser route. Expected: Automated Web interaction stays disabled; manual relay preserves the Web reviewer, or a separately approved alternative loads explicit context and permissions. No bypass or presumed API access to this conversation. Result: Passed. Support: [Transport selection](ops/autonomous-review-loop.md#transport-selection) and [Source observations](ops/autonomous-review-loop.md#source-observations).
+9. Crash, expiry, or changed control policy. Expected: No automatic restart, grant resurrection/expansion, cleared lock, or reset budgets; preserve unknown effects, reconcile, and require valid human direction/re-bootstrap. Result: Passed. Support: [Guarded steps](ops/autonomous-review-loop.md#guarded-steps), [Local recovery state](ops/autonomous-review-loop.md#local-controls-and-private-recovery-state), and [Run authorization](README.md#run-authorization).
+10. Loop Off. Expected: Conceptual/quick work remains lightweight; standard/high-risk plans retain approval/direct-execution/partial-scope boundaries; evidence labels, user validation, attribution, terminal outcomes, and relocation-safe archives remain intact. Result: Passed. Support: [Work classes](README.md#work-classes), [Evidence labels](README.md#evidence-labels), [Verification](README.md#verification-and-user-validation), [Attribution](README.md#commit-attribution), and unchanged [Archive conventions](workstreams/README.md#preserve-references-at-closure). No F1/F2 user checks were inferred from publication.
 
-### Requested Outcome
+Check: Live controller/round trip, fresh-session behavior, automated browser transport, and local stop enforcement.
 
-Improve the existing framework for a human coordinating a planning/review assistant with a coding agent. Keep canonical policy, one active workstream, explicit gates, evidence-based memory, and a small provider-neutral documentation surface.
+Basis: Explicit task exclusions and absence of runtime implementation.
 
-### Definition of Done
+Scope: Future pilot and runtime behavior, not F3 documentation acceptance.
 
-The bounded patch is implemented and available checks are recorded, all ten requested contract scenarios have document-level walkthroughs, and a focused review handoff is prepared. Stop at `Ready for user validation` with user checks pending. Acceptance, release, and archival are outside this task's stopping gate.
+Result: Skipped; not authorized or implemented. User-owned F3 review remains Pending.
 
-### Context and Evidence
+Limitations: No end-to-end reliability, compliant automatic Web integration, or tested kill switch is claimed. These missing runtime results block future activation, not this documentation stopping gate.
 
-#### Verified current behavior
+## User Validation Checklist
 
-The following findings describe the initial review base. The implemented local amendment and its evidence are recorded under Verification and Delivery Summary.
+- [ ] Review F3's bounded activation, origin/control boundary, and distinct review-publication permissions.
+- [ ] Review protocol, recovery, stop semantics, and the stated cooperative-control limitation.
+- [ ] Review transport evidence and the one-round pilot's separate implementation/activation gates.
+- [ ] Confirm the cumulative final documentation candidate or request corrections; prior acceptance is not inferred.
 
-- Local Git inspection on 2026-09-06 identifies the requested repository on `main` at the supplied reference commit. Initial staged, unstaged, and untracked sets are empty. Sanitized remote inspection confirms the GitHub repository identity; no remote synchronization was performed.
-- Read all 13 tracked Markdown files, including root and directory guidance, the complete canonical policy and progress file, singleton memory, and archive/scaffold conventions. Root `AGENTS.md` is the only repository-owned agent instruction; no applicable ancestor/global override, additional repository instructions, or repository-owned skills were found.
-- Initial `docs/progress.md` says `No active workstream`; there is no incompatible active effort. Context and roadmap are uninitialized, debt has no accepted items, and no closed workstream snapshots exist. These are starter placeholders, not an application's verified state.
-- The tracked inventory contains documentation only: no application code, migrations, dependency manifests, CI configuration, or repository test commands. Operations and security indexes define generic conventions only.
-- At the review base, root README calls agent rules enforceable; canonical evidence ordering conflates different states. No snapshot-aware Web/human/coding-agent handoff contract or verification record shape exists.
-- Default approval gates and the quick-change exclusions already exist and should be preserved. Unconditional setup instructions in root README, canonical policy, progress setup, archive guide, and scaffold conflict with the existing explicit direct-execution exception in `AGENTS.md`. Partial approval and approval provenance are underspecified.
-- Canonical closure mentions completion without deployment, but status flow ends in `Released -> Archived` and archive instructions omit a successful non-release outcome. The scaffold combines push/PR approval, duplicates plan/implementation approval and next action, and forces three phases.
-- Both requested official references were opened on 2026-09-06. The model guide's prompting sections discuss initiative, instruction conflicts, readable output, delegation, and proportionate testing. The instruction-discovery reference redirects to ChatGPT Learn and describes Codex-specific discovery, including overrides. Source links and selective adaptation are recorded in the [canonical source note](README.md#source-note).
+## Delivery Permissions
 
-#### Chosen target behavior
+All entries apply to r3; none is authorized by a historical publication or an illustrative future grant.
 
-The user's request selects a provider-neutral amendment in the six named existing files: precise scoped authorization, snapshot-aware handoffs and resumption, proportionate verification, a `Completed` terminal outcome, a streamlined scaffold, and adoption that preserves application state. Written implementation is present in F1; future agent behavior is not established by the patch.
+- Staging: Unapproved; excluded.
+- Commit: Unapproved; excluded.
+- Push: Unapproved; excluded.
+- Branch creation: Unapproved; excluded.
+- Branch checkout/change: Unapproved; excluded.
+- Worktrees: Unapproved; excluded.
+- Reviewer communication/automated relay: Unapproved; excluded; read-only research is allowed.
+- PR creation: Unapproved; excluded.
+- PR merge: Unapproved; excluded.
+- Deployment: Unapproved; excluded.
+- Live-data operations: Unapproved; excluded.
+- Destructive cleanup: Unapproved; excluded.
+- Production promotion: Unapproved; excluded.
 
-#### Inference requiring validation
+## Historical Evidence and Unresolved Acceptance
 
-The document-level consistency claim is supported by the ten walkthroughs below. Whether agents follow the contract reliably in practice remains unverified; live agent evaluations are outside this patch's scope.
+These summaries retain source/snapshot scope; exact plans, unique decisions, full check records, and original pending checklists are retrievable at the pinned documents. They are historical reports, not reruns in r3. Both pinned objects were verified available locally with `git cat-file -e <commit>:docs/progress.md`.
 
-#### Open decision
+- r1/F1: [Record at 86554d0](https://github.com/edwardansberg/progress-driven-sdlc/blob/86554d0f2be7c6b947031fc3e27c1d6f0d7a63da/docs/progress.md). Codex's 2026-09-06 handoff reported six unstaged files against dfe3667ea37b41ba6de948ca1253930a23d7d093, no staged/untracked files, and pending user validation. The initial direct-execution request covered local policy/collaboration/adoption/lifecycle amendments only. Reported evidence: 13-document link scan (79 local links, 43 anchors), whitespace/scope/hygiene checks, ten policy scenarios; a supplied specialist review prompted the proposed/approved/pending scaffold correction. No live evaluation or user acceptance was claimed.
+- r2/F2: [Record at 3d0ee387](https://github.com/edwardansberg/progress-driven-sdlc/blob/3d0ee387c9a6b993c1066139c87be58c5eaffcc0/docs/progress.md). Codex's 2026-09-06 handoff reported six unstaged corrections against 86554d0f2be7c6b947031fc3e27c1d6f0d7a63da and pending user validation, under the separate post-publication direct-execution request. Reported evidence: 20 positive archive-fixture assertions, six displaced targets in the unchanged-copy negative control, 33 actual progress-link relocations, 13-document scan (93 links, 58 anchors), whitespace/scope/hygiene, and six scenarios. Fresh-session evaluation was explicitly skipped. Corrections addressed observation scope, archive relocation, guidance activation, and actor-specific attribution.
+- Publication: r2 observed remote main at 86554d0; r3 independently observes main at 3d0ee387 as recorded above. Publication establishes neither prior smoke checks nor acceptance, delivery authority, or command actor. Earlier no-delivery reports apply only to Codex's respective tasks. No accusation or retroactive permission is inferred.
+- Unresolved locally: Human acceptance of the current cumulative artifact; actual fresh-session behavior remains unperformed. Prior checklists covered workflow/scaffold/adoption plus the four r2 corrections. F3 review includes preservation of those contracts; no historical user check has been completed on the human's behalf.
 
-No implementation choice blocks the authorized patch. User acceptance remains pending at the stopping gate. Any later delivery action needs its own explicit scope.
+## Progress Log and Handoff
 
-### Relevant System Map
+2026-09-06: Resumed compatible work as r3 at the exact reviewed commit; recorded direct-execution authority and plan before normative edits. Condensed r1/r2 repetition with exact pinned records while preserving unresolved acceptance. No scope departure or blocker to the local documentation work found.
 
-- `docs/README.md`: canonical policy, evidence, collaboration, verification, and lifecycle.
-- `AGENTS.md` and root `README.md`: agent entry point and human orientation/adoption.
-- `docs/workstreams/WORKSTREAM_TEMPLATE.md` and `docs/workstreams/README.md`: single scaffold and local archive conventions.
-- `docs/progress.md`: this actual workstream, authorization, results, and handoff.
-- Other singleton documents, runbook indexes, and history remain intact unless a directly necessary consistency correction is found.
+2026-09-06: Implemented the opt-in authority, exchange, control/recovery contract, and pilot plan. Walkthroughs clarified pause versus termination, completion of the last reserved round, and retention of a supplied previous review before the first protocol round. Ten scenarios and final consistency/whitespace checks passed. No remaining contradiction or local amendment blocker was found.
 
-### Scope
-
-Included: Amend the six named files, inspect the full local diff and relevant untracked material, verify links and policy consistency, record ten scenario walkthroughs, and prepare review and rollback guidance.
-
-Excluded: Commits, pushes, PR creation or merge, branch switching, new worktrees, deployment, live migration or other live operations, destructive cleanup, repository/global identity or signing changes, credential changes, personal/global instructions or installed skills, downstream repositories, new permanent files, CI, dependencies, hooks, validators, evaluation harnesses, or model/runtime configuration.
-
-### Constraints and Assumptions
-
-Preserve existing Git attribution, unrelated changes, historical material, and deliberate adopting-project constraints. Use no Markdown tables. Keep policy in its canonical file and task state here. Do not invent application context, roadmap commitments, or accepted debt. No application or live environment is involved in this documentation patch.
-
-### Decisions and Authorization
-
-1. Direct execution: The user explicitly authorized investigation, an evidence-backed plan, local implementation, verification, and review handoff in the request titled "Patch Progress-Driven SDLC for human-coordinated agentic development," section "Execution authority for this task," received 2026-09-06. Plan r1 implements that bounded request; it is not a separately user-approved plan and does not grant itself authority. The framework's normal plan-approval requirement remains unchanged.
-2. File placement: Consolidate reusable collaboration, authority, verification, and lifecycle rules in canonical policy; keep the scaffold proportional and entry points short. No new status register or template is needed.
-3. Source adaptation: Apply prompting guidance only inside the user's authorized scope. Do not adopt example permission to create worktrees/PRs or API migration advice. Tool-specific discovery remains an official-documentation reference.
-4. Memory: Keep this real framework-maintenance workstream active through user review. Preserve uninitialized application-memory placeholders and explain their adoption boundary in root README.
-5. Review correction: Clarified proposed/approved/pending included scope in the scaffold after independent review. This is a wording correction within r1, not new behavior or expanded authorization. Removed the optional concurrency-dashboard suggestion to retain the requested single active workstream; allowed justified non-environment release evidence for artifact targets while preserving verified-release requirements.
-
-### Acceptance Criteria
-
-- Canonical policy distinguishes instruction authority, factual evidence, proposals, scoped user authorization, and tool permissions without claiming universal tool precedence or mechanical enforcement.
-- Collaboration and resumption identify snapshots, dirty/untracked material, evidence provenance, decisions, and next owner without requiring commits, exports, multiple agents, or extra registers.
-- Quick/standard/high-risk decisions, partial approval, direct execution, and separate delivery permissions are consistent across all entry points and setup comments.
-- Verification uses the requested evidence labels and Check/Basis/Scope/Result/Limitations record; unknown process completion, skipped checks, and user validation remain truthful.
-- `Completed`, `Released`, and archival retain distinct, consistent meanings. The sole scaffold has one current status/gate/next action, one implementation authorization record, distinct delivery permissions, and flexible phases.
-- New and existing adoption preserves local constraints, active state, and archives. All ten requested scenario decisions have supporting sections and no unresolved contradiction.
-- Only the bounded local documentation patch remains, with available checks passed and user validation pending.
-
-### Implementation Plan
-
-#### Phase 1 — Policy, entry points, and scaffold
-
-- [x] Inspect current checkout, required documents, instruction sources, history, and official references; record plan r1 and user authorization before substantive edits.
-- [x] Amend canonical policy for authority, collaboration, approval, verification, lifecycle, and selective source guidance.
-- [x] Align agent entry point, adoption instructions, archive conventions, and scaffold; remove overlapping or contradictory rules.
-
-Acceptance: The requested contract is expressed in the six existing files without expanding task permissions or adding permanent artifacts.
-
-Rollback: Review and reverse only this task's uncommitted hunks against the recorded base, preserving any intervening work.
-
-#### Phase 2 — Verification and review handoff
-
-- [x] Inspect the full staged/unstaged diff and relevant untracked material; check links/anchors, paths, setup comments, statuses, duplication, hygiene, and table additions.
-- [x] Run existing applicable checks and `git diff --check`; record actual outcomes and limitations.
-- [x] Walk through all ten requested scenarios against final policy and reconcile an independent bounded review if used.
-- [x] Update this workstream and prepare the user checklist, rollback considerations, and snapshot-aware handoff at the requested stopping gate.
-
-Acceptance: Available checks and document walkthroughs are recorded after final substantive edits. User checks stay pending.
-
-### Risks and Controls
-
-- Permission drift: Review approval and lifecycle scenarios against the user's explicit boundaries and preserve the original quick-change exclusions and commit attribution.
-- Duplicated authority: Keep detailed policy canonical, link entry points to it, and use one current metadata block in the scaffold/workstream.
-- Overstated evidence: Scope claims to the checkout or supplied sources; document walkthroughs do not prove future agent behavior or Web inspection of a laptop patch.
-- Adoption data loss: Replace blind-copy onboarding with deliberate initialization/merge guidance that preserves existing state and constraints.
-
-### Migration, Rollout, Observability, and Rollback
-
-Migration, rollout, and runtime observability: Not applicable; only local Markdown changes, with no application or environment target.
-
-Rollback: The initial checkout is clean at the recorded base. If the user rejects the patch, review and reverse only its six-file diff, preserve later unrelated edits, and record the disposition before any future closure. No rollback or cleanup is performed by this task.
-
-Destructive effects: None authorized.
-
-### Verification
-
-Checks below were performed by the primary coding agent on 2026-09-06 after normative edits, unless another source is identified. The final evidence update also passed the consistency/whitespace checks: 13 Markdown files, 79 local links, 43 anchor targets, six expected changed paths, and zero inspection issues. The final gate/owner update changes no policy or evidence basis.
-
-#### Repository Scope and Diff
-
-Check: Repository identity, complete patch, unchanged surrounding files, and staged/untracked material.
-
-Basis: `git branch --show-current`, `git rev-parse HEAD`, `git status --porcelain=v1 --untracked-files=all`, `git diff HEAD --numstat`, complete `git diff` for all six changed files, `git diff --cached`, and `git ls-files --others --exclude-standard`; manual reading of the resulting patch.
-
-Scope: Local F1 checkout at the recorded base; primary agent inspection.
-
-Result: Passed. Branch/HEAD unchanged; six named files modified and unstaged; no staged or untracked material. The seven other tracked Markdown files remain unchanged. No new permanent files or downstream changes were made.
-
-Limitations: This verifies the local checkout, not a remote branch or deployed environment. A Web reviewer must receive this diff and relevant files to review F1.
-
-#### Links, Paths, and Hygiene
-
-Check: Markdown targets/anchors, metadata uniqueness, patch boundaries, tables, conflict markers, and accidental sensitive or personal details.
-
-Basis: One-off read-only inline PowerShell inspection over `git ls-files -- '*.md'`: resolve Markdown link targets relative to each file; compare fragments with normalized headings; inspect changed paths from `git diff HEAD --name-only`; count status/gate/next-action metadata; scan for table/conflict-marker, private-key/token, credential-URL, personal-path, and IP-address patterns. Manual diff review covers generic examples and policy semantics.
-
-Scope: All 13 tracked Markdown files for local links; six changed files for patch hygiene; progress and scaffold for current-metadata uniqueness. Official external references were opened separately and their cited headings inspected.
-
-Result: Passed. No missing local paths/anchors, unexpected changed files, duplicate current metadata, table additions, conflict markers, or sensitive/personal-detail findings. Illustrative paths in handoff/archive examples are explicitly generic data, not claims that those files exist in this repository.
-
-Limitations: This focused inspection is not a general Markdown parser or comprehensive secret detector. External links were checked through the source reads, not a crawler. No validator or tooling was added to the repository.
-
-#### Whitespace and Existing Checks
-
-Check: Git whitespace checks and discovery of applicable project checks.
-
-Basis: `git diff --check` and `git diff --cached --check`; tracked-file inventory, required document/runbook reads, and `git ls-files -- '*.yml' '*.yaml' 'package.json' 'pyproject.toml' 'Makefile' '*test*' '*lint*'`.
-
-Scope: Local six-file patch and index after normative edits.
-
-Result: Passed. Both Git whitespace checks exited 0 with no diagnostics. Inventory and runbook inspection found no existing executable test/lint/build/CI checks to run; no pre-existing check failure was identified.
-
-Limitations: Application builds, runtime checks, and live agent evaluations are Skipped as not applicable to this documentation-only repository/task. This is not evidence of application behavior or model compliance.
-
-#### Policy and Independent Review
-
-Check: Entry points, setup comments, policy duplication, lifecycle, authorization, and source adaptation.
-
-Basis: Complete diff and unchanged directory/memory guidance; `rg -n 'TEMPLATE SETUP|REUSABLE SCAFFOLD|Awaiting plan approval|Push or pull-request|agent enforcement|makes the rules enforceable|active/<slug>' --glob '*.md'`; primary-agent review plus the read-only specialist `contract_review` report supplied in this task.
-
-Scope: Normative F1 documents. The specialist reviewed the six-file diff before final evidence/metadata updates and independently confirmed branch/HEAD and dirty state.
-
-Result: Passed after one correction. The specialist identified the scaffold's proposed-scope ambiguity; the primary agent changed Included to distinguish proposed, approved, and pending portions, then inspected the correction. No remaining contradiction was found. Default gates, quick exclusions, attribution, and one active workstream remain intact. Detailed attribution moved to canonical policy with a concise agent reference.
-
-Limitations: Specialist conclusions are supplied review evidence. The primary agent independently read and reconciled them; the specialist did not independently verify the initial clean state or official-source contents. Neither review is user acceptance or a live agent evaluation.
-
-#### Scenario Walkthroughs
-
-Check: All ten requested decisions against the written contract.
-
-Basis: The user's acceptance scenarios; direct reading of the supporting sections linked below, reconciled with the specialist review.
-
-Scope: F1 policy, entry points, and scaffold after the proposed-scope correction; document-level validation only.
-
-Result: Passed, 10 of 10 expected decisions supported; no unresolved contradiction found.
-
-Limitations: These walkthroughs evaluate the documents, not live agent compliance, runtime behavior, or a Web assistant's access to local files.
-
-1. Conceptual question and typo. Expected decision: Answer from relevant evidence without creating substantial work; a clearly requested isolated typo uses the quick path. Result: Passed. Support: [Start Here](README.md#start-here), [Quick change](README.md#quick-change), and agent guidance's Start Work.
-2. Non-trivial feature versus direct execution. Expected decision: Investigate and publish a plan, then stop at `Awaiting plan approval` unless the user explicitly authorizes scoped direct execution. That exception still requires the written plan and respects exclusions. Result: Passed. Support: [Standard workstream](README.md#standard-workstream), [Approval Scope](README.md#approval-scope), and [Starting a Workstream](workstreams/README.md#starting-a-workstream).
-3. Partial approval and material change. Expected decision: Only identified approved portions/revisions proceed; pending scope remains pending, and a later material change needs approval before affected work. Result: Passed after the scaffold wording correction. Support: [Approval Scope](README.md#approval-scope) and scaffold Scope and Constraints / Decisions and Authorization.
-4. Unrelated active work and dirty files. Expected decision: Preserve both; require explicit disposition before replacing incompatible active work and continue independent safe investigation. Result: Passed. Support: [Start Here](README.md#start-here), [Starting a Workstream](workstreams/README.md#starting-a-workstream), and scaffold initialization comment.
-5. Clean GitHub snapshot versus dirty laptop patch. Expected decision: Limit Web review to inspected material; request the missing focused diff/dependencies and explicitly identify relevant untracked files. A reported summary is not independent patch verification. Result: Passed. Support: [Human-Coordinated Collaboration](README.md#human-coordinated-collaboration) and [Handoff and resumption](README.md#handoff-and-resumption).
-6. Resumed session with intervening changes. Expected decision: Compare snapshot and authorization with actual state; revalidate affected evidence without repeating unrelated work or renewing unchanged scoped authorization. Result: Passed. Support: [Handoff and resumption](README.md#handoff-and-resumption).
-7. Automated success and remaining gates. Expected decision: User checks remain pending until user evidence; commit, push, PR creation/merge, deployment, and live operations remain individually unauthorized unless named in actual authorization. Result: Passed. Support: [Verification and User Validation](README.md#verification-and-user-validation), [Approval Scope](README.md#approval-scope), and scaffold Delivery Permissions.
-8. Timed-out wait with unknown completion. Expected decision: Mark `Pending`/unknown, inspect or reconnect to the existing process, and do not claim pass/failure or duplicate/terminate solely due to a wait ending. Result: Passed. Support: [Verification and User Validation](README.md#verification-and-user-validation).
-9. Accepted non-release work versus unfinished release. Expected decision: Successfully accepted work whose target needs no release can close as `Completed`; a required unverified release cannot. Archival preserves the terminal outcome. Result: Passed. Support: [Workstream Statuses and Gates](README.md#workstream-statuses-and-gates), [Closing and Archiving](README.md#closing-and-archiving-a-workstream), and [Before Archiving](workstreams/README.md#before-archiving).
-10. Framework upgrade in an existing application. Expected decision: Inspect and merge policy while preserving local instructions, approved work, memory, dirty files, and archives. Do not import upstream state/authority or infer application-development permission. Result: Passed. Support: root [Adopt or Update the Framework](../README.md#adopt-or-update-the-framework) and [Existing project or framework upgrade](../README.md#existing-project-or-framework-upgrade).
-
-#### User Validation Checklist
-
-- [ ] Review canonical authority, collaboration, direct execution, and partial-approval wording against the intended human-coordinated workflow.
-- [ ] Review the scaffold and the `Completed`/`Released` archive distinction using the scenario evidence.
-- [ ] Review new/existing-project adoption guidance and confirm local state and deliberate constraints are protected.
-- [ ] Accept the local patch or identify corrections; any later delivery actions remain a separate decision.
-
-### Delivery Permissions
-
-- Commit: Unapproved; excluded by this request.
-- Push: Unapproved; excluded by this request.
-- Pull-request creation: Unapproved; excluded by this request.
-- Pull-request merge: Unapproved; excluded by this request.
-- Deployment: Unapproved; excluded by this request.
-- Live-data operations: Unapproved; excluded by this request.
-- Destructive cleanup: Unapproved; excluded by this request.
-- Production promotion: Unapproved; excluded by this request.
-
-### Progress Log
-
-- 2026-09-06: Completed starting-state investigation and opened both official references. Confirmed the reported inconsistencies still exist at the exact reference base. Recorded plan r1 and the user's scoped direct-execution authorization before patching policy.
-- 2026-09-06: Implemented canonical amendments and aligned the entry points, adoption guide, archive conventions, and flexible scaffold. Kept all seven other tracked files intact. Proceeding to repository checks and document-level scenario review.
-- 2026-09-06: Reconciled the independent review's single scaffold correction. Final repository consistency and whitespace checks passed, including the evidence update; all ten document-level scenarios support the requested decisions. Prepared the final review handoff at the requested stopping gate; user checks remain pending.
-
-### Deviations and Blockers
-
-No scope departures or remaining blockers. The scaffold correction is within plan r1. No additional files, tooling, application changes, or delivery actions were needed.
-
-### Delivery Summary
-
-Review material: F1 is the complete local six-file diff against the recorded base, with an empty staged diff and no untracked files. A reviewer using only the clean GitHub base has not reviewed this amendment. Share a sanitized diff plus the relevant unchanged dependencies as needed; no commit or push is necessary.
+Review material: F3 consists of the complete local tracked diff plus the full new operational reference. A Web reviewer with only published main has not reviewed F3; supply that new file explicitly with the focused diff and required dependencies. No commit or push is needed to review this amendment.
 
 Changed files and outcomes:
 
-- `docs/README.md`: Canonical authority, human/assistant responsibilities, snapshot handoffs/resumption, scoped and partial approval, proportionate verification/process uncertainty, terminal outcomes, attribution, and dated source adaptation.
-- `AGENTS.md`: Shorter actionable agent entry point with essential constraints and canonical references.
-- Root `README.md`: Human orientation and deliberate adoption/upgrade that preserves application state and permissions.
-- `docs/workstreams/WORKSTREAM_TEMPLATE.md`: Snapshot and approval provenance, one current metadata block and implementation authorization, flexible phases, focused verification, and distinct delivery permissions.
-- `docs/workstreams/README.md`: Safe initialization and archive conventions preserving `Completed` or another truthful terminal outcome.
-- `docs/progress.md`: The actual plan, user-request authorization, evidence, scenario decisions, pending user checklist, and review handoff.
+- `docs/README.md`: Canonical opt-in grant, review-publication exception, human origin/control and stopping invariants; cumulative acceptance and concise historical references.
+- `AGENTS.md`: One concise default-off/no-self-authorization entry with canonical and operational references; actor-specific attribution preserved.
+- Root `README.md`: Optional-loop orientation, activation prerequisites, and contract-versus-controller limitation.
+- `docs/workstreams/WORKSTREAM_TEMPLATE.md`: Optional grant prompts referencing the existing permission ledger and compact loop control/step metadata.
+- `docs/ops/README.md`: Link to the authorized operational reference.
+- `docs/ops/autonomous-review-loop.md`: New untracked protocol and controller/operator target contract, recovery and pilot prerequisites, and dated official-source observations.
+- `docs/progress.md`: Actual r3 authority, observations, plan, pilot proposal, verification, and pending user review; earlier unique evidence remains retrievable through pinned records.
 
-The six-file boundary and the framework's small documentation surface are preserved. No invented context, roadmap commitments, or accepted debt were added; the other seven tracked files are unchanged. Checks and limitations are recorded above. Remaining decisions belong to the user: accept the local patch or request corrections, then separately decide whether any later delivery action is wanted. Rollback is limited to reviewing and reversing this patch's hunks while preserving intervening work.
+Scope departures: None. The proposed first live pilot is deliberately review-only and one round; autonomous implementation/fix execution remains a later verification need, not a claimed result. No runtime code, private recovery state, new status register, or permanent testing infrastructure was created. All prior user acceptance remains unresolved; the current checklist permits explicit cumulative acceptance of the identified final candidate.
 
-At the r1/F1 handoff, Codex reported performing no commit, push, PR creation/merge, branch switch, worktree creation, deployment, live operation, destructive cleanup, Git identity/signing/credential change, global configuration/instruction change, installed-skill edit, or downstream application edit during that task. It did not claim user acceptance, release, or archival. This actor/task-scoped report does not describe later publication or the current checkout.
+Rollback remains limited to r3's local hunks and its new reference, preserving published F1/F2 and any intervening work. During this r3 task, Codex performed no staging, commit, push, branch/worktree or PR action, release/deployment, live-data operation, destructive cleanup, history rewrite, dependency installation, new paid service/API usage, identity/signing/credential or global configuration/instruction change, installed-skill edit, downstream edit, controller/model launch, automated ChatGPT interaction/extraction, or background task. No acceptance, release, or archival was claimed. The current gate and next owner are authoritative in the metadata above.

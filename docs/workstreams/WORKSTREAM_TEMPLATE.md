@@ -18,6 +18,10 @@ Current gate: Investigation and plan publication
 
 Next action: <!-- Owner and concrete step under the recorded authorization -->
 
+Loop control: Off
+
+Loop step/reason: <!-- No run granted by default; when relevant, current step/reason and outstanding request. This is not workstream status. -->
+
 Repository: <!-- Repository identity, without credentials or personal paths -->
 
 Branch: <!-- Branch name or detached state -->
@@ -88,6 +92,21 @@ ownership constraints; pair uncertain assumptions with validation. -->
 - Distinguish pending/superseded portions, proposals, and material decisions.
 Do not invent missing approval history. Delivery permissions are separate below. -->
 
+### Optional Run Authorization
+
+Not enabled; no run grant.
+
+<!-- Leave concise when unused. For an explicitly enabled run, record one grant:
+human source/reference; run ID; repository/workstream; approved plan/scope and fixed
+acceptance criteria; allowed paths/classes and exclusions; approved remote/review
+branch; destination alias/sharing boundary; start, expiry, round/time/spending
+limits; human checkpoints and local control mechanism/limitations. Reference the
+named Delivery Permissions below, including repeat allowance, instead of repeating
+permissions here. Unknown required fields keep control Off. Follow canonical
+Optional Execution and Review Loop and docs/ops/autonomous-review-loop.md.
+Record original base, previous reviewed head (or none), exact candidate and
+outstanding request when they exist; keep private transport/recovery data local. -->
+
 ## Acceptance Criteria
 
 <!-- Independently specified outcomes, invariants, edge/failure conditions,
@@ -149,6 +168,11 @@ neither means authorized. Add separate entries for distinct targets if needed. -
 - Live-data operations: Not requested
 - Destructive cleanup: Not requested
 - Production promotion: Not requested
+
+<!-- For loop publication/transport, add distinct Staging, Branch creation, and
+Reviewer communication entries when relevant. Bind all named actions to the
+run/target and reference, including repeat limits. Review publication is not
+release or user acceptance. No default/release-branch writes in the initial loop. -->
 
 ## Progress Log
 

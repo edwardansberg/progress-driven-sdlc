@@ -20,6 +20,12 @@ Use the [collaboration contract](docs/README.md#human-coordinated-collaboration)
 
 A Web review of a GitHub commit cannot verify a different uncommitted laptop patch. Transfer a focused sanitized diff and relevant files, including untracked files when needed; no commit or push is required merely to share context.
 
+### Optional execution and review loop
+
+The [opt-in contract](docs/README.md#optional-execution-and-review-loop) lets a human bound repeated implementation, verification, specifically authorized review-branch publication, and Web review before final human validation. Installation, adoption, and implementation approval leave it Off. Activation needs a complete human grant, distinct controls, known publication effects, and a permitted transport; review publication grants neither acceptance nor release.
+
+The [operational reference](docs/ops/autonomous-review-loop.md) specifies messages, recovery, controls, and pilot prerequisites. This starter supplies documentation, not a working controller or tested stop mechanism. Manual relay preserves the chosen Web reviewer while automated transport permission is unresolved; an API reviewer is a separate human choice.
+
 ## Adopt or Update the Framework
 
 This upstream framework repository and each adopting application have separate repositories, branches, evidence, active state, and permissions. Upstream `docs/progress.md` may contain real framework-maintenance work awaiting review. It is not the adopting application's project state and must not be reset upstream for packaging convenience.

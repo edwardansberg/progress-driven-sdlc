@@ -2,6 +2,10 @@
 
 Store reusable deployment, recovery, maintenance, observability, and incident procedures here. Active implementation detail belongs in `docs/progress.md`; durable system shape belongs in `docs/context.md`.
 
+## References
+
+- [Optional execution and review loop](autonomous-review-loop.md): Message protocol, controller target behavior, operator/recovery procedure, and pilot prerequisites. Documentation only; no controller is included or enabled. Authority remains in [canonical policy](../README.md#optional-execution-and-review-loop).
+
 ## Runbook Shape
 
 Each runbook should contain only the sections it needs, normally:
