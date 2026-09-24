@@ -1,21 +1,21 @@
-# Progress
+# Make the framework easy to start and follow
 
-Status: No active workstream
+Source: [Authoritative work record](progress-agent.md), short-landing-readme-safe-adoption, plan r2, candidate C6.
 
-Current gate: None; previous workstream Completed
+## Goal
 
-Next action: Human selects the next challenge when ready. No follow-up starts automatically.
+Make the framework usable by one human and one coding agent, with optional collaboration, safe adoption, and progress you can read quickly.
 
-Loop control: Off
+## What changed
 
-Last substantive update: 2026-09-06 — acceptance and closure under A5
+The pending L1 candidate was preserved before [recovery PR #1](https://github.com/edwardansberg/progress-driven-sdlc/pull/1) restored main to the accepted documentation tree. Development now deliberately reintroduces the useful adoption work on its own branch.
 
-Workflow: [Documentation Workflow](README.md)
+The proposed layout keeps this page short. The linked detailed record owns permissions, decisions, checks and recovery evidence. A reusable file map separates framework policy from upstream maintenance memory; existing projects keep their files and active work.
 
-## Last Closed Workstream
+## Stage and limits
 
-[human-coordinated-agentic-development](workstreams/archive/2026/2026-09-06-docs-human-coordinated-agentic-development.md) — Completed. The human accepted C5 documentation at 1ecea05b8340d150143ae6df9c6b85d448aa414f and confirmed archival/reset, with no further release required. The archive preserves decisions, historical verification, and closure evidence.
+Ready for user validation. Document checks and fresh/existing-target fixtures passed; the separate development PR carries the full candidate. No live adoption or usability improvement has been demonstrated. Original L1 acceptance remains pending; the usability trial stays deferred and V1 unresolved. Loop control: Off.
 
-## Deferred Follow-up
+## Your decision and next step
 
-The [real-world usability trial](roadmap.md#real-world-usability-trial) is deferred and unperformed, not passed. It no longer holds the accepted documentation work open. V1 remains an unresolved, unapproved proposal in the archive; no runtime implementation or loop activation is authorized.
+Review candidate C6 in the separate development PR and accept it or request corrections. The redesigned framework will not merge automatically. This page summarizes the source record and grants no permission.

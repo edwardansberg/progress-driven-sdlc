@@ -1,10 +1,13 @@
-<!-- REUSABLE SCAFFOLD: Initialize docs/progress.md only after checking existing
+<!-- REUSABLE SCAFFOLD: Initialize docs/progress-agent.md only after checking existing
 active state; resume compatible work and never overwrite an unresolved unrelated
 workstream without the user's explicit disposition. Replace prompts with
 investigated state and remove setup comments before publishing the plan.
 Standard/high-risk work normally awaits plan approval; recorded explicit scoped
 direct execution permits proceeding after investigation and a written plan.
-Paths in this scaffold are repository-relative; adapt links when instantiating. -->
+Paths in this scaffold are repository-relative; adapt links when instantiating.
+Derive docs/progress.md from this record at checkpoints; no second scaffold.
+Its short source-identified summary covers goal, change, stage, risk/blocker,
+human decision, and next owner. Reconcile divergence before consequential action. -->
 
 # Active workstream: <!-- short-slug -->
 
@@ -68,6 +71,13 @@ Identify supplied reports as reported evidence rather than independent checks. -
 ### Open decision
 
 <!-- Record each unresolved choice, its owner, and the gate by which it is needed. -->
+
+## Ownership and Dependencies
+
+<!-- For solo work, identify the human decision owner and coding agent; no extra
+reviewer is required unless risk or organizational policy calls for one. For
+collaboration, name necessary implementer/reviewer/integration ownership and
+candidate-bound dependencies. Reconcile concurrent edits; no automatic coordinator. -->
 
 ## Relevant System Map
 

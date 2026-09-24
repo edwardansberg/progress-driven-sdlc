@@ -2,7 +2,7 @@
 
 Status: Maintained roadmap
 
-Last substantive update: 2026-09-06 — confirmed workstream closure and deferred usability trial
+Last substantive update: 2026-09-24 — authorized preservation/recovery and clone-ready development; deferred trial unchanged
 
 Authority: Directional product intent; not implementation or release authorization
 
@@ -10,7 +10,7 @@ Workflow: [Documentation Workflow](README.md)
 
 ## Current
 
-No active workstream. The accepted framework documentation work is closed.
+The [short-landing-readme-safe-adoption continuation](progress-agent.md), r2 under D2, preserves L1, restores accepted main, and prepares a separate clone-ready solo/collaboration candidate. Outcome: reusable policy without upstream state, short human progress backed by one detailed record. Exit evidence: scoped recovery and development PRs, document/fixture checks, then human validation; redesign merge is not authorized.
 
 ## Next
 
