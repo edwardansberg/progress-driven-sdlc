@@ -22,7 +22,7 @@ Implementation base: b99526c44fb07c29531679eda936920e2cd38152 (preserved origina
 
 Restored main / development diff base: 72c0e5dd4014aaf6278b8cba05bc3a6bb3d866f0
 
-Last inspected HEAD: 72c0e5dd4014aaf6278b8cba05bc3a6bb3d866f0
+Last inspected HEAD: 5a0c515598814001bea4947a41cad22a110c08ae (first published C6 implementation; final record-only follow-up identified by PR head)
 
 Snapshot observation: C6-start, 2026-09-24, primary Codex. Initial main and independently inspected remote main were b99526c; index/worktree clean, no untracked material, one worktree, neither named branch existed. Current C6 is the cumulative development patch against restored main; observation is not its future containing commit.
 
@@ -73,7 +73,7 @@ Human owns acceptance and any later redesign delivery decision. Codex is the sol
 - [x] Fast-forward development through restored main, deliberately reintroduce saved five-file L1 contents from b99526c without rewriting history, then apply the redesign. Merely retaining pre-revert ancestry would not restore content.
 - [x] Adopt solo core, optional collaboration and upstream-only reviewed-PR delivery; publish explicit import/initialization map before moving authoritative progress to its new path.
 - [x] Verify all six independently specified outcomes, links/anchors, fixtures, complete diff and hygiene.
-- [ ] Publish only scoped development files and open a separate unmerged PR; record the observed publication before handoff.
+- [x] Publish only scoped development files and open [development PR #2](https://github.com/edwardansberg/progress-driven-sdlc/pull/2); independently verify its head/base, twelve-file diff, preserved b99526c ancestry and open/unmerged state.
 
 ## Layout and Adoption Map
 
@@ -127,7 +127,7 @@ Six independent expected outcomes and supporting sections:
 5. Human/detail — Expect source/workstream/revision, gate, risk, decision and next owner to agree; pending acceptance cannot hide in detail or become approval in summary. Canonical Live Document Contracts, both current views and scaffold prompts agree on C6/r2, human validation, pending L1/new-candidate acceptance, deferred trial/V1, Off and no redesign merge. Conflicting/missing views require disclosure and reconciliation before consequential action. Passed inspection; actual human comprehension remains unmeasured.
 6. Hygiene/history — Expect complete cumulative reintroduction against restored main, viable adoption dependencies and old navigation, no scope/secrets/history loss. Inspected all changed hunks and both new files; the scanner covers unchanged archive links and retained ten legacy root anchors. Future archive convention moves detailed evidence with target rebasing and refreshes the summary; old archives are unchanged. Protected section/protocol comparisons and Git checks above pass. No actual adoption, historical rewrite, live loop or research change.
 
-Editorial measurements: Whitespace-token method including headings/links gives landing README 333 words and guide 2,274. The human view remains within the 150–250-word target; its final count is recorded with publication verification. Counts are not readability evidence. The existing fictional answer remains 38 words including its label; no usability trial is marked complete.
+Editorial measurements: Whitespace-token method including headings/links gives landing README 333 words and guide 2,274. The human view remains within the 150–250-word target; its final count is recorded with publication verification. Three additional future archive relocation simulations preserve the independent policy/adoption/roadmap targets from a nested archive directory; no archive was written. Counts are not readability evidence. The existing fictional answer remains 38 words including its label; no usability trial is marked complete.
 
 Limitations: The scanner is a focused local-link/anchor check and pattern hygiene inspection, not a complete Markdown parser or secret detector. Temporary fixtures neither implement the procedure nor prove agent behavior. No live adoption, employee participation, agent evaluation, browser transport, enforcement or comprehension measurement is authorized.
 
@@ -149,4 +149,14 @@ Limitations: The scanner is a focused local-link/anchor check and pattern hygien
 
 ## Delivery Summary
 
-Recovery #1 is merged with exact accepted tree verified. Development candidate C6 is being prepared against restored main; final published SHA and PR will be reported as observations after they exist, without bookkeeping commits to embed this document’s future hash. Original L1 is preserved, not accepted or archived. The human will receive one separate PR and the short summary; detail/verification live here.
+Recovery: [PR #1](https://github.com/edwardansberg/progress-driven-sdlc/pull/1), branch fix/restore-accepted-framework-main, head 8f89a0469702086b77ca01aff58cf123fe19ac0b, merged 2026-09-24T10:48:05Z as 72c0e5dd4014aaf6278b8cba05bc3a6bb3d866f0. Remote main and exact accepted tree were reverified after merge and before development handoff. The recovery worktree/branch is retained, not cleaned up.
+
+Development: [PR #2](https://github.com/edwardansberg/progress-driven-sdlc/pull/2), dev/clone-ready-human-agent-docs, C6. First published implementation 5a0c515598814001bea4947a41cad22a110c08ae was independently verified as the PR head against restored main, OPEN, no checks configured. The final follow-up only records this publication and refreshes the human summary; its exact published SHA is supplied in the PR and final handoff, not chased inside its own containing document. Initial/final candidate observations are distinct. Both commits use Codex author with configured committer unchanged. No identity/signing/credential settings were changed.
+
+Complete cumulative file inventory: AGENTS.md; README.md; docs/README.md; docs/context.md; docs/ops/README.md; docs/ops/adopt-framework.md (reintroduced); docs/ops/autonomous-review-loop.md (ownership/activation links only); docs/progress-agent.md (new canonical record); docs/progress.md (derived summary); docs/roadmap.md (current direction only); docs/workstreams/README.md; docs/workstreams/WORKSTREAM_TEMPLATE.md. All are documentation; no permanent checker or runtime. Archive/debt/research state remains unchanged. Initial worktree was clean; no unrelated work was absorbed into either PR. Publication staging used the exact path allowlist and was checked before commit.
+
+Original L1 at b99526c remains in the development ancestry with its immutable record and pending acceptance; no claim that the original author/committer identifies who invoked Git. Human review of the new candidate is the next action, not an automatic redesign merge. Loop Off. Usability, V1, H2 and all excluded work remain unperformed/unchanged under their stated boundaries.
+
+Review/rollback: Inspect the short summary, reusable map, ownership contract and six verification outcomes; accept C6 or request corrections. Any subsequent integration or rollback requires its named human authority. Preserve original and intervening work with scoped forward changes; no history rewrite, reset, deletion or automatic cleanup. Static results establish neither live usability nor enforcement.
+
+Publication-record verification: Final human summary 194 whitespace words. Focused links, view agreement, scoped diff and Git whitespace checks cover the record-only follow-up; product/fixture checks above retain their unchanged implementation scope. Final branch/ref/clean-state observations are reported in the handoff.

@@ -18,4 +18,4 @@ Ready for user validation. Document checks and fresh/existing-target fixtures pa
 
 ## Your decision and next step
 
-Review candidate C6 in the separate development PR and accept it or request corrections. The redesigned framework will not merge automatically. This page summarizes the source record and grants no permission.
+Review candidate C6 in [development PR #2](https://github.com/edwardansberg/progress-driven-sdlc/pull/2) and accept it or request corrections. The redesigned framework will not merge automatically. This page summarizes the source record and grants no permission.
