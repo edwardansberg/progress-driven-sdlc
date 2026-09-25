@@ -1,9 +1,9 @@
 # Template architecture amendment — active maintainer record
 
-Status: Implementing
+Status: Ready for user validation
 Plan revision: r3; candidate C7
 Loop control: Off
-Next action: Codex implements and checks the clean-template candidate, preserves this record in a branch commit, then neutralizes the release tree for human review.
+Next action: Codex publishes this evidence checkpoint followed by the checked neutral tree; human reviews the final PR candidate. No merge authorized.
 
 ## Authority and inspected state
 
@@ -21,6 +21,49 @@ Verified start: main 72c0e5dd4014aaf6278b8cba05bc3a6bb3d866f0; PR #2 open with h
 6. Commit/push only this branch; verify remote head and unchanged main; stop for human review. If publication cannot preserve required attribution, retain the local candidate and report the capability limitation.
 
 Risks: accidentally removing target state during adoption; falsely implying neutral template state closes pending maintenance; copied development branches; link breakage; confusing documented rules with enforcement. Controls: explicit preservation map, source-bound branch evidence, default-branch-only onboarding, document checks and unchanged settings. No runtime or live-data changes; rollback is a scoped forward patch preserving later work, requiring its own authority.
+
+## C7 document verification — 2026-09-25
+
+Scope: Codex inspected the full starting PR #2 candidate and the resulting proposed release files in this worktree against main 72c0e5dd4014aaf6278b8cba05bc3a6bb3d866f0 and starting candidate 3af67ea40c7aa4dcc308a632121f224661a29f91. The checked final-tree SHA-256 manifest below identifies files before packaging; it is not this intermediate checkpoint’s tree. The final packaging commit will replace the two progress views with that checked neutral content and carry the other scoped edits.
+
+Check: Focused local Markdown path/fragment scanner, whitespace/conflict-marker scan, neutral-memory identifier scan, protected-section byte comparisons and full diff/tree inspection. Result: Passed — 17 Markdown files, 104 relative links, 50 fragments, zero detected errors; git diff --check clean. Human starter summary is 109 whitespace words (not a readability score). Six policy sections (evidence labels, work classes, approval scope, loop policy, verification, attribution) and the full optional-loop document are unchanged from the starting candidate. No retained dated archive or old maintainer file in the proposed tree. Existing archive is recoverable at d8d01cf55219b8b836f36aec3aa4343b77cb3395, path docs/workstreams/archive/2026/2026-09-06-docs-human-coordinated-agentic-development.md; this record’s historical references are evaluated at their original revisions.
+
+Static walkthroughs against independently requested outcomes:
+
+- A — New solo project: README Start a new project takes default-branch template generation directly to the coding agent and first goal. Neutral views expose no inherited authority. Canonical collaboration/approval/verification rules retain plan, scope, verification, human acceptance and risk safeguards without requiring another actor or PR. Document expectation satisfied; no user observed.
+- B — Later collaboration: Same policy and scaffold add decision/implementation/review/integration ownership, candidate-bound handoffs and concurrent-edit reconciliation. No second lifecycle or concurrent coordinator claimed. Document expectation satisfied.
+- C — Existing application: Adoption Sections 1–5 preserve product README, code, memory, active work, history and local adaptations; source is pinned, content merged deliberately, missing memory initialized from target evidence. No upstream-history merge. Same-source aligned repeat explicitly proposes no change; no installer executed.
+- D — Occupied workflow/instructions: Guide requires full destination inspection, safe-path/pre-image guards, an approved migration map and a stop before integrating incompatible authoritative paths. Existing progress remains authoritative until mapped transfer. Document expectation satisfied; no real repository migration performed.
+- E — Framework maintainer: New maintain-template runbook uses topic branch records, a committed evidence checkpoint and subsequent neutralization; PR/commits retain pending acceptance. Preferred merge-commit ancestry preserves evidence; other strategies require a durable reachable reference first. Reopening corrections restores the existing branch record, not a parallel ledger. Document expectation satisfied; no merge performed.
+- F — Generated file set: Inspected every proposed tracked path plus new maintenance runbook, with dated archive removed. Seventeen Markdown files comprise reusable guidance and neutral memory only; optional advanced policy remains Off. Default-branch-only generation avoids branch-local maintenance data. GitHub documentation confirms a single initial commit; no actual GitHub template generation was run.
+
+Classification: root README/AGENTS/docs policy, workstream scaffold/indexes, ops/security/old indexes and adoption guide are reusable; five live files are target-initialized neutral state; optional-loop and upstream-only maintenance procedures are optional reference. Active maintenance context/progress/roadmap and dated archive are removed from the final working tree but preserved in ancestry. No debt entry was inherited; its status is clarified as not initialized.
+
+Limitations and pending review: Checks are static document inspection, not usability, adoption, enforcement, model or employee evidence. No research repository/H2 changes. Scanner is not a complete Markdown parser/security audit. No tracked workflow or executable project test suite exists; absence is not test success. Current GitHub API shows is_template=false, main unprotected and no rulesets; review list empty. Connector refused workflow-list/hook-list endpoints, so remote integration inventory was not independently reverified; the human explicitly authorizes this scoped branch push and no new workflow/hook configuration is added. Settings remain unchanged. Actual template generation and owner configuration require a separate action after acceptance/merge.
+
+Human review checklist: review the clean final tree, solo and later-team paths, preservation on existing adoption, neutralization/evidence recovery rules, and the one-authority/two-view contract. Human acceptance and merge remain pending; prior C6/L1 acceptance and deferred usability/V1 are not resolved by packaging. Rollback requires a scoped forward change, preserving subsequent work and evidence.
+
+### Checked final-tree content manifest
+
+```text
+eed95ab935349706939291c05842cafbbbcbb4ca2e0c385006bbb87420085b7b  AGENTS.md
+2d91dd7c43421a76d41e2d1983092d5699b2b796562f4d5addce5c7e462414db  README.md
+1351260a2a6c819f6cc3daf40d9cca40c2f2481ef13313fe128a1ba41b266871  docs/README.md
+111adc05dbdae79ee10e96fa57c18e40cd808db464e254a1e9c33a175d50f1bf  docs/context.md
+8c069d365961b81a063194fcf78eab0128c5d9332b4f6eeeec07cfadbf4e8006  docs/old/README.md
+15e5c4e67c5f0e7bff06966c62e84b5b27309325acf6acf62f8ca0cfcdb33eb4  docs/ops/README.md
+712f799a44498f7f18cbe574511f4eb2b8d6bec760c257a9f6a6ffe0d19b85a2  docs/ops/adopt-framework.md
+43ac955e6ee6cf5312fdabac3568f1a78b711d388c0c49f5b26f991d017dadb6  docs/ops/autonomous-review-loop.md
+6152c1ba0eb9c7bb20aca798df6abc2d51dfb6577d82ee4fe62c595d7448bfef  docs/ops/maintain-template.md
+51694825fa082fe0e715cf6d7853904b3ebac18c99464800e80eed861ed2ea1d  docs/progress-agent.md
+984cf1f03646b7ba1a41d902211059416f447e7959eae3834cd7cede45fccd9e  docs/progress.md
+5cc4716f231b70177fc36de1a8fdbaa9b6d5ae4e3afea7a1479bc5077fcca9e2  docs/roadmap.md
+277a63dec3e9c12e397193f4673a41dffe02ee8e10fdeea3445a2794be8ce0e2  docs/security/README.md
+22baa61998e4d8ec622bbb135d22fe5126cee196b98ca408b68b06454d51eaaf  docs/techdebt.md
+5bbfdbffbd2b96ca0ee1719e08faeaa0d052cca4463b24c877fb7489b56d4a48  docs/workstreams/README.md
+5a6fcbbf82a4db3a1e9e6ad2869c1fd011729f3e40555dbd9dbb56bd2f466fd4  docs/workstreams/WORKSTREAM_TEMPLATE.md
+ef3eb7ca0f36c725e5c8fb93d7f97376bebaec842b4ee7e96277558977e2b762  docs/workstreams/archive/README.md
+```
 
 ## Prior r2 record (historical)
 
