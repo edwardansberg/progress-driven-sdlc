@@ -1,6 +1,6 @@
 # Technical Debt Register
 
-Status: Maintained register
+Status: Not initialized
 
 Last substantive update: Not yet initialized
 

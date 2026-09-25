@@ -1,21 +1,15 @@
-# Progress
+# Project progress
 
-Status: No active workstream
+Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
 
-Current gate: None; previous workstream Completed
+## Goal and current state
 
-Next action: Human selects the next challenge when ready. No follow-up starts automatically.
+Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
 
-Loop control: Off
+## What changed, and what needs attention
 
-Last substantive update: 2026-09-06 — acceptance and closure under A5
+This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
 
-Workflow: [Documentation Workflow](README.md)
+## Your decision and next step
 
-## Last Closed Workstream
-
-[human-coordinated-agentic-development](workstreams/archive/2026/2026-09-06-docs-human-coordinated-agentic-development.md) — Completed. The human accepted C5 documentation at 1ecea05b8340d150143ae6df9c6b85d448aa414f and confirmed archival/reset, with no further release required. The archive preserves decisions, historical verification, and closure evidence.
-
-## Deferred Follow-up
-
-The [real-world usability trial](roadmap.md#real-world-usability-trial) is deferred and unperformed, not passed. It no longer holds the accepted documentation work open. V1 remains an unresolved, unapproved proposal in the archive; no runtime implementation or loop activation is authorized.
+Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.

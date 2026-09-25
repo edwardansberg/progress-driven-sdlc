@@ -1,53 +1,30 @@
 # Project Context
 
-Status: Not initialized
-
-Last verified: Not yet initialized
-
-Evidence: None recorded
-
+Status: Not initialized from project evidence
 Workflow: [Documentation Workflow](README.md)
 
-No verified project context has been recorded yet.
+## Purpose and boundaries
 
-<!-- TEMPLATE SETUP: Replace each "Not yet documented" line with concise facts
-verified from code, configuration, migrations, tests, Git history, and runtime
-evidence. Remove this comment after initialization. Keep procedures in docs/ops,
-active implementation detail in docs/progress.md, and future direction in
-docs/roadmap.md. Never add secret values or sensitive production payloads. -->
+Project goal, users, business rules, owner and exclusions: Unknown; establish with the human and repository evidence.
 
-## Product Purpose
+## Architecture and repository map
 
-Not yet documented.
+Application components, entry points, dependencies and responsibilities: Not yet inspected. Framework policy is in docs/README.md; progress-agent.md owns active work and progress.md summarizes it. Operations and security indexes locate future project-specific procedures.
 
-## Architecture at a Glance
+## Runtime, data and trust boundaries
 
-Not yet documented.
+Environments, deployment topology, external services, persistence/migrations, authentication, authorization, privacy and security constraints: Not yet verified. Do not infer a safe environment or permission from empty starter files. Never record secrets.
 
-## Repository Map
+## Build, verification and delivery
 
-Not yet documented.
+Commands, required checks, release/rollback process and organizational controls: Not yet established. Inspect actual configuration and obtain required decisions before use.
 
-## Runtime and Deployment Topology
+## Framework provenance and local decisions
 
-Not yet documented.
+Reusable source: https://github.com/edwardansberg/progress-driven-sdlc
+Source revision used to create/adopt this project: Not yet recorded; verify if available, otherwise retain this uncertainty. A generated repository’s first commit is not the upstream source revision.
+Adopted path mapping and deliberate local deviations: Not yet assessed.
 
-## Service Responsibilities and Contracts
+## Constraints and open decisions
 
-Not yet documented.
-
-## Data and Persistence
-
-Not yet documented.
-
-## Authentication and Trust Boundaries
-
-Not yet documented.
-
-## Build, Test, and Delivery Flow
-
-Not yet documented.
-
-## Engineering Constraints
-
-Not yet documented.
+No project-specific choices or approvals recorded. Initialize from evidence and human decisions; history or framework examples grant no project authority.
