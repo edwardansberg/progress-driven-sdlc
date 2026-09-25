@@ -1,3 +1,29 @@
+# Template architecture amendment — active maintainer record
+
+Status: Implementing
+Plan revision: r3; candidate C7
+Loop control: Off
+Next action: Codex implements and checks the clean-template candidate, preserves this record in a branch commit, then neutralizes the release tree for human review.
+
+## Authority and inspected state
+
+Human request, 2026-09-25: redesign the released/default tree as a neutral new-project template while retaining safe adoption/update. Authorized documentation edits, removal/neutralization of maintainer content, commits and pushes to dev/clone-ready-human-agent-docs. No merge, direct main changes, settings, force push, branch deletion, research changes or studies. This scoped request supersedes prior packaging restrictions; it does not accept earlier candidates or enable automation.
+
+Verified start: main 72c0e5dd4014aaf6278b8cba05bc3a6bb3d866f0; PR #2 open with head 3af67ea40c7aa4dcc308a632121f224661a29f91. Fresh local clone on that branch is clean. GitHub is_template=false; main reported unprotected. No settings changed. Earlier evidence below remains historical to r2.
+
+## Investigated plan
+
+1. Retain solo core, optional collaboration, risk controls, authoritative detail/derived human view and adoption collision guards.
+2. Make README distinguish template creation (default branch only), adoption/update and framework maintenance. Make AGENTS reusable in a new application.
+3. Add one maintainer release runbook: branch-only active state, an evidence checkpoint commit, neutral final tree, exact PR review and explicit merge permission. Preserve evidence in ancestry and PR references; neutralization is packaging, not workstream acceptance/closure.
+4. Neutralize context, roadmap and both progress views; keep already-neutral debt. Remove dated upstream archive from the final tree, retaining it in history. Keep directory guidance, scaffold and optional loop contract.
+5. Review complete diff, local links/anchors, neutral memory and six static scenarios. Preserve results in the evidence checkpoint and final commit message, without shipping an upstream evaluation report into new projects.
+6. Commit/push only this branch; verify remote head and unchanged main; stop for human review. If publication cannot preserve required attribution, retain the local candidate and report the capability limitation.
+
+Risks: accidentally removing target state during adoption; falsely implying neutral template state closes pending maintenance; copied development branches; link breakage; confusing documented rules with enforcement. Controls: explicit preservation map, source-bound branch evidence, default-branch-only onboarding, document checks and unchanged settings. No runtime or live-data changes; rollback is a scoped forward patch preserving later work, requiring its own authority.
+
+## Prior r2 record (historical)
+
 # Active workstream: short-landing-readme-safe-adoption
 
 Display title: Make the framework easy to start and follow
