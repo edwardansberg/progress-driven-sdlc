@@ -4,7 +4,7 @@ These instructions apply to this repository. [Documentation Workflow](docs/READM
 
 ## Repository Purpose
 
-First establish whether the human intends to develop this framework or adopt it into another project. A clone includes upstream maintenance memory; it is not a fresh application. For adoption, follow the [explicit reusable map](docs/ops/adopt-framework.md#reusable-map-and-neutral-initialization) against the intended target; never resume upstream work as application work. Maintainer changes use topic/development branches and reviewed PRs, with explicit delivery permission; do not push directly to main. This upstream rule does not impose PRs on solo adopters. Omit this repository-specific paragraph when importing guidance into a target.
+Establish the actual repository and human goal. In a new project generated from the template, initialize neutral memory from inspected project evidence and the human’s decisions; do not invent facts or approvals. For an existing project, follow [safe adoption/update](docs/ops/adopt-framework.md) and preserve its instructions and active state. Only when developing the upstream framework itself, follow [template maintenance](docs/ops/maintain-template.md): topic branches and reviewed PRs, no routine direct main development. That upstream delivery rule does not impose PRs on solo applications.
 
 ## Start Work
 

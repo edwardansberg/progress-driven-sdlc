@@ -2,7 +2,7 @@
 
 `docs/progress-agent.md` holds the one authoritative active substantial workstream; `docs/progress.md` is its short, source-identified human view. This directory contains the sole reusable scaffold and final snapshots of closed work.
 
-The lifecycle policy is canonical in [Documentation Workflow](../README.md). This file defines only initialization and archive conventions unique to this directory.
+The lifecycle policy is canonical in [Documentation Workflow](../README.md). This file defines only initialization and archive conventions unique to this directory. Application history stays here; upstream framework-maintenance evidence follows the separate [template packaging procedure](../ops/maintain-template.md) and does not ship as dated starter archives.
 
 ## Starting a Workstream
 

@@ -1,7 +1,15 @@
-# Clean template ready for review
+# Project progress
 
-Source: [Detailed maintainer record](progress-agent.md), r3 / C7.
+Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
 
-The proposed tree has neutral project memory, direct new-project onboarding and guarded existing-project adoption. Solo work stays first-class; collaboration remains optional. Static document checks and six walkthroughs passed, without live usability or template-generation testing.
+## Goal and current state
 
-This evidence checkpoint is followed by neutral release packaging; it does not close or accept the maintainer workstream. Human review and any future merge remain pending. Automation Off. GitHub template setting is still off and requires a separate owner action after release approval.
+Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
+
+## What changed, and what needs attention
+
+This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
+
+## Your decision and next step
+
+Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.

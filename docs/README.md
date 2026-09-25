@@ -38,7 +38,7 @@ The [live contracts](#live-document-contracts) define singleton ownership. Keep 
 
 ### History
 
-Terminal workstreams go to [the archive](workstreams/README.md). Material under docs/old/ is non-authoritative history: verify before reuse and never cite it as current truth.
+Application terminal workstreams go to [the archive](workstreams/README.md). Material under docs/old/ is non-authoritative history: verify before reuse and never cite it as current truth. The upstream framework uses the [maintenance packaging procedure](ops/maintain-template.md) to preserve its own evidence outside the released template tree; this exception never permits resetting an adopting application’s state.
 
 ## Document Map
 
@@ -59,7 +59,7 @@ Tie claims to source revision, checkout, test/target environment, or identified 
 
 The human owns priorities, material choices, approvals, and validation. Web/planning assistants research, specify, criticize plans, and review identified evidence. Coding agents inspect the actual checkout, plan, implement authorized work, verify, and maintain approved decisions/evidence. Both may contribute ideas; these are primary responsibilities, not exclusive roles or required providers/agent counts.
 
-One human and one coding agent can plan, implement, verify, pause/resume, and reach human acceptance. Ordinary low-risk work needs no separate Web planner, second agent, teammate, or review ceremony. Risk-based specialist review and applicable organizational requirements still apply; solo use is not an exemption. Pausing preserves work and exposes in-flight limits; resumption reconciles the actual checkout and still-applicable human scope before continuing, without treating a pause as cancellation or new delivery permission.
+One human and one coding agent can plan, implement, verify, pause/resume, and reach human acceptance. Ordinary low-risk work needs no separate Web planner, second agent, teammate, PR, cross-person handoff, or formal reviewer. Risk-based specialist review and applicable organizational requirements still apply; solo use is not an exemption. Pausing preserves work and exposes in-flight limits; resumption reconciles the actual checkout and still-applicable human scope before continuing, without treating a pause as cancellation or new delivery permission.
 
 When collaboration is needed, identify the human decision owner, implementer, required reviewer, and integration owner in the detailed record. One person may fill several roles where allowed. Teams of human–agent pairs use candidate-bound handoffs and reconcile ownership before writes; concurrent edits stop affected work for reconciliation. This framework supplies no concurrent multi-agent coordinator. Keep one authoritative active workstream per repository, not parallel team permission ledgers.
 
@@ -349,7 +349,7 @@ Add validation infrastructure only when observed drift/repeated review cost just
 
 Only at a truthful terminal outcome, record outcome, successful-work acceptance, checks, applicable commit/environment evidence, rollback, and unresolved follow-ups. Update confirmed roadmap direction/recent outcomes and accepted postponed debt.
 
-Follow [archive/reference-preservation conventions](workstreams/README.md#preserve-references-at-closure) before reusing progress: preserve terminal outcome, link targets, and maintained historical references. Then set the detailed record to No active workstream or initialize the next authorized request, and refresh the human summary. Never reset unresolved work for starter packaging or bypass required release with Completed.
+Follow [archive/reference-preservation conventions](workstreams/README.md#preserve-references-at-closure) before reusing progress: preserve terminal outcome, link targets, and maintained historical references. Then set the detailed record to No active workstream or initialize the next authorized request, and refresh the human summary. Never reset unresolved application work for starter packaging or bypass required release with Completed. Upstream template release preparation may replace its branch-only maintenance memory with neutral starter files only after preserving a retrievable evidence checkpoint under the [maintenance procedure](ops/maintain-template.md). That packaging transition is not acceptance or closure; the PR retains the pending maintenance gate.
 
 ## Source Note
 
