@@ -7,7 +7,7 @@ Store reusable deployment, recovery, maintenance, observability, and incident pr
 - [Maintain the template](maintain-template.md): Upstream-only branch development, evidence preservation and neutral release checks. Application adopters need not follow its PR release rule.
 
 - [Adopt or update the framework](adopt-framework.md): Inspect the intended project, pin an upstream snapshot, preserve local policy and state, and verify bounded documentation setup before human validation.
-- [Optional execution and review loop](autonomous-review-loop.md): Message protocol, controller target behavior, operator/recovery procedure, and pilot prerequisites. Documentation only; no controller is included or enabled. Authority remains in [canonical policy](../README.md#optional-execution-and-review-loop).
+- [Optional execution and review loop](autonomous-review-loop.md): Message protocol, controller target behavior, operator/recovery procedure, and pilot prerequisites. Documentation only; no controller is included or enabled. The [core activation gate](../README.md#optional-execution-and-review-loop) always applies; read the full contract before any loop grant/design/operation/review, not for ordinary loop-Off work.
 
 ## Runbook Shape
 

@@ -206,7 +206,7 @@ Not delivered yet.
 Human cover: decisive result, material limitation, next owner/action, and accessible
 evidence reference. Complete relay packet: use the canonical task-request shape and
 handoff requirements, including relevant untracked material; reuse metadata rather
-than creating a second status block. A laptop path is not an accessible Web packet.
+than creating a second status block. A local path is not necessarily accessible to the receiving session.
 Keep separately observed publication/delivery and acceptance evidence here when
 relevant, identifying artifact, date, source, and scope. Scope action reports to
 their reporting actor/task. No terminal outcome while required gates remain pending. -->
