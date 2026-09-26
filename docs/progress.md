@@ -1,7 +1,15 @@
-# Context-efficiency candidate
+# Project progress
 
-Source: [Detailed maintainer record](progress-agent.md), context-efficient-workflow/r1.
+Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
 
-The smaller guidance and task-based reading routes are ready for human review. Ordinary roles are provider-neutral; communication has no fixed word quota. Static checks and eight document scenarios passed, with no performance or usability claim. The strict loop protocol remains unchanged and automation is Off.
+## Goal and current state
 
-The core reduction falls short of the approximate half-size target; combined and scenario measurements disclose this tradeoff. Publication is still pending. Evidence will be preserved before neutral template packaging. No acceptance, merge, main/settings/research change or execution is authorized.
+Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
+
+## What changed, and what needs attention
+
+This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
+
+## Your decision and next step
+
+Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.
