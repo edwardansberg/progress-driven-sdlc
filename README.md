@@ -14,7 +14,7 @@ A project template for you and one coding agent. You choose the goal, authorize 
 
 1. On the [upstream repository](https://github.com/edwardansberg/progress-driven-sdlc), choose **Use this template → Create a new repository** when available. Leave **Include all branches** unchecked: development branches may contain maintainer state.
 2. Open your new repository with your coding agent.
-3. Tell it your first goal. It inspects the repository and neutral memory, records verified project context and prepares a scoped plan before implementation.
+3. Tell it your first goal. It follows the [task-based reading route](docs/README.md#start-here), inspects project evidence and prepares a scoped plan before implementation.
 4. Authorize the plan, review the verification, and accept or request changes.
 
 Already created from the template? Start at step 2. No manual file copying is needed. The starter has no active work, approvals, roadmap commitments or accepted debt; automation is Off. Unknown project facts stay unknown. Replace this starter README with your product introduction during authorized initialization, retaining a link to [workflow policy](docs/README.md).
@@ -33,7 +33,7 @@ Ask your coding agent to follow the [safe adoption/update procedure](docs/ops/ad
 
 ## Follow progress, solo or together
 
-Read [short progress](docs/progress.md); its [detailed source](docs/progress-agent.md) owns scope, decisions and evidence. One human and one coding agent need no Web session, second reviewer, PR or handoff for ordinary low-risk work. Required security and specialist controls still apply. Teams add ownership, shared-context boundaries, review and integration permissions to the same core; no concurrent-agent coordinator is supplied.
+Read [short progress](docs/progress.md); its [detailed source](docs/progress-agent.md) owns scope, decisions and evidence. One human and one coding agent need no separate planning session, second reviewer, PR or handoff for ordinary low-risk work. Required security and specialist controls still apply. Teams add ownership, shared-context boundaries, review and integration permissions to the same core; no concurrent-agent coordinator is supplied.
 
 ## Develop this framework
 
@@ -44,4 +44,4 @@ Only upstream maintainers need the [template maintenance procedure](docs/ops/mai
 <a id="fictional-exchange"></a>
 <a id="optional-execution-and-review-loop"></a>
 
-[Policy](docs/README.md) · [Optional Web setup](docs/ops/adopt-framework.md#portable-web-bootstrap) · [Refresh guidance](docs/ops/adopt-framework.md#activating-updated-guidance) · [Example](docs/ops/adopt-framework.md#fictional-exchange) · [Optional automation](docs/ops/autonomous-review-loop.md) (Off; no controller included).
+[Policy](docs/README.md) · [Optional session setup](docs/ops/adopt-framework.md#optional-session-bootstrap) · [Refresh guidance](docs/ops/adopt-framework.md#activating-updated-guidance) · [Example](docs/ops/adopt-framework.md#fictional-exchange) · [Optional automation](docs/ops/autonomous-review-loop.md) (Off; no controller included).
