@@ -21,9 +21,9 @@ Commands, required checks, release/rollback process and organizational controls:
 
 ## Framework provenance and local decisions
 
-Reusable source: https://github.com/edwardansberg/progress-driven-sdlc
-Source revision used to create/adopt this project: Not yet recorded; verify if available, otherwise retain this uncertainty. A generated repository’s first commit is not the upstream source revision.
-Adopted path mapping and deliberate local deviations: Not yet assessed.
+Source, adopted revision and local-deviation summary: See the canonical [Framework provenance block](../README.md#framework-provenance). Do not maintain independent current values here.
+
+Detailed adoption path mapping and durable local design decisions: Not yet assessed. Record verified mapping and decision rationale here; keep migration checks and historical source evidence in the workstream.
 
 ## Constraints and open decisions
 
