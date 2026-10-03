@@ -4,6 +4,14 @@
 
 A project template for you and one coding agent. You choose the goal, authorize the scope and accept the result; the agent investigates, builds and verifies. Add teammates or another assistant when useful. Extra review depends on risk and organizational policy.
 
+## Framework provenance
+
+Source: https://github.com/edwardansberg/progress-driven-sdlc
+Adopted revision: Not recorded yet
+Local deviations: Not assessed yet
+
+Applications keep this canonical human-visible summary near the top of their product README. During adoption or initialization, record the exact released upstream commit when verified. If it cannot be established, record `Unknown`; never guess. A generated repository's first commit is not proof of the upstream source revision. Link detailed deviations instead of copying them here.
+
 <a id="use-the-workflow"></a>
 
 **Plan → Authorize → Build → Verify → Accept**
@@ -17,7 +25,7 @@ A project template for you and one coding agent. You choose the goal, authorize 
 3. Tell it your first goal. It follows the [task-based reading route](docs/README.md#start-here), inspects project evidence and prepares a scoped plan before implementation.
 4. Authorize the plan, review the verification, and accept or request changes.
 
-Already created from the template? Start at step 2. No manual file copying is needed. The starter has no active work, approvals, roadmap commitments or accepted debt; automation is Off. Unknown project facts stay unknown. Replace this starter README with your product introduction during authorized initialization, retaining a link to [workflow policy](docs/README.md).
+Already created from the template? Start at step 2. No manual file copying is needed. The starter has no active work, approvals, roadmap commitments or accepted debt; automation is Off. Unknown project facts stay unknown. Replace the starter introduction with your product introduction during authorized initialization. Retain the Framework provenance block near the top and the link to [workflow policy](docs/README.md).
 
 [GitHub template creation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) starts a new repository with a single commit. Cloning the upstream repository retains its Git history and is useful for source inspection or framework development; it is not the new-project path. If **Use this template** is absent, an owner must enable it separately after the clean release is ready.
 
@@ -27,6 +35,26 @@ Already created from the template? Start at step 2. No manual file copying is ne
 ## Add to an existing project
 
 Ask your coding agent to follow the [safe adoption/update procedure](docs/ops/adopt-framework.md), pin a source revision and propose a merge map. Preserve your product README, instructions, memory, active work and Git history. Occupied or incompatible policy paths require a human decision before integration. Do not replace an existing project with this template or merge upstream Git history into it.
+
+Paste this request into your coding agent:
+
+```text
+Upgrade this EXISTING project to the current released Progress-Driven SDLC.
+Inspect repository state, existing framework rules and local customizations first.
+Resolve https://github.com/edwardansberg/progress-driven-sdlc's default branch
+ to one full commit. Use that pinned snapshot and follow its
+ docs/ops/adopt-framework.md. Stop if the guide or required evidence is unavailable.
+Preserve product code/README, project instructions, active work and authority,
+ context/roadmap/debt, runbooks, archives, dirty work and Git history.
+Prepare a migration map. Stop for a human decision on material conflicts or
+ unsafe occupied paths; otherwise present a bounded upgrade plan for approval.
+After approval of the plan and branch creation, implement on a dedicated branch.
+Verify the full diff, links, state preservation and same-revision idempotence.
+Update only the README's Framework provenance block with source, adopted revision
+ and local deviations; retain the product content. Stop at a reviewable candidate.
+Do not infer commit, push, PR, merge, deployment, automation or unrelated
+ application authority from this request.
+```
 
 <a id="collaborate-across-sessions-and-tools"></a>
 <a id="operating-model"></a>
