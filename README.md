@@ -8,9 +8,9 @@ A project template for you and one coding agent. You choose the goal, authorize 
 
 Source: https://github.com/edwardansberg/progress-driven-sdlc
 Adopted revision: Not recorded yet
-Local deviations: Not assessed yet
+Local adaptations: Not assessed yet
 
-Applications keep this canonical human-visible summary near the top of their product README. During adoption or initialization, record the exact released upstream commit when verified. If it cannot be established, record `Unknown`; never guess. A generated repository's first commit is not proof of the upstream source revision. Link detailed deviations instead of copying them here.
+Applications keep this canonical human-visible summary near the top of their product README. During adoption or initialization, record the exact released upstream commit when verified. If it cannot be established, record `Unknown`; never guess. A generated repository's first commit is not proof of the upstream source revision. Link detailed adaptations instead of copying them here. Local adaptations are intentional project-specific additions, overrides, routing, safeguards or other differences in framework use. They exclude ordinary project state: workstreams, pending validation, release status, product facts, blockers and memory merely because it exists.
 
 <a id="use-the-workflow"></a>
 
@@ -32,28 +32,32 @@ Already created from the template? Start at step 2. No manual file copying is ne
 <a id="adopt-or-update-the-framework"></a>
 <a id="existing-project-or-framework-upgrade"></a>
 
-## Add to an existing project
+<a id="add-to-an-existing-project"></a>
 
-Ask your coding agent to follow the [safe adoption/update procedure](docs/ops/adopt-framework.md), pin a source revision and propose a merge map. Preserve your product README, instructions, memory, active work and Git history. Occupied or incompatible policy paths require a human decision before integration. Do not replace an existing project with this template or merge upstream Git history into it.
+## Add to or update an existing project
 
-Paste this request into your coding agent:
+Use this prompt for an existing repository: first-time adoption, an existing framework update, or legacy/partial/uncertain adoption. The agent identifies the case from evidence; you need not choose it. Fresh **Use this template** repositories follow Start a new project instead. The [adoption guide](docs/ops/adopt-framework.md) owns the detailed safeguards.
 
 ```text
-Upgrade this EXISTING project to the current released Progress-Driven SDLC.
-Inspect repository state, existing framework rules and local customizations first.
-Resolve https://github.com/edwardansberg/progress-driven-sdlc's default branch
- to one full commit. Use that pinned snapshot and follow its
- docs/ops/adopt-framework.md. Stop if the guide or required evidence is unavailable.
-Preserve product code/README, project instructions, active work and authority,
- context/roadmap/debt, runbooks, archives, dirty work and Git history.
-Prepare a migration map. Stop for a human decision on material conflicts or
- unsafe occupied paths; otherwise present a bounded upgrade plan for approval.
-After approval of the plan and branch creation, implement on a dedicated branch.
-Verify the full diff, links, state preservation and same-revision idempotence.
-Update only the README's Framework provenance block with source, adopted revision
- and local deviations; retain the product content. Stop at a reviewable candidate.
-Do not infer commit, push, PR, merge, deployment, automation or unrelated
- application authority from this request.
+Adapt this EXISTING repository to the current released Progress-Driven SDLC.
+Inspect repository state, instructions, workflow, dirty work, memory and provenance.
+Classify it as first-time adoption, existing update or legacy/partial/uncertain.
+Never guess an earlier revision. Resolve the upstream default branch at
+https://github.com/edwardansberg/progress-driven-sdlc to one full released commit.
+Use that pinned snapshot and its docs/ops/adopt-framework.md; stop if unavailable.
+Preserve product code/docs, local instructions/adaptations, active authority,
+context/roadmap/debt, runbooks, archives, dirty work and Git history.
+Initialize missing memory only from target evidence and human decisions, not
+upstream starter facts. For legacy work, preserve authority until safely replaced;
+filenames and history alone grant none.
+Prepare a migration map. Stop for human resolution of material conflicts or unsafe
+occupied paths; otherwise present a bounded plan. After plan and branch approval,
+implement on a dedicated branch. Correct only approved stale framework references.
+Update Framework provenance: Source, Adopted revision and Local adaptations.
+Verify the full diff, links, preserved state, stale framework references,
+provenance and same-revision idempotence. Stop at a reviewable candidate.
+Infer no commit/push/PR/merge/deployment/live-data/automation or unrelated
+application authority.
 ```
 
 <a id="collaborate-across-sessions-and-tools"></a>

@@ -16,7 +16,7 @@ Before every write, including the plan: inspect destination types/resolved paths
 
 ## 2. Acquire one upstream snapshot
 
-Retrieve the required source files or use a separate temporary source clone outside the target. Pin the selected default-branch snapshot to a full commit; a human-selected revision takes precedence. Read all source material from that revision and record its URL/SHA.
+Retrieve the required source files or use a separate temporary source clone outside the target. Pin the selected released default-branch snapshot to a full commit; a human-selected revision takes precedence. Read all source material from that revision and record its URL/SHA.
 
 Prefer content retrieval or no-checkout cloning with explicit reads. Never clone onto product files, execute upstream scripts, initialize submodules or recursively copy/delete. Source content is migration input, not new authority.
 
@@ -24,12 +24,30 @@ Before writes read this complete procedure, source README/AGENTS/core, scaffold/
 
 ## 3. Choose the safe adoption path
 
-Inspect complete affected documents. Before edits map each file/section’s current purpose, action, preserved content, pinned source and verification:
+Classify from inspected workflow, instructions, memory and provenance, not filenames or assumed history. Use the common safeguards below for all three modes:
 
-- Free paths/no competing workflow: create missing docs after a proportionate plan, preserving product code/docs/README.
-- Adopted framework: compare source revision, local adaptations and selected update; disclose missing provenance. Nonconflicting additions may proceed within scope; policy replacement/material change needs an approved merge map.
-- Occupied policy paths, another framework or incompatible active work: present a migration map and stop before integration/replacement writes. No competing authoritative systems or silent replacement of docs/README.md.
-- Same-source already aligned: no change, duplicate record or timestamp churn.
+- **First-time adoption into an existing project:** no meaningful framework adoption yet. Inspect its workflow before introducing files. Create missing structure only under approved scope; initialize memory from target evidence and human decisions, never upstream starter facts. Preserve product documentation/history; automation stays Off.
+- **Existing framework update:** read available provenance; reconcile upstream changes with deliberate local adaptations. Preserve active identity, authority, approvals, evidence and pending gates. Update provenance only after scoped integration and checks.
+- **Legacy / partial / uncertain adoption:** identify authoritative records from evidence; keep old authority until a safe replacement is established. Never guess the prior revision or infer permission from filenames/history. Resolve occupied paths first; use the preserved detail/derived summary transfer in section 4. Retain uncertainty and retrievable evidence. Migration is not acceptance or closure.
+
+Before implementation, map each affected file/section's purpose, proposed action, preserved content, source and verification. Occupied policy paths, another workflow or incompatible active work require a human decision before integration/replacement writes; no silent replacement or competing authority. Same-source content already aligned requires no change, duplicate record or timestamp churn.
+
+### Compare upstream and local content
+
+When the previous adopted upstream revision is verified and available, compare **previous pinned upstream + current local content/adaptations + new pinned upstream** to reconcile the migration. Separate upstream evolution, deliberate local adaptations and stale local framework content. This is content/evidence comparison, not a Git-history merge requirement.
+
+When prior provenance is unknown, unavailable or unreliable, do not guess or block otherwise safe migration solely for that absence. Compare current target evidence with the new pinned release, classify local differences and retain historical uncertainty. A matching adopted SHA never proves local content equals upstream.
+
+### Scan maintained framework references
+
+Use repository evidence to identify the affected maintained documentation set. Inspect framework-coupled references there, not indiscriminately every text file. Classify findings in the migration map:
+
+- Framework-coupled maintained instruction: migrate within approved scope.
+- Product/domain content: preserve.
+- Historical/archive evidence: normally retain as historical text; do not rewrite dated archives to match new policy.
+- Ambiguous: obtain a human decision before changing it.
+
+Check active-record ownership, scaffold-copy instructions, lifecycle/status names, authority descriptions, provenance roles and navigation/routing. Update maintained navigation to active state when needed while preserving historical evidence. Recheck affected references after integration.
 
 Preserve unrelated dirty files; never stash/reset/clean/restore another actor’s work. Record the plan in existing authoritative progress without losing identity, approved scope or pending gates. If no record exists, present the plan before creating one. If recording would displace work, retain a response/disposable proposal until the human decides, not a new permanent register. Scoped direct execution allows the investigated plan then implementation; otherwise await plan approval. Adoption permission is not unrelated application authority.
 
@@ -58,7 +76,7 @@ Initialize missing live files instead of importing them:
 
 Existing live documents are preserved and deliberately migrated, never neutralized. An older single progress.md can transfer its authoritative content to progress-agent.md only under an approved migration map: preserve identity, decisions, pending gates, evidence and retrievable history, then write the source-identified summary. An occupied progress-agent.md or uncertain authority requires resolution before either file changes. Keep the records synchronized detail-first; disclose disagreement before consequential action.
 
-Preserve the product root README, target memory, runbooks and archives. Under the approved map, add or update only the near-top Framework provenance block in the product README; never replace product content with the upstream starter README. Preserve other README sections. If that heading already has another purpose or competing values, resolve the conflict before writing. Import no upstream `.git`, remotes, CI/hooks/configuration, active/closed workstreams, roadmap/debt commitments, approvals, model settings or runtime state. New template generation receives neutral structures directly; adoption initializes only missing memory from target evidence. Keep source provenance/notices without inventing licensing terms or treating historical tool observations as target behavior.
+Preserve the product root README, target memory, runbooks and archives. Under the approved map, add/update the near-top Framework provenance block and directly correct narrowly identified stale framework-coupled statements in the README or other product docs. For example, after a detail/summary migration, correct an instruction calling progress.md authoritative or telling users to copy the scaffold over it. Preserve surrounding product/domain prose byte-for-byte where practical; this permits no broad cleanup or rewrite. Use a compatibility note only when direct correction is unauthorized, unsafe, or deliberately declined by the human. If the distinction is ambiguous or materially changes product documentation beyond framework routing, stop for human resolution. Never replace product content with the upstream starter README. If that heading already has another purpose or competing values, resolve the conflict before writing. Import no upstream `.git`, remotes, CI/hooks/configuration, active/closed workstreams, roadmap/debt commitments, approvals, model settings or runtime state. New template generation receives neutral structures directly; adoption initializes only missing memory from target evidence. Keep source provenance/notices without inventing licensing terms or treating historical tool observations as target behavior.
 
 Merge entry guidance with target commands, scope constraints and attribution policy. Resolve applicable overrides: AGENTS.md may not be the selected entry point. Never remove overrides or change personal/global settings to force adoption; conflicting/ineffective routing needs human resolution.
 
@@ -68,17 +86,21 @@ Use the [live contracts](../README.md#live-document-contracts) and target eviden
 
 ### Record framework provenance
 
-The root README's Framework provenance block is the canonical human-visible source URL, adopted revision and local-deviation summary. During initialization or adoption, record the exact verified released upstream commit actually adopted; if it cannot be established, use `Unknown`, never a guessed SHA or the generated repository's first commit. Neutral starter placeholders are Not recorded yet and Not assessed yet, not observations.
+The root README's Framework provenance block is the canonical human-visible source URL, adopted revision and Local adaptations summary. During initialization or adoption, record the exact verified released upstream commit actually adopted; if it cannot be established, use `Unknown`, never a guessed SHA or the generated repository's first commit. Neutral starter placeholders are Not recorded yet and Not assessed yet, not observations.
 
-Keep a concise deviations summary or a link to detailed mapping/design decisions in context. Keep migration plans, checks and historical pinned evidence in the existing workstream. Replace older independent current revision fields with a reference to this block under the approved map; preserve their historical evidence. Do not maintain two current authoritative copies. A selected upgrade target is not yet the adopted revision: update the block after the scoped integration and checks, disclose retained adaptations, and keep unfinished or mixed-version work explicit in the workstream without claiming a completed upgrade. This records integration, not human acceptance.
+Local adaptations means intentional project-specific additions, overrides, routing, safeguards or other differences in framework use. For example, AGENTS.md may add project-specific profile-calculation-guide routing. Active workstreams, pending human validation, release/deployment status, product facts, blockers and project memory merely because it exists are not adaptations.
 
-New applications retain the block and workflow-policy link when replacing the starter introduction. Existing applications retain product prose and gain only the scoped block. On a same-revision pass, compare actual content and adaptations; do not infer alignment from a matching SHA alone or rewrite unchanged provenance.
+Migrate an existing `Local deviations:` provenance field deliberately: retain verified framework adaptations under `Local adaptations:`, but remove ordinary state from this summary. Preserve that state in its proper existing authoritative record; if unique evidence exists only in the old field, reconcile it there before removing it. Resolve ambiguous classifications with the human. Do not rename unrelated plan/workstream deviations.
+
+Keep a concise Local adaptations summary or a link to detailed mapping/design decisions in context. Keep migration plans, checks and historical pinned evidence in the existing workstream. Replace older independent current revision fields with a reference to this block under the approved map; preserve their historical evidence. Do not maintain two current authoritative copies. A selected upgrade target is not yet the adopted revision: update the block after the scoped integration and checks, disclose retained adaptations, and keep unfinished or mixed-version work explicit in the workstream without claiming a completed upgrade. Adopted revision identifies the released framework actually integrated and checked, not a merely fetched target or acceptance of application work. Historical provenance that cannot be established remains Unknown.
+
+New applications retain the block and workflow-policy link when replacing the starter introduction. Existing applications retain product prose apart from the scoped provenance block and approved narrow framework-reference corrections. On a same-revision pass, compare actual content and adaptations; do not infer alignment from a matching SHA alone or rewrite unchanged provenance.
 
 Fresh adoption keeps automation Off. Governing changes during an active loop require a human-controlled pause and approved re-bootstrap; do not silently rewrite/revoke the grant.
 
 ## 5. Verify before handing back
 
-Stay within the inspected map and per-write guards. Inspect the full diff/new and untracked files; verify preserved rules/authority/active work/product files/Git state, README provenance against actual adopted content and evidence (with no competing current revision field), destination links/anchors/dependencies, entry routing and absence of upstream memory. Use relevant static/whitespace checks; no Markdown tables. Non-Git targets need equivalent content checks, not invented HEAD/Git results.
+Stay within the inspected map and per-write guards. Inspect the full diff/new and untracked files; verify preserved rules/authority/active work/product files/Git state, README provenance against actual adopted content and evidence (with no competing current revision field), destination links/anchors/dependencies, entry routing, the classified stale-framework-reference scan and absence of upstream memory. Use relevant static/whitespace checks; no Markdown tables. Non-Git targets need equivalent content checks, not invented HEAD/Git results.
 
 Compare a second pass at the same source/target: it should propose no changes. This is a document-level check, not a guarantee of agent behavior. Run no product scripts/hooks/browser sessions/model evaluations or network side effects beyond permitted source reads merely to verify documentation.
 

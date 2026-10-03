@@ -21,7 +21,7 @@ Commands, required checks, release/rollback process and organizational controls:
 
 ## Framework provenance and local decisions
 
-Source, adopted revision and local-deviation summary: See the canonical [Framework provenance block](../README.md#framework-provenance). Do not maintain independent current values here.
+Source / Adopted revision / Local adaptations summary: See the canonical [Framework provenance block](../README.md#framework-provenance). Do not maintain independent current values here.
 
 Detailed adoption path mapping and durable local design decisions: Not yet assessed. Record verified mapping and decision rationale here; keep migration checks and historical source evidence in the workstream.
 
