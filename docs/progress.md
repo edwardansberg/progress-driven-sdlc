@@ -1,15 +1,7 @@
 # Project progress
 
-Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
+Source: [Detailed work record](progress-agent.md), ste-inspired-communication r1, candidate S1.
 
-## Goal and current state
+The local amendment adds meaning-preserving plain English and optional visual-explanation boundaries to the interaction contract. It is Ready for user validation. Static scope, link, whitespace and eight editorial checks passed; no live usability was tested. Loop control is Off.
 
-Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
-
-## What changed, and what needs attention
-
-This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
-
-## Your decision and next step
-
-Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.
+Please review the local candidate and provide feedback. Human acceptance and publication remain pending. The human has now authorized checkpoint/packaging commits, branch push and an unmerged PR; merge remains unapproved. This is branch-local maintenance state, not neutral starter content; the maintenance procedure preserves evidence before later authorized packaging.
