@@ -1,9 +1,15 @@
 # Project progress
 
-Source: [Detailed record](progress-agent.md), framework-provenance-upgrade-prompt r1, candidate P1.
+Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
 
-The README now owns the framework provenance summary and includes a reusable upgrade prompt. The adoption guide, context and release inventory agree on that ownership.
+## Goal and current state
 
-Ready for user validation; Loop Off. Six document walkthroughs, links and whitespace checks passed. These do not prove live migration or usability. The pre-existing untracked patch is unchanged.
+Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
 
-Please review P1 and provide feedback. The changes remain local and uncommitted; the human has now authorized checkpoint/packaging commits, branch push and an unmerged PR. The two progress views contain branch-local evidence, not released starter state.
+## What changed, and what needs attention
+
+This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
+
+## Your decision and next step
+
+Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.
