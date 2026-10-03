@@ -1,15 +1,9 @@
 # Project progress
 
-Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
+Source: [Detailed record](progress-agent.md), adaptive-adoption-update-flow r1, candidate A1.
 
-## Goal and current state
+The existing-project prompt now handles first adoption, updates and uncertain legacy layouts. Local adaptations excludes project state. The guide adds evidence-based comparison and narrow approved corrections to stale framework references.
 
-Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
+Ready for user validation; Loop Off. Ten static walkthroughs, link/anchor and whitespace checks passed. No live migration or usability was tested. The unrelated untracked patch is unchanged.
 
-## What changed, and what needs attention
-
-This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
-
-## Your decision and next step
-
-Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.
+Please review A1 and provide feedback. Changes remain local and uncommitted; the human has now authorized checkpoint/packaging commits, topic push and an unmerged PR. These active progress views retain maintainer evidence until authorized checkpoint/packaging.

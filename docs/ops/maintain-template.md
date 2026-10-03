@@ -23,11 +23,11 @@ If corrections are requested after neutralization, restore the checkpoint into t
 
 Classify the exact tree, including unexpected additions; do not rely on a selective copy operation to hide contaminants:
 
-- README.md: Reusable new-project onboarding, existing-project adoption link and optional upstream-maintenance link. Target replaces the starter introduction during authorized initialization but retains the near-top Framework provenance block and workflow-policy link. Its adopted revision stays Not recorded yet in the neutral template; packaging must not invent a future application revision or insert a maintainer task.
+- README.md: Reusable new-project onboarding, existing-project adoption link and optional upstream-maintenance link. Target replaces the starter introduction during authorized initialization but retains the near-top Framework provenance block and workflow-policy link. Its neutral provenance fields are Source, Adopted revision: Not recorded yet, and Local adaptations: Not assessed yet; packaging must not invent a future application revision or insert a maintainer task.
 - AGENTS.md and docs/README.md: Reusable agent guidance and canonical policy; repository-mode checks prevent upstream release rules from becoming application requirements.
 - docs/progress.md: Neutral, short human view with a matching detailed-source revision, no active work and automation Off.
 - docs/progress-agent.md: Authoritative neutral application state; no workstream, scope grant, candidate, checks or acceptance claimed.
-- docs/context.md: Target-initialized structure; unknown project facts remain explicit; detailed adoption mapping and local decisions belong here, while source/revision/deviation summary refers to the root README provenance block.
+- docs/context.md: Target-initialized structure; unknown project facts remain explicit; detailed adoption mapping and local decisions belong here, while Source / Adopted revision / Local adaptations summary refers to the root README provenance block.
 - docs/roadmap.md and docs/techdebt.md: Neutral direction/debt structures; no upstream commitments or outcomes.
 - docs/workstreams/: Reusable scaffold and directory/archive indexes only. No dated maintainer records in the release tree.
 - docs/ops/: Reusable index, adoption/update guide, this upstream-only procedure and the optional advanced loop specification. No project-specific deployment facts or active run.
