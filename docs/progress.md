@@ -1,15 +1,9 @@
 # Project progress
 
-Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
+Source: [Detailed record](progress-agent.md), project-blueprint-v0.1 r1-BP1.
 
-## Goal and current state
+The optional blueprint contract and neutral five-view renderer are ready for human review. Schema, hostile-text, Chrome navigation and static repository checks passed. Revision/no-churn behavior was checked as a procedure simulation, not a live refresh engine.
 
-Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
+No actual project blueprint was created. Human usability, screen-reader coverage and real-project correctness remain unverified. Loop is Off; commit/push/PR publication is now authorized; merge is not.
 
-## What changed, and what needs attention
-
-This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
-
-## Your decision and next step
-
-Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.
+Next: review BP1 and provide feedback or acceptance. The authorized local evidence bundle preserves this maintenance record before neutral starter packaging; a Git checkpoint and neutral packaging will now preserve it for review.
