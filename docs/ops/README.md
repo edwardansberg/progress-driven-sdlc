@@ -4,6 +4,8 @@ Store reusable deployment, recovery, maintenance, observability, and incident pr
 
 ## References
 
+- [Project Blueprint](project-blueprint.md) and [neutral renderer template](project-blueprint-template.html): Optional persistent project model; explicit creation/refresh only, no ordinary context loading.
+
 - [Maintain the template](maintain-template.md): Upstream-only branch development, evidence preservation and neutral release checks. Application adopters need not follow its PR release rule.
 
 - [Adopt or update the framework](adopt-framework.md): Inspect the intended project, pin an upstream snapshot, preserve local policy and state, and verify bounded documentation setup before human validation.

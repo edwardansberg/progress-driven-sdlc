@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Blueprint</title>
+<style>
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #172b3a; background: #f5f7fa; }
+body { margin: 0; line-height: 1.55; }
+header, main { max-width: 72rem; margin: auto; padding: 1rem; }
+h1, h2, h3 { line-height: 1.25; }
+nav, .map { display: flex; flex-wrap: wrap; gap: .65rem; }
+button, summary { cursor: pointer; font: inherit; }
+button { color: #173d63; background: #fff; border: 1px solid #57738b; border-radius: .35rem; padding: .55rem .8rem; }
+button[aria-current="page"] { background: #173d63; color: white; }
+:focus-visible, [tabindex="-1"]:focus { outline: 3px solid #a44200; outline-offset: 3px; }
+[hidden] { display: none !important; }
+article, .map > li { border: 1px solid #b1bfcb; border-radius: .5rem; padding: 1rem; background: white; margin-block: 1rem; }
+.map { list-style: none; padding: 0; }
+.map > li { flex: 1 1 15rem; margin: 0; min-width: 0; }
+.roadmap { border-left: .25rem solid #57738b; padding-left: 2rem; }
+.roadmap li { padding: .5rem; }
+.status { font-weight: 700; }
+h1, h2, h3, h4, h5, h6, p, li, dd, code, button { overflow-wrap: anywhere; }
+dl { margin-block: 1rem; }
+dt { font-weight: 700; }
+dd { margin-inline-start: 0; margin-block-end: .75rem; }
+summary { padding: .5rem 0; }
+#notice { border-left: .3rem solid #a44200; padding-left: 1rem; }
+.skip { position: absolute; left: -10000px; }
+.skip:focus { position: static; }
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to blueprint content</a>
+<header>
+<h1>Project Blueprint</h1>
+<nav aria-label="Blueprint views">
+<button type="button" data-view="overview" aria-current="page">Overview</button>
+<button type="button" data-view="roadmap">Roadmap</button>
+<button type="button" data-view="components">Components</button>
+<button type="button" data-view="flows">Flows</button>
+<button type="button" data-view="info">Blueprint Info</button>
+</nav>
+</header>
+<main id="content" tabindex="-1">
+<p id="notice" role="status">Blueprint data has not been rendered.</p>
+<noscript><p>JavaScript is disabled. Ask for a text rendering of the embedded data; no live status is available here.</p></noscript>
+<section id="overview" aria-labelledby="overview-title"><h2 id="overview-title" tabindex="-1">Overview</h2></section>
+<section id="roadmap" aria-labelledby="roadmap-title" hidden><h2 id="roadmap-title" tabindex="-1">Roadmap</h2></section>
+<section id="components" aria-labelledby="components-title" hidden><h2 id="components-title" tabindex="-1">Components</h2></section>
+<section id="flows" aria-labelledby="flows-title" hidden><h2 id="flows-title" tabindex="-1">Flows</h2></section>
+<section id="info" aria-labelledby="info-title" hidden><h2 id="info-title" tabindex="-1">Blueprint Info</h2></section>
+</main>
+<!-- BLUEPRINT_DATA_START -->
+<script id="blueprint-data" type="application/json">
+{
+  "schemaVersion": 1,
+  "sourceRevision": "Unknown",
+  "roadmap": [],
+  "components": [],
+  "flows": []
+}
+</script>
+<!-- BLUEPRINT_DATA_END -->
+<script>
+'use strict';
+function validateBlueprint(data) {
+  const fail = message => { throw new Error(message); };
+  const object = (value, keys, label) => {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) fail(label + ': expected object');
+    if (Object.keys(value).some(key => !keys.includes(key))) fail(label + ': unsupported field');
+  };
+  const string = (value, label) => {
+    if (typeof value !== 'string' || !value.trim()) fail(label + ': expected nonempty string');
+  };
+  const optionalString = (value, label) => { if (value !== undefined) string(value, label); };
+  const array = (value, label) => { if (!Array.isArray(value)) fail(label + ': expected array'); };
+  const strings = (value, label) => {
+    if (value === undefined) return;
+    array(value, label); value.forEach(item => string(item, label));
+  };
+  const revision = value => typeof value === 'string' && (value === 'Unknown' || /^(?:[a-f0-9]{40}|[a-f0-9]{64})$/.test(value));
+  object(data, ['schemaVersion', 'sourceRevision', 'refresh', 'sources', 'roadmap', 'components', 'flows'], 'Blueprint');
+  if (data.schemaVersion !== 1) fail('Unsupported schemaVersion');
+  if (!revision(data.sourceRevision)) fail('Invalid sourceRevision');
+  if (data.refresh !== undefined) {
+    object(data.refresh, ['fromRevision', 'notes'], 'refresh');
+    if (data.refresh.fromRevision !== undefined && !revision(data.refresh.fromRevision)) fail('Invalid fromRevision');
+    optionalString(data.refresh.notes, 'refresh.notes');
+  }
+  strings(data.sources, 'sources');
+  if ((data.sources || []).some(path => /^(?:[a-z]+:|[/\\])|(?:^|[/\\])\.\.(?:[/\\]|$)|[?#]/i.test(path))) fail('Sources must be repository-relative paths');
+  const ids = {};
+  for (const type of ['roadmap', 'components', 'flows']) {
+    array(data[type], type); ids[type] = new Set();
+    for (const item of data[type]) {
+      if (!item || typeof item.id !== 'string' || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) fail(type + ': invalid ID');
+      if (ids[type].has(item.id)) fail(type + ': duplicate ID');
+      ids[type].add(item.id);
+    }
+  }
+  const component = id => { if (!ids.components.has(id)) fail('Unresolved component reference'); };
+  for (const item of data.roadmap) {
+    object(item, ['id', 'title', 'status', 'summary', 'components', 'gates'], 'Roadmap item');
+    string(item.title, 'title');
+    if (!['completed', 'current', 'planned', 'paused', 'unknown'].includes(item.status)) fail('Invalid roadmap status');
+    optionalString(item.summary, 'summary'); strings(item.gates, 'gates'); strings(item.components, 'components');
+    (item.components || []).forEach(component);
+  }
+  for (const item of data.components) {
+    object(item, ['id', 'name', 'kind', 'summary', 'responsibilities', 'relationships', 'interfaces', 'paths'], 'Component');
+    for (const key of ['name', 'kind', 'summary']) string(item[key], key);
+    for (const key of ['responsibilities', 'interfaces', 'paths']) strings(item[key], key);
+    if (item.relationships !== undefined) {
+      array(item.relationships, 'relationships');
+      item.relationships.forEach(rel => {
+        object(rel, ['target', 'kind', 'label'], 'Relationship'); component(rel.target); string(rel.kind, 'kind'); optionalString(rel.label, 'label');
+      });
+    }
+  }
+  for (const item of data.flows) {
+    object(item, ['id', 'name', 'summary', 'steps'], 'Flow'); string(item.name, 'name'); optionalString(item.summary, 'summary'); array(item.steps, 'steps');
+    item.steps.forEach(step => { object(step, ['component', 'label'], 'Step'); component(step.component); string(step.label, 'label'); });
+  }
+  return data;
+}
+function node(tag, text) {
+  const element = document.createElement(tag);
+  if (text !== undefined) element.textContent = text;
+  return element;
+}
+const views = ['overview', 'roadmap', 'components', 'flows', 'info'];
+function showView(id, focus = true) {
+  if (!views.includes(id)) return;
+  views.forEach(view => { document.getElementById(view).hidden = view !== id; });
+  document.querySelectorAll('[data-view]').forEach(button => {
+    if (button.dataset.view === id) button.setAttribute('aria-current', 'page');
+    else button.removeAttribute('aria-current');
+  });
+  if (focus) document.getElementById(id + '-title').focus();
+}
+document.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => showView(button.dataset.view)));
+function renderBlueprint(data) {
+  const lookup = new Map(data.components.map(item => [item.id, item]));
+  const componentButton = id => {
+    const button = node('button', lookup.get(id).name); button.type = 'button';
+    button.addEventListener('click', () => { showView('components', false); document.getElementById('component-' + id).focus(); });
+    return button;
+  };
+  const list = (parent, title, values, heading = 'h4') => {
+    if (!values || !values.length) return;
+    parent.append(node(heading, title)); const ul = node('ul');
+    values.forEach(value => ul.append(node('li', value))); parent.append(ul);
+  };
+  const relationships = (parent, item) => {
+    if (!item.relationships || !item.relationships.length) return;
+    const ul = node('ul');
+    item.relationships.forEach(rel => {
+      const li = node('li'); li.append(node('span', rel.kind + ' → '), componentButton(rel.target));
+      if (rel.label) li.append(node('span', ': ' + rel.label)); ul.append(li);
+    }); parent.append(ul);
+  };
+  const roadmapList = detailed => {
+    const ol = node('ol'); ol.className = 'roadmap';
+    data.roadmap.forEach(item => {
+      const li = node('li'); li.append(node('strong', item.title), node('span', ' — ' + item.status));
+      if (detailed && item.summary) li.append(node('p', item.summary));
+      (item.gates || []).forEach(gate => li.append(node('p', 'Gate / constraint: ' + gate)));
+      if (detailed) (item.components || []).forEach(id => li.append(componentButton(id)));
+      ol.append(li);
+    }); return ol;
+  };
+  const overview = document.getElementById('overview');
+  overview.append(node('h3', 'Roadmap / progress'), data.roadmap.length ? roadmapList(false) : node('p', 'No roadmap items recorded.'));
+  overview.append(node('h3', 'Major component map'));
+  const map = node('ul'); map.className = 'map';
+  data.components.forEach(item => { const li = node('li'); li.append(componentButton(item.id), node('p', item.kind), node('p', item.summary)); relationships(li, item); map.append(li); });
+  overview.append(data.components.length ? map : node('p', 'No components recorded.'));
+  document.getElementById('roadmap').append(data.roadmap.length ? roadmapList(true) : node('p', 'No roadmap items recorded.'));
+  data.components.forEach(item => {
+    const article = node('article'); const title = node('h3', item.name); title.id = 'component-' + item.id; title.tabIndex = -1;
+    article.append(title, node('p', item.kind), node('p', item.summary)); relationships(article, item);
+    if (['responsibilities', 'interfaces', 'paths'].some(key => (item[key] || []).length)) {
+      const details = node('details'); details.append(node('summary', 'Responsibilities and implementation details'));
+      list(details, 'Responsibilities', item.responsibilities); list(details, 'Interfaces', item.interfaces); list(details, 'Selected paths', item.paths); article.append(details);
+    }
+    document.getElementById('components').append(article);
+  });
+  if (!data.components.length) document.getElementById('components').append(node('p', 'No components recorded.'));
+  data.flows.forEach(item => {
+    const article = node('article'); article.append(node('h3', item.name)); if (item.summary) article.append(node('p', item.summary));
+    const ol = node('ol'); item.steps.forEach(step => { const li = node('li'); li.append(componentButton(step.component), node('span', ' — ' + step.label)); ol.append(li); });
+    article.append(ol); document.getElementById('flows').append(article);
+  });
+  if (!data.flows.length) document.getElementById('flows').append(node('p', 'No flows recorded.'));
+  const info = document.getElementById('info'); const dl = node('dl');
+  const field = (label, value) => dl.append(node('dt', label), node('dd', value));
+  field('Schema version', String(data.schemaVersion)); field('Represented source revision', data.sourceRevision);
+  if (data.refresh) { if (data.refresh.fromRevision) field('Previous represented revision', data.refresh.fromRevision); if (data.refresh.notes) field('Refresh notes', data.refresh.notes); }
+  info.append(dl); list(info, 'Authoritative source references (repository-relative)', data.sources, 'h3');
+  info.append(node('p', 'This derived model does not replace source evidence, detailed progress or human acceptance. Its revision identifies inspected project state, not the commit containing this HTML. Blueprint-only maintenance need not advance that revision.'));
+  info.append(node('p', 'Freshness is not checked automatically. A newer project change may make this model incomplete. Request a refresh explicitly; browser controls grant no project authority.'));
+  const empty = !data.roadmap.length && !data.components.length && !data.flows.length;
+  const notice = document.getElementById('notice');
+  notice.textContent = empty ? 'No project blueprint data. This reusable template describes no project.' : data.sourceRevision === 'Unknown' ? 'Represented source revision is Unknown. Verify project evidence before relying on this model.' : '';
+  notice.hidden = !notice.textContent;
+}
+try {
+  const blocks = document.querySelectorAll('script#blueprint-data[type="application/json"]');
+  if (blocks.length !== 1) throw new Error('Expected one blueprint data block');
+  renderBlueprint(validateBlueprint(JSON.parse(blocks[0].textContent)));
+} catch (error) {
+  document.getElementById('notice').textContent = 'Blueprint unavailable: ' + error.message + '. Preserve this file and request repair; no project model was validated.';
+}
+</script>
+</body>
+</html>

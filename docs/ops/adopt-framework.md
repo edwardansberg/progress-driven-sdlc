@@ -64,6 +64,7 @@ Inspect every destination first; the map is an allowlist, not overwrite permissi
 - docs/workstreams/WORKSTREAM_TEMPLATE.md and docs/workstreams/README.md.
 - docs/workstreams/archive/README.md, the directory guide only, not archived entries.
 - docs/ops/README.md, docs/ops/adopt-framework.md, docs/ops/maintain-template.md (upstream-only reference), and docs/ops/autonomous-review-loop.md (optional advanced specification, Off).
+- docs/ops/project-blueprint.md and docs/ops/project-blueprint-template.html: Reusable optional contract/neutral renderer; adoption does not create or refresh docs/project-blueprint.html. Preserve any existing project blueprint; reconcile compatibility only under explicit scope.
 - docs/security/README.md and docs/old/README.md, reusable conventions only; merge target-specific procedures rather than copying upstream observations as project facts.
 
 Initialize missing live files instead of importing them:

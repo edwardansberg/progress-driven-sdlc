@@ -30,7 +30,7 @@ Classify the exact tree, including unexpected additions; do not rely on a select
 - docs/context.md: Target-initialized structure; unknown project facts remain explicit; detailed adoption mapping and local decisions belong here, while Source / Adopted revision / Local adaptations summary refers to the root README provenance block.
 - docs/roadmap.md and docs/techdebt.md: Neutral direction/debt structures; no upstream commitments or outcomes.
 - docs/workstreams/: Reusable scaffold and directory/archive indexes only. No dated maintainer records in the release tree.
-- docs/ops/: Reusable index, adoption/update guide, this upstream-only procedure and the optional advanced loop specification. No project-specific deployment facts or active run.
+- docs/ops/: Reusable index, adoption/update guide, this upstream-only procedure, the optional advanced loop specification, and the optional Project Blueprint contract/neutral HTML template. No generated docs/project-blueprint.html or project-specific template data. No project-specific deployment facts or active run.
 - docs/security/: Reusable guidance only until target-specific evidence exists.
 - docs/old/: History guidance only; no upstream historical documents.
 

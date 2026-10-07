@@ -61,6 +61,10 @@ Use the simplest suitable format: diagrams for relationships or flows; HTML for 
 
 Default to self-contained offline HTML. Do not add unapproved external dependencies, network calls, tracking or persistent writes. Never embed secrets. Inspect HTML and scripts before any authorized preview; escape untrusted text. Retain a text alternative if rendering is unavailable. No installation, hosting or extra spend follows from an explainer request. Keep disposable files outside tracked product/template content unless approved. Record decisions in authoritative documents. “Disposable” does not authorize deletion of retained evidence.
 
+#### Optional Project Blueprint
+
+[Project Blueprint](ops/project-blueprint.md) is a persistent, tracked, non-authoritative project-wide human view, separate from ad-hoc explainers. Create or refresh only on explicit human request; normal development reads or updates none of its files and does not routinely offer one. Read its contract/template for creation or schema/renderer changes, corruption, compatibility uncertainty, UX redesign or relevant contract updates. A normal data-only refresh uses the existing data block, represented source revision, Git delta and affected project sources without loading the full renderer/manual unless needed. Existing project authority still applies.
+
 <a id="normal-relay-and-project-switching"></a>
 
 Ordinary handoffs need no controller, browser chat, JSON or loop. Human relay can transfer a complete task/result or accessible reference. On project switches verify repository/state; transfer no approvals/defaults/evidence or automatic portfolio sweep. Optional [session setup](ops/adopt-framework.md#optional-session-bootstrap) grants no authority.
