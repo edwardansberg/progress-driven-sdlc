@@ -7,7 +7,7 @@
 <style>
 :root { color-scheme: light; font-family: system-ui, sans-serif; color: #172b3a; background: #f5f7fa; }
 body { margin: 0; line-height: 1.55; }
-header, main, footer { max-width: 72rem; margin: auto; padding: 1rem; }
+header, main { max-width: 72rem; margin: auto; padding: 1rem; }
 h1, h2, h3 { line-height: 1.25; }
 nav, .map { display: flex; flex-wrap: wrap; gap: .65rem; }
 button, summary { cursor: pointer; font: inherit; }
@@ -21,7 +21,7 @@ article, .map > li { border: 1px solid #b1bfcb; border-radius: .5rem; padding: 1
 .roadmap { border-left: .25rem solid #57738b; padding-left: 2rem; }
 .roadmap li { padding: .5rem; }
 .status { font-weight: 700; }
-p, li, dd, code, button { overflow-wrap: anywhere; }
+h1, h2, h3, h4, h5, h6, p, li, dd, code, button { overflow-wrap: anywhere; }
 dl { margin-block: 1rem; }
 dt { font-weight: 700; }
 dd { margin-inline-start: 0; margin-block-end: .75rem; }
@@ -35,7 +35,6 @@ summary { padding: .5rem 0; }
 <a class="skip" href="#content">Skip to blueprint content</a>
 <header>
 <h1>Project Blueprint</h1>
-<p>A represented project snapshot, not live status or authority.</p>
 <nav aria-label="Blueprint views">
 <button type="button" data-view="overview" aria-current="page">Overview</button>
 <button type="button" data-view="roadmap">Roadmap</button>
@@ -53,7 +52,6 @@ summary { padding: .5rem 0; }
 <section id="flows" aria-labelledby="flows-title" hidden><h2 id="flows-title" tabindex="-1">Flows</h2></section>
 <section id="info" aria-labelledby="info-title" hidden><h2 id="info-title" tabindex="-1">Blueprint Info</h2></section>
 </main>
-<footer><p>Request creation or refresh explicitly through your normal project workflow. Decisions belong in authoritative project records.</p></footer>
 <!-- BLUEPRINT_DATA_START -->
 <script id="blueprint-data" type="application/json">
 {
@@ -177,7 +175,7 @@ function renderBlueprint(data) {
   overview.append(node('h3', 'Roadmap / progress'), data.roadmap.length ? roadmapList(false) : node('p', 'No roadmap items recorded.'));
   overview.append(node('h3', 'Major component map'));
   const map = node('ul'); map.className = 'map';
-  data.components.forEach(item => { const li = node('li'); li.append(componentButton(item.id), node('p', item.kind)); relationships(li, item); map.append(li); });
+  data.components.forEach(item => { const li = node('li'); li.append(componentButton(item.id), node('p', item.kind), node('p', item.summary)); relationships(li, item); map.append(li); });
   overview.append(data.components.length ? map : node('p', 'No components recorded.'));
   document.getElementById('roadmap').append(data.roadmap.length ? roadmapList(true) : node('p', 'No roadmap items recorded.'));
   data.components.forEach(item => {
@@ -205,7 +203,8 @@ function renderBlueprint(data) {
   info.append(node('p', 'Freshness is not checked automatically. A newer project change may make this model incomplete. Request a refresh explicitly; browser controls grant no project authority.'));
   const empty = !data.roadmap.length && !data.components.length && !data.flows.length;
   const notice = document.getElementById('notice');
-  notice.textContent = empty ? 'No project blueprint data. This reusable template describes no project.' : data.sourceRevision === 'Unknown' ? 'Represented source revision is Unknown. Verify project evidence before relying on this model.' : 'Snapshot view. See Blueprint Info for its represented revision and freshness limits.';
+  notice.textContent = empty ? 'No project blueprint data. This reusable template describes no project.' : data.sourceRevision === 'Unknown' ? 'Represented source revision is Unknown. Verify project evidence before relying on this model.' : '';
+  notice.hidden = !notice.textContent;
 }
 try {
   const blocks = document.querySelectorAll('script#blueprint-data[type="application/json"]');

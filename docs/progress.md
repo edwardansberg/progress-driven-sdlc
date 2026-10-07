@@ -1,15 +1,7 @@
 # Project progress
 
-Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
+Source: [Detailed record](progress-agent.md), project-blueprint-v0.1 r2-BP2.
 
-## Goal and current state
+BP2 is ready for review: component qualifications are visible, routine governance moved out of normal chrome, long headings wrap and ID wording distinguishes persistent versus replacement concepts. Browser/static checks passed. Schema v1 and sourceRevision semantics are unchanged.
 
-Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
-
-## What changed, and what needs attention
-
-This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
-
-## Your decision and next step
-
-Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.
+Human acceptance, screen-reader coverage and real-project usability remain unverified. Loop Off. Codex may update existing PR #7 under the publication grant; merge is unapproved. Checkpoint evidence precedes neutral packaging.
