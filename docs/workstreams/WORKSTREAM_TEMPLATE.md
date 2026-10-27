@@ -1,212 +1,57 @@
-<!-- REUSABLE SCAFFOLD: Initialize docs/progress-agent.md only after checking existing
-active state; resume compatible work and never overwrite an unresolved unrelated
-workstream without the user's explicit disposition. Replace prompts with
-investigated state and remove setup comments before publishing the plan.
-Standard/high-risk work normally awaits plan approval; recorded explicit scoped
-direct execution permits proceeding after investigation and a written plan.
-Paths in this scaffold are repository-relative; adapt links when instantiating.
-Derive docs/progress.md from this record at checkpoints; no second scaffold.
-Its short source-identified summary covers goal, change, stage, risk/blocker,
-human decision, and next owner. Reconcile divergence before consequential action. -->
+<!-- Sole workstream scaffold: use only after inspecting existing state.
+Resume compatible work; do not overwrite unresolved unrelated work.
+Replace prompts with evidence and remove unused optional sections/comments.
+Standard/high-risk work awaits approval unless scoped direct execution is recorded.
+Relative links must be adapted when this record is instantiated or archived. -->
 
-# Active workstream: <!-- short-slug -->
+# Active workstream: [type]-[short-name]
 
-Display title: <!-- Optional real outcome, e.g. Prevent duplicate submissions; a human label, not another identity or status. Omit if unnecessary. -->
-
-Workstream class: <!-- Quick, Standard, or High-risk -->
-
-Risk: <!-- Low, Medium, or High, with reason -->
-
+State revision: [plan/candidate revision]
 Status: Planning
-
-Current gate: Investigation and plan publication
-
-Next action: <!-- Owner and concrete step under the recorded authorization -->
-
+Current gate: Investigation and plan
+Next action: [owner and action]
+Workspace: [docs/workstreams/active/[key]/; omit until supporting files are needed]
 Loop control: Off
+Repository / branch: [identity; branch contains the key]
+Implementation base: [full inspected revision]
+Snapshot observation: [date/source/actor, HEAD or complete artifact, relevant dirty/pre-existing work]
 
-Loop step/reason: <!-- No run granted by default; when relevant, current step/reason and outstanding request. This is not workstream status. -->
+## Goal and scope
 
-Repository: <!-- Repository identity, without credentials or personal paths -->
-
-Branch: <!-- Branch name or detached state -->
-
-Implementation base: <!-- Original starting revision; retain when later observations change -->
-
-Last inspected HEAD: <!-- Observed revision, not this document's future containing commit -->
-
-Snapshot observation: <!-- Date or capture reference, actor/source, snapshot ID and patch/bundle base; relevant staged/unstaged/untracked state and pre-existing work. Distinguish materially changed artifacts and retain historical observations. -->
-
-Plan revision: <!-- Revision or equivalent identifier; update when the plan changes -->
-
-Started: <!-- Available date -->
-
-Last substantive update: <!-- Date and actor -->
-
-Delivery target: <!-- Agreed artifact/environment and whether a release is required; mark unresolved choices -->
-
-Workflow: `docs/README.md`
-
-## Requested Outcome and Definition of Done
-
-<!-- State the observable outcome, required evidence and documentation, user
-acceptance, and agreed delivery conditions. Distinguish this task's stopping gate
-from eventual workstream closure. -->
-
-## Context and Evidence
-
-### Verified current behavior
-
-<!-- Cite files, revision/snapshot, commands, or environment observations.
-Identify supplied reports as reported evidence rather than independent checks. -->
-
-### Chosen target behavior
-
-<!-- Record explicitly selected behavior; approval is not implementation evidence. -->
-
-### Inference requiring validation
-
-<!-- Pair each inference with the focused evidence needed to resolve it. -->
-
-### Open decision
-
-<!-- Record each unresolved choice, its owner, and the gate by which it is needed. -->
-
-## Ownership and Dependencies
-
-<!-- For solo work, identify the human decision owner and coding agent; no extra
-reviewer is required unless risk or organizational policy calls for one. For
-collaboration, name necessary implementer/reviewer/integration ownership and
-candidate-bound dependencies. Reconcile concurrent edits; no automatic coordinator. -->
-
-## Relevant System Map
-
-<!-- Relevant entry points, core logic, state, external contracts, and operational
-surfaces; keep concise or justify non-applicability. -->
-
-## Scope and Constraints
-
-Included: <!-- Proposed boundary, identifying approved and pending portions;
-authorization is recorded below. -->
-
-Excluded: <!-- Adjacent work and unauthorized actions. -->
-
-Constraints and assumptions: <!-- Compatibility, security, cost, platform, and
-ownership constraints; pair uncertain assumptions with validation. -->
+[Outcome, included changes and material exclusions.]
 
 ## Decisions and Authorization
 
-<!-- Keep the implementation authorization here once, including:
-- State: Pending, approved scope, partial approval, or scoped direct execution.
-- Covered plan revision or scope; approving actor; available decision/date reference.
-- For direct execution, identify the user's request, scope/exclusions, and the plan
-  implementing it. Do not claim the plan itself was approved if it was not.
-- Distinguish pending/superseded portions, proposals, and material decisions.
-Do not invent missing approval history. Delivery permissions are separate below. -->
+[Human reference/date, scope/revision, direct execution or pending/partial approval.
+Separate proposals from decisions. Record named delivery permissions only when
+relevant; omitted actions are not authorized. Add loop grant details only for an
+explicitly requested grant, using the existing full loop contract and a Delivery
+Permissions section for its named actions. Ordinary work needs no empty section.]
 
-### Optional Run Authorization
+## Acceptance criteria and plan
 
-Not enabled; no run grant.
+- [ ] [Observable criterion and bounded implementation/check steps.]
 
-<!-- Leave concise when unused. For an explicitly enabled run, record one grant:
-human source/reference; run ID; repository/workstream; approved plan/scope and fixed
-acceptance criteria; allowed paths/classes and exclusions; approved remote/review
-branch; destination alias/sharing boundary; start, expiry, round/time/spending
-limits; human checkpoints and local control mechanism/limitations. Reference the
-named Delivery Permissions below, including repeat allowance, instead of repeating
-permissions here. Unknown required fields keep control Off. Follow canonical
-Optional Execution and Review Loop and docs/ops/autonomous-review-loop.md.
-Record original base, previous reviewed head (or none), exact candidate and
-outstanding request when they exist; keep private transport/recovery data local. -->
+## Evidence and unresolved risks
 
-## Acceptance Criteria
+[Important sources and snapshot scope. Distinguish Verified current behavior,
+Chosen target behavior, Inference requiring validation and Open decision as needed.
+Record relevant results using Check / Basis / Scope / Result / Limitations.
+Add migration, rollout, recovery, observability or specialist detail only when
+actual risk or project rules require it. Keep supporting evidence in the workspace,
+not another authority record.]
 
-<!-- Independently specified outcomes, invariants, edge/failure conditions,
-compatibility/security contracts, and documentation or delivery requirements. -->
+## Human review and next gate
 
-## Implementation Plan
+[Identified candidate, pending human checks/decision and next owner. Human cover
+stays short; complete relay material remains accessible, including relevant
+untracked work. A local path is not another session’s access. Update detail first,
+then its derived progress.md summary at material checkpoints.]
 
-<!-- Use only as many phases as the work needs; one is sufficient for a bounded
-effort. Add concrete checkbox steps and completion evidence per phase. Keep
-reusable procedures in runbooks. Reference shared rollback detail when sufficient. -->
-
-### Phase 1 — <!-- Outcome -->
-
-- [ ] <!-- Concrete step -->
-
-Acceptance: <!-- Evidence needed for phase completion -->
-
-Rollback or containment: <!-- Focused boundary or reference to shared detail -->
-
-## Risks, Migration, Rollout, Observability, and Rollback
-
-<!-- Record meaningful risks and controls. Retain concrete migration,
-compatibility, rollout, observability, rollback, and destructive-target detail
-where relevant. Otherwise give concise, justified non-applicability. -->
-
-## Verification
-
-<!-- Use the canonical Check/Basis/Scope/Result/Limitations record for automated,
-repository, runtime, or supplied-evidence checks that apply. Retain required
-project checks and distinguish check performer from reviewer. -->
-
-Check: <!-- What is tested or inspected -->
-
-Basis: <!-- Command, files, supplied artifact, or observation; performer/source -->
-
-Scope: <!-- Artifact or revision/snapshot and environment where relevant -->
-
-Result: Pending <!-- Passed, Failed, Skipped, or Pending, with factual outcome -->
-
-Limitations: <!-- What remains unverified and why -->
-
-### User Validation Checklist
-
-- [ ] <!-- Outcome or important edge/failure case; identify the artifact covered by user evidence/confirmation and return affected checks to Pending after changes -->
-- [ ] <!-- Relevant rollback/containment or review check -->
-
-## Delivery Permissions
-
-<!-- For each relevant action, record pending/unapproved/approved state, exact
-scope/target, actor, and available reference. One instruction may cover multiple
-named actions. Omit irrelevant actions or mark Not applicable with a reason;
-neither means authorized. Add separate entries for distinct targets if needed. -->
-
-- Commit: Not requested
-- Push: Not requested
-- Pull-request creation: Not requested
-- Pull-request merge: Not requested
-- Deployment: Not requested
-- Live-data operations: Not requested
-- Destructive cleanup: Not requested
-- Production promotion: Not requested
-
-<!-- For loop publication/transport, add distinct Staging, Branch creation, and
-Reviewer communication entries when relevant. Bind all named actions to the
-run/target and reference, including repeat limits. Review publication is not
-release or user acceptance. No default/release-branch writes in the initial loop. -->
-
-## Progress Log
-
-<!-- Dated material findings, decisions, outcomes, deviations, and verification.
-Do not duplicate current metadata or copy terminal transcripts. -->
-
-## Deviations and Blockers
-
-None currently.
-
-<!-- State changed scope/risks, the concrete blocker and smallest needed decision,
-and whether renewed approval applies. -->
-
-## Delivery Summary
-
-Not delivered yet.
-
-<!-- Follow docs/README.md#interaction-contract and #handoff-and-resumption.
-Human cover: decisive result, material limitation, next owner/action, and accessible
-evidence reference. Complete relay packet: use the canonical task-request shape and
-handoff requirements, including relevant untracked material; reuse metadata rather
-than creating a second status block. A local path is not necessarily accessible to the receiving session.
-Keep separately observed publication/delivery and acceptance evidence here when
-relevant, identifying artifact, date, source, and scope. Scope action reports to
-their reporting actor/task. No terminal outcome while required gates remain pending. -->
+<!-- Add at closeout, not as routine paperwork:
+Development outcome: <accepted scope/candidate and human reference>
+Delivery at closeout: <not required, pending, reported deployed, verified deployed,
+failed or rolled back; factual scope/environment>
+Delivery owner / record: <existing approved durable home, or unresolved gate>
+Post-deployment checks: <assigned obligations/runbook when relevant>
+Follow docs/workstreams/README.md before archiving the bundle. -->

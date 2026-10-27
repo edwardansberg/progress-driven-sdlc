@@ -17,7 +17,7 @@ Environments, deployment topology, external services, persistence/migrations, au
 
 ## Build, verification and delivery
 
-Commands, required checks, release/rollback process and organizational controls: Not yet established. Inspect actual configuration and obtain required decisions before use.
+Commands, required checks, release/rollback process, existing approved delivery-record location and organizational controls: Not yet established. Inspect actual configuration and obtain required decisions before use.
 
 ## Framework provenance and local decisions
 
