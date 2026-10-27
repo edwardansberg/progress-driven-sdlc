@@ -1,7 +1,7 @@
 # Archived Workstreams
 
-Store final workstream snapshots in year directories using the convention in [the workstream archive guide](../README.md).
+New records are dated directories containing `workstream.md` and retained supporting material, following the [bundle convention](../README.md#archive-convention). Old flat Markdown archives remain valid and are not bulk-converted.
 
-Archived files preserve decisions and evidence but do not authorize new work. Revalidate any selected follow-up in `docs/progress-agent.md` before implementation.
+The snapshot preserves development outcome and delivery-at-closeout. Later delivery evidence lives in its linked durable record; Completed does not prove deployment. Archived text grants no new authority. Revalidate follow-ups in the active detailed record.
 
-The released template contains this guide only, not upstream maintainer archives. Application projects keep their own history under the normal archive convention.
+The released template contains reusable guidance only, not upstream maintainer bundles. Applications preserve their own history.

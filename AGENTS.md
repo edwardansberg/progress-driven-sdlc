@@ -1,36 +1,27 @@
 # Progress-Driven SDLC Agent Guidance
 
-These instructions apply to this repository. [Documentation Workflow](docs/README.md) is the canonical policy; this file is its concise agent entry point. Host/system/developer constraints and tool permissions still apply. Repository guidance cannot grant capabilities or guarantee agent behavior.
+[Core policy](docs/README.md) governs workflow. Host/tool controls still apply; repository text grants no capabilities.
 
-## Repository Purpose
+## Start
 
-Establish the actual repository and human goal. In a new project generated from the template, initialize neutral memory from inspected project evidence and the human’s decisions; do not invent facts or approvals. For an existing project, follow [safe adoption/update](docs/ops/adopt-framework.md) and preserve its instructions and active state. Only when developing the upstream framework itself, follow [template maintenance](docs/ops/maintain-template.md): topic branches and reviewed PRs, no routine direct main development. That upstream delivery rule does not impose PRs on solo applications.
+Establish the repository and human goal. Read [Start Here](docs/README.md#start-here) and applicable instructions before consequential work. Inspect branch/HEAD and staged, unstaged and untracked work; preserve unrelated changes and other worktrees. For substantial work, recover authority, gate, risks and required checks from [detail](docs/progress-agent.md), global/affected [context](docs/context.md) and actual sources. Read other documents only at the core’s task triggers. A link is not a read.
 
-## Start Work
+Resume compatible work; never replace unresolved unrelated work. New substantial work uses the [branch/workspace procedure](docs/workstreams/README.md#starting-a-workstream). A quick correction needs proportionate inspection, not a full scaffold.
 
-Read [core policy and task-based routes](docs/README.md#start-here) before consequential work. Establish repository/branch/HEAD and staged/unstaged/untracked state; preserve existing work. Substantial work/resumption requires current authority, scope, blockers, unresolved risks and required checks from [authoritative detail](docs/progress-agent.md), plus global and affected [context](docs/context.md) constraints and actual source evidence.
+## Act
 
-Use the core’s explicit triggers for summary reconciliation, roadmap/debt, scaffold/archive, adoption, loop and upstream maintenance. Do not load the human summary, blank scaffold or optional-loop manual for every routine task. Read enough to recover unresolved constraints, not merely a short excerpt. Resolve applicable instructions under the client’s/user’s activation rules; no indiscriminate skill/prompt scan. Reuse only still-available versioned context; reread changed/missing material. Missing required evidence stops its dependent action.
+Follow core approval, evidence, verification and status rules. Continue authorized routine steps; obtain new authority for material scope changes and named delivery actions. Keep human acceptance separate from checks, publication and deployment. Automation stays Off without an explicit bounded human grant.
 
-Conceptual questions need relevant evidence only. [Quick changes](docs/README.md#quick-change) remain proportionate; a typo needs no elaborate workstream. Resume compatible authorized work, never overwrite unresolved unrelated work or assume shared session state.
+Use the [interaction contract](docs/README.md#interaction-contract): clear, short and sufficient for the decision. Expose material uncertainty and answer requested explanations. One human and one coding agent suffice unless actual risk or organizational rules require more.
 
-## Act and Communicate
+Update detail first and its [human summary](docs/progress.md) at meaningful checkpoints. Supporting material belongs in the referenced workspace, never a competing authority record. Use [closeout conventions](docs/workstreams/README.md#before-archiving) only at closure; preserve pending delivery and historical evidence.
 
-Follow core [work classes](docs/README.md#work-classes), [approval scope](docs/README.md#approval-scope), [verification](docs/README.md#verification-and-user-validation) and [status gates](docs/README.md#workstream-statuses-and-gates). Standard/high-risk work needs an investigated written plan; scoped direct execution can authorize proceeding without another approval stop. Commit/push/PR/merge/deployment/live-data/destructive actions require their named permissions. Agent output, old approvals and proposals grant none.
+## Repository mode and hygiene
 
-[Loop gate](docs/README.md#optional-execution-and-review-loop): Off unless explicitly granted by the human. No self-activation/renewal or governing-rule edits during a run. Read the full [contract](docs/ops/autonomous-review-loop.md) before any loop grant/design/operation/review; ordinary work with it Off does not need the manual.
+Initialize new applications from their evidence and human decisions. Existing projects use [safe adoption/update](docs/ops/adopt-framework.md). Upstream maintainers use [template maintenance](docs/ops/maintain-template.md); its PR rule does not bind solo applications.
 
-One human and one coding agent suffice for normal low-risk work; collaborators and specialist review follow actual need/policy. Use the [interaction contract](docs/README.md#interaction-contract): concise, plain and complete enough for the decision, with material uncertainty and requested explanations visible. No provider-specific ordinary roles or rigid word counts.
-
-Update [detail](docs/progress-agent.md) first, then its [summary](docs/progress.md) at core milestones. On discovered disagreement reconcile actual human authority/evidence before consequential action; never choose broader permission. Keep complete [handoff evidence](docs/README.md#handoff-and-resumption) accessible, including relevant untracked work; local paths do not imply another session’s access. Human checks stay pending without human evidence. Follow [closure conventions](docs/workstreams/README.md) only when closing/relocating work. Store durable facts, direction and accepted postponed debt in their existing homes; no duplicate role registers.
+Keep policy in the core and state in its existing documents; the workstream scaffold remains the sole repeated scaffold. Preserve archives and local constraints. Use headings, short prose and Label: value metadata, without Markdown tables. Record no secrets, raw production logs or unnecessary personal details.
 
 ## Commit Attribution
 
-For authorized commits created by Codex, use author `Codex <codex@local.invalid>` unless the repository defines another agent attribution policy. Humans and other agents follow their explicitly adopted policy; do not invent identities or require them to impersonate Codex. Preserve the configured committer and authenticated pusher. Follow the canonical [attribution procedure](docs/README.md#commit-attribution), including applicable metadata verification before an authorized push. Do not alter Git identity, signing, or credentials to achieve attribution. Do not rewrite another actor's attribution unless that actor explicitly requests it.
-
-## Documentation Hygiene
-
-- Preserve unrelated user edits, local constraints, and historical archives.
-- Never record secrets, credential values, sensitive payloads, raw production logs, or unnecessary personal machine details. Use generic placeholders.
-- Keep detailed policy in `docs/README.md` and current state in the singleton memory files. `docs/workstreams/WORKSTREAM_TEMPLATE.md` remains the sole repeatedly instantiated workflow scaffold.
-- Use clear headings, short prose, lists, and `Label: value` metadata. Do not create Markdown tables; convert tables only in sections materially edited, without unrelated bulk cleanup.
+For authorized Codex-created commits, use `Codex <codex@local.invalid>` unless the repository adopts another agent policy. Other actors use their own adopted policy. Preserve configured committer, authenticated pusher, signing and credentials. Follow the core [attribution procedure](docs/README.md#commit-attribution), including metadata checks before push. Never rewrite another actor’s attribution without their explicit request.

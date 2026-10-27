@@ -20,6 +20,8 @@ No confirmed later outcome.
 
 No project commitments recorded.
 
-## Recently Delivered or Parked
+<a id="recently-delivered-or-parked"></a>
 
-No project outcomes recorded. Initialize only from this project’s evidence and human decisions.
+## Recently Completed, Delivered or Parked
+
+No project outcomes recorded. Distinguish accepted development from actual delivery; link pending delivery to its owner/record. Initialize only from this project’s evidence and human decisions.

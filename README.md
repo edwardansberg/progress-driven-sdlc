@@ -6,11 +6,11 @@ A project template for you and one coding agent. You choose the goal, authorize 
 
 ## Framework provenance
 
-Source: https://github.com/edwardansberg/progress-driven-sdlc
-Adopted revision: Not recorded yet
-Local adaptations: Not assessed yet
+- Source: [https://github.com/edwardansberg/progress-driven-sdlc](https://github.com/edwardansberg/progress-driven-sdlc)
+- Adopted revision: Not recorded yet
+- Local adaptations: Not assessed yet
 
-Applications keep this canonical human-visible summary near the top of their product README. During adoption or initialization, record the exact released upstream commit when verified. If it cannot be established, record `Unknown`; never guess. A generated repository's first commit is not proof of the upstream source revision. Link detailed adaptations instead of copying them here. Local adaptations are intentional project-specific additions, overrides, routing, safeguards or other differences in framework use. They exclude ordinary project state: workstreams, pending validation, release status, product facts, blockers and memory merely because it exists.
+Keep this summary near the top of the application README. Record the exact verified, integrated upstream revision, or `Unknown`; the generated repository's first commit does not prove it. Local adaptations describe intentional framework differences, not ordinary project state. Link detailed mapping instead of duplicating it. See [provenance requirements](docs/ops/adopt-framework.md#record-framework-provenance).
 
 <a id="use-the-workflow"></a>
 
@@ -39,25 +39,42 @@ Already created from the template? Start at step 2. No manual file copying is ne
 Use this prompt for an existing repository: first-time adoption, an existing framework update, or legacy/partial/uncertain adoption. The agent identifies the case from evidence; you need not choose it. Fresh **Use this template** repositories follow Start a new project instead. The [adoption guide](docs/ops/adopt-framework.md) owns the detailed safeguards.
 
 ```text
-Adapt this EXISTING repository to the current released Progress-Driven SDLC.
-Inspect repository state, instructions, workflow, dirty work, memory and provenance.
-Classify it as first-time adoption, existing update or legacy/partial/uncertain.
-Never guess an earlier revision. Resolve the upstream default branch at
-https://github.com/edwardansberg/progress-driven-sdlc to one full released commit.
-Use that pinned snapshot and its docs/ops/adopt-framework.md; stop if unavailable.
-Preserve product code/docs, local instructions/adaptations, active authority,
-context/roadmap/debt, runbooks, archives, dirty work and Git history.
-Initialize missing memory only from target evidence and human decisions, not
-upstream starter facts. For legacy work, preserve authority until safely replaced;
-filenames and history alone grant none.
-Prepare a migration map. Stop for human resolution of material conflicts or unsafe
-occupied paths; otherwise present a bounded plan. After plan and branch approval,
-implement on a dedicated branch. Correct only approved stale framework references.
-Update Framework provenance: Source, Adopted revision and Local adaptations.
-Verify the full diff, links, preserved state, stale framework references,
-provenance and same-revision idempotence. Stop at a reviewable candidate.
-Infer no commit/push/PR/merge/deployment/live-data/automation or unrelated
-application authority.
+Adapt this EXISTING repository to Progress-Driven SDLC.
+
+1. Inspect the project
+   Inspect repository state, applicable instructions, uncommitted work, workflow,
+   memory and provenance. Classify first-time adoption, existing update or
+   legacy/partial/uncertain adoption. Never guess earlier framework revisions.
+
+2. Pin the framework source
+   Respect a human-selected revision; otherwise resolve the default branch at
+   https://github.com/edwardansberg/progress-driven-sdlc to an exact released SHA.
+   Read docs/ops/adopt-framework.md at that pinned revision. Stop target writes
+   if required sources are unavailable.
+
+3. Prepare the migration
+   Map proposed changes and preserved content. Preserve product files, local
+   instructions/adaptations, authority, active work, delivery obligations,
+   context/roadmap/debt, runbooks, archives, dirty work and Git history.
+   Initialize missing memory only from target evidence and human decisions.
+   Preserve legacy authority until safely replaced; filenames/history grant none.
+   Stop for human resolution of material conflicts or unsafe occupied paths.
+   Otherwise present a bounded plan.
+
+4. Implement within approved scope
+   Use a dedicated migration branch under applicable authorization. Do not ask
+   again when an explicit instruction already covers the action. Follow the
+   pinned adoption guide and preserve existing validation gates. Correct only
+   approved stale framework references.
+
+5. Verify and hand back
+   Check the complete diff, links, preserved state, stale framework references,
+   provenance and same-revision idempotence. After integration and checks, update
+   Framework provenance: Source, Adopted revision and Local adaptations.
+   Stop at a reviewable candidate.
+
+Infer no staging, commit, push, PR, merge, deployment, live-data, automation or
+unrelated application permission.
 ```
 
 <a id="collaborate-across-sessions-and-tools"></a>
@@ -66,6 +83,8 @@ application authority.
 ## Follow progress, solo or together
 
 Read [short progress](docs/progress.md); its [detailed source](docs/progress-agent.md) owns scope, decisions and evidence. One human and one coding agent need no separate planning session, second reviewer, PR or handoff for ordinary low-risk work. Required security and specialist controls still apply. Teams add ownership, shared-context boundaries, review and integration permissions to the same core; no concurrent-agent coordinator is supplied.
+
+Accepted development can be archived before deployment when remaining delivery obligations have an assigned owner and durable record. Existing acceptance gates still apply. See the [closeout procedure](docs/workstreams/README.md#before-archiving).
 
 ## Develop this framework
 
