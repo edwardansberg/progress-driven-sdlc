@@ -3,7 +3,7 @@
 Observation: 2026-11-07; primary coding agent on Windows/PowerShell with existing Git, gh and Python. No dependencies installed.
 Baseline: Released main 04765e32d8832a9b80fddd0b3875234386891d14.
 Inspected implementation: 751b14ab67351d6cc318bb553edeae6379285448, plus the three corrections identified below. Evidence records keep their original snapshot scope; later record-only changes do not imply repeated runtime checks.
-Authority and current status: [Active detail](../../../progress-agent.md), referencing the agreement in context. This note is supporting evidence, not another authority record.
+Authority and current status: [Active detail](workstream.md), referencing the agreement in context. This note is supporting evidence, not another authority record.
 
 ## Requested behavior and canonical home
 

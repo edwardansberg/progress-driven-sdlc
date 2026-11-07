@@ -6,7 +6,7 @@ Workflow: [Documentation Workflow](README.md)
 
 ## Current
 
-Current authorized upstream outcome: standing agreements, autonomous collaboration guidance and clear progress; scope and acceptance remain in the [active record](progress-agent.md). No application roadmap is implied.
+No active development workstream. The accepted outcome is recorded below; neutral packaging is authorized separately from merge.
 
 ## Next
 
@@ -24,4 +24,4 @@ No project commitments recorded.
 
 ## Recently Completed, Delivered or Parked
 
-No project outcomes recorded. Distinguish accepted development from actual delivery; link pending delivery to its owner/record. Initialize only from this project’s evidence and human decisions.
+Completed — owner accepted: standing agreements, autonomous collaboration guidance and clear progress. See the [archived outcome and pending merge decision](workstreams/archive/2026/2026-11-07-feat-autonomous-human-agent-workflow/workstream.md#owner-acceptance-and-closeout). Not merged or released.

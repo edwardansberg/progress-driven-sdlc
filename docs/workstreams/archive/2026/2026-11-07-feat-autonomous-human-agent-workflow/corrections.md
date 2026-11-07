@@ -1,6 +1,6 @@
 # Focused correction evidence
 
-Scope: The human's 2026-11-07 correction request for the existing workstream; authority and current result remain in [detail](../../../progress-agent.md#focused-correction-pass). No redesign or new application behavior.
+Scope: The human's 2026-11-07 correction request for the existing workstream; authority and current result remain in [detail](workstream.md#focused-correction-pass). No redesign or new application behavior.
 Baseline: c99f3fcdc539eb3c8bf1c479c80c4f2f1eb17f1c, fetched and equal to the existing origin development branch; includes implementation f3e48c9. No PR for this branch; released main unchanged. Real index and tracked work were clean.
 
 ## Changes and boundaries

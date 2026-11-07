@@ -1,7 +1,7 @@
 # Research basis and proposed evaluation
 
 Checked: 2026-11-07 against the five linked primary sources; all were accessible. Methods, findings and limitations were inspected, not independently replicated. Publication/version dates below are not experiment dates; unspecified collection or run dates remain unknown.
-Scope: Supporting evidence for [active detail](../../../progress-agent.md), not policy, authorization or a second status record. Accessibility standards are assessed separately.
+Scope: Supporting evidence for [active detail](workstream.md), not policy, authorization or a second status record. Accessibility standards are assessed separately.
 
 ## Repository context and task success
 
