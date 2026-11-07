@@ -1,9 +1,9 @@
 # Active workstream: feat-autonomous-human-agent-workflow
 
-State revision: review-1
+State revision: correction-check-1
 Status: Ready for user validation
-Current gate: Human review of the published development candidate; acceptance pending
-Next action: Human reviews the candidate and accepts or requests corrections; coding agent verifies final record delivery before handing back.
+Current gate: Corrections checked; publication and human review pending
+Next action: Agent publishes the checked corrections, then saves and delivers the final human briefing.
 Workspace: [Supporting evidence](workstreams/active/feat-autonomous-human-agent-workflow/)
 Loop control: Off
 Repository / branch: edwardansberg/progress-driven-sdlc / codex/feat-autonomous-human-agent-workflow
@@ -46,7 +46,7 @@ Historical check-1 verification: First increment 751b14ab67351d6cc318bb553edeae6
 
 Reading regression: The core/entry policy floor increased from 2,956 to 4,383 whitespace-separated words; ordinary neutral-state resumption from 3,334 to 4,833. No runtime or token reduction is claimed. Human usability, accessibility, productivity, adoption execution and workplace evaluation remain unmeasured. No unresolved implementation finding remains. Human acceptance and any later PR/merge/release remain separate; the optional controller stays Off.
 
-## Human review and next gate
+## Historical review-1 checkpoint
 
 Implementation candidate: f3e48c9b3b39627b8eca491d1cc8eaf0e20afaa4, cumulative base 04765e32d8832a9b80fddd0b3875234386891d14. Both intended commits reached origin/codex/feat-autonomous-human-agent-workflow; git ls-remote returned this exact candidate after the ordinary push. Author metadata checked before each push; configured committer/signing/credentials preserved. This candidate is not the later record-only commit.
 
@@ -54,8 +54,26 @@ Final checks: Passed — 25 Markdown files / 180 local links and fragments; stag
 
 Briefing check: review-1 source, Ready for user validation, changed outcomes, static-check limits, reading regression, publication and human next action reconciled against this record. Save progress.md and reuse its visible text in the final response; only its local link format changes for transport.
 
-Handoff operation: Commit/push only the final detail and saved briefing, then compare remote ref with local HEAD and confirm the candidate is its ancestor. This operation is verified in the session after the records exist; no future containing hash is inserted here. If save/publication fails, refresh the affected records/briefing and disclose the unpublished work before final response. No further implementation or human decision is needed for this authorized delivery.
+Historical review-1 handoff (delivered as c99f3fc and verified again at correction baseline): Commit/push only the final detail and saved briefing, then compare remote ref with local HEAD and confirm the candidate is its ancestor. This operation is verified in the session after the records exist; no future containing hash is inserted here. If save/publication fails, refresh the affected records/briefing and disclose the unpublished work before final response. No further implementation or human decision is needed for this authorized delivery.
 
 Excluded local inputs: Original codex-sdlc-autonomous-collaboration-prompt.md remains untracked; the content-equivalent invoked request is published in the supporting bundle. Unrelated ste_communication_amendment.patch remains untouched/untracked. No other in-scope work is intentionally local-only.
 
 Next human action: Review the standing-authority choices and briefing/application guidance in the [change map](workstreams/active/feat-autonomous-human-agent-workflow/verification.md), then accept this identified candidate or request corrections. Expected review outcome is a business/policy decision, not rerunning agent checks. PR creation, merge, real release packaging and deployment need their applicable separate authority. No human acceptance, merge, deployment or framework-effectiveness claim is made.
+
+
+## Focused correction pass
+
+Authority: Follow-up human request "Correct autonomous human–agent workflow implementation", 2026-11-07; recorded in the [existing agreement](context.md#standing-working-agreement). Same workstream and publication target; no redesign, new feature, PR, merge, deployment or protected-branch change. Acceptance is still Pending.
+
+Reconciled baseline: Fetch completed; HEAD and origin/codex/feat-autonomous-human-agent-workflow both c99f3fcdc539eb3c8bf1c479c80c4f2f1eb17f1c, containing f3e48c9b3b39627b8eca491d1cc8eaf0e20afaa4. Released origin/main remains 04765e32d8832a9b80fddd0b3875234386891d14. No PR exists for this branch. Index and tracked work clean; both original untracked inputs and the other worktree preserved.
+
+Bounded correction plan:
+
+- [x] Replace engineering-heavy briefing instructions with practical outcomes, useful checks/limits and a concrete human review; keep identifiers and evidence in linked detail, preserving exact saved/final briefing equality.
+- [x] Clarify compatible authorized edits to existing policy files versus genuine conflicts/unclear ownership, including related adoption conditions; allow inspected staging/commits/pushes under the agreement while preserving unrelated staged content and Git boundaries.
+- [x] Explain kickoff authority in plain language before technical permissions; correct booking-change terminology without unrelated example changes.
+- [ ] Verify links/whitespace and all seven requested scenarios; use a disposable local Git fixture for staged-change isolation and non-force publication, a fresh receiving-context review for resumption, and measured entry/core reading against c99f3fc. Publish the correction candidate, then save/publish the matching final review briefing.
+
+Completion boundary: Ready for user validation, never accepted/Completed/Released without human evidence. Preserve earlier evidence with its original snapshot; append correction results here and retain focused supporting checks in the existing workspace. No human usability, autonomy or productivity improvement is inferred from document or fixture checks.
+
+Correction-check-1 results: Scoped policy edits are complete; [correction evidence](workstreams/active/feat-autonomous-human-agent-workflow/corrections.md) records the seven verification routes and policy blob identities. Static review and local Git staging/publication fixture passed; final saved-message equality and real publication are the remaining handoff operations. Mandatory entry/core reading changes from 4,383 to 4,405 words (+22, about 0.5%); adoption detail adds 100 task-triggered words. No new mandatory reading file. Earlier checks remain historical, not current runtime proof. No policy blocker remains.

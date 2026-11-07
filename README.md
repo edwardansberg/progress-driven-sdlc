@@ -27,6 +27,8 @@ Keep this summary near the top of the application README. Record the exact verif
 
 Already created from the template? Start at step 2. No manual file copying is needed. The starter has no active work, approvals, roadmap commitments or accepted debt; automation is Off. Unknown project facts stay unknown. Replace the starter introduction with your product introduction during authorized initialization. Retain the Framework provenance block near the top and the link to [workflow policy](docs/README.md).
 
+By submitting this prompt, you let the agent prepare a plan, continue routine development, and save and upload agreed changes to a separate development branch. You keep control of important business decisions, accepting the result, merging it into the main version and deploying it for use. Narrow these permissions before submitting if needed.
+
 ```text
 My first goal in this repository is: <desired outcome and known constraints>.
 
@@ -65,6 +67,8 @@ Submitting this prompt supplies the authority it names; merely having it in the 
 ## Add to or update an existing project
 
 Use this prompt for an existing repository: first-time adoption, an existing framework update, or legacy/partial/uncertain adoption. The agent identifies the case from evidence; you need not choose it. Fresh **Use this template** repositories follow Start a new project instead. The [adoption guide](docs/ops/adopt-framework.md) owns the detailed safeguards.
+
+This prompt lets the agent plan and carry out the agreed documentation update, then save and upload its changes to a separate development branch. Your existing project rules and unrelated work stay protected. Important business decisions, acceptance, merging and deployment remain yours; an existing local-only choice still applies.
 
 ```text
 Adapt this EXISTING repository to Progress-Driven SDLC.

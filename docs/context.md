@@ -31,7 +31,7 @@ The current task changes reusable documentation only. Maintainer records remain 
 
 ## Standing working agreement
 
-Human authorization: Current 2026-11-07 request explicitly invokes the [retained request](workstreams/active/feat-autonomous-human-agent-workflow/request.md), including execution and publication authority; plan auto-approved. Task-bounded, not an assumed grant for future upstream workstreams.
+Human authorization: Current 2026-11-07 request explicitly invokes the [retained request](workstreams/active/feat-autonomous-human-agent-workflow/request.md), including execution and publication authority; plan auto-approved. Task-bounded, not an assumed grant for future upstream workstreams. The subsequent human request, "Correct autonomous human–agent workflow implementation" (2026-11-07), explicitly authorizes this same workstream's scoped corrections, verification, memory updates, commits and non-force pushes to the existing development branch; exclusions below remain unchanged.
 Repository: edwardansberg/progress-driven-sdlc.
 Origin: https://github.com/edwardansberg/progress-driven-sdlc.git (fetch and push verified).
 Permitted branch: codex/feat-autonomous-human-agent-workflow, created from released main 04765e32d8832a9b80fddd0b3875234386891d14.

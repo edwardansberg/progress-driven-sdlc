@@ -1,11 +1,5 @@
-Implemented and published standing agreements, autonomous work packages, application navigation guidance, and synchronized checkpoint briefings.
+The guidance now explains when the agent can update existing instructions and save agreed changes without asking again, while protecting other people’s work and your important decisions.
 
-Branch: `codex/feat-autonomous-human-agent-workflow`. Base: `04765e3`. Verified implementation candidate: `f3e48c9`; final records are delivered separately.
+I also simplified the initial agreement and progress examples, and corrected the booking-change wording. Document checks and a local test of saving changes without disturbing someone else’s work passed.
 
-Documentation checks, 15 static scenarios, recovery review and neutral-release inspection passed. Required reading increased; usability and productivity remain unmeasured. Automation is Off.
-
-Original input files remain untracked and preserved; the request also has a published evidence copy.
-
-Status: Ready for user validation. Review the [implementation plan and evidence](progress-agent.md) and accept or request corrections; merge and deployment remain separate.
-
-Source: feat-autonomous-human-agent-workflow / review-1.
+I’m publishing these corrections and preparing your review task. Your acceptance is still pending; no action is needed from you yet. [Work record](progress-agent.md#focused-correction-pass).
