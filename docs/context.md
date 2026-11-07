@@ -1,6 +1,6 @@
 # Project Context
 
-Status: Upstream framework development; application facts remain uninitialized
+Status: Not initialized from project evidence
 Workflow: [Documentation Workflow](README.md)
 
 ## Purpose and boundaries
@@ -27,17 +27,10 @@ Detailed adoption path mapping and durable local design decisions: Not yet asses
 
 ## Constraints and open decisions
 
-The current task changes reusable documentation only. Maintainer records remain on the development branch; the proposed release tree uses neutral application memory.
+No project-specific choices or approvals recorded. Initialize from evidence and human decisions; history or framework examples grant no project authority.
 
 ## Standing working agreement
 
-Human authorization: Current 2026-11-07 request explicitly invokes the [retained request](workstreams/archive/2026/2026-11-07-feat-autonomous-human-agent-workflow/request.md), including execution and publication authority; plan auto-approved. Task-bounded, not an assumed grant for future upstream workstreams. The subsequent human request, "Correct autonomous human–agent workflow implementation" (2026-11-07), explicitly authorizes this same workstream's scoped corrections, verification, memory updates, commits and non-force pushes to the existing development branch; exclusions below remain unchanged.
-Repository: edwardansberg/progress-driven-sdlc.
-Origin: https://github.com/edwardansberg/progress-driven-sdlc.git (fetch and push verified).
-Permitted branch: codex/feat-autonomous-human-agent-workflow, created from released main 04765e32d8832a9b80fddd0b3875234386891d14.
-Routine actions: Inspection/research, safe branch setup, written plan, scoped documentation implementation and repairs, local checks/disposable fixtures, memory maintenance, inspected staging, attributed commits and ordinary non-force pushes to that origin branch through review handoff.
-Exclusions: PR creation/messages, merge/integration, deployment, repository settings, live-data operations, new spending, destructive operations and workplace pilots. Human acceptance remains separate. Execution/review controller Off.
-Publication effects: No active local hooks, configured hooks path or tracked GitHub workflows observed at baseline. Recheck if assumptions change; unapproved deployment/spending/sensitive distribution stops affected publication.
-Persistence: Recoverable across sessions for this workstream until revoked or materially invalidated; grants no unrelated outcome. Preserve stricter human overrides. Reusable policy cannot broaden this actual grant.
-
-Closeout authorization: The 2026-11-07 owner instruction accepts the reviewed scope and authorizes archival and separate forward neutral packaging with commits/non-force pushes to the same development branch. Merge, PR creation, deployment and repository configuration remain excluded. See the archived detailed closeout for the retained human reference and scope.
+Default convention: Commit-and-push enabled under the [core agreement](README.md#standing-working-agreement), once established by a real human instruction.
+Human authorization / repository / origin / permitted development branches: Not established.
+Adopted choices and exceptions: Not established; preserve any existing stricter or local-only instructions. Record the actual kickoff/adoption reference and scoped targets here; active work references this home.

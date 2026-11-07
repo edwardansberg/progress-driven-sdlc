@@ -1,5 +1,5 @@
-The accepted documentation work is complete and archived with its decisions, checks, corrections and research limits intact.
+No development work is active. Describe the goal you want to achieve and any important constraints.
 
-I will publish this archive before preparing the clean template. Merging remains a separate decision; no usability or productivity benefit has been empirically established.
+Your agent will inspect the project, prepare a plan, and carry out agreed work within your working agreement. You keep control of important decisions and accepting the result.
 
-[Accepted work and evidence](workstreams/archive/2026/2026-11-07-feat-autonomous-human-agent-workflow/workstream.md#owner-acceptance-and-closeout) · archive-1. No active workstream; automation Off.
+Automation is Off. [Project status](progress-agent.md) · starter-1.

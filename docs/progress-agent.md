@@ -1,11 +1,22 @@
 # Project work record
 
-State revision: archive-1
+State revision: starter-1
 Status: No active workstream
-Current gate: Accepted development archived; authorized neutral packaging pending
-Next action: Agent publishes the archive checkpoint, then prepares the neutral template for separate merge review.
+Current gate: None; project not yet initialized from evidence
+Next action: Human describes the first goal; agent inspects the project, records a bounded plan and works within the established human agreement.
 Loop control: Off
+Loop step/reason: No run granted
 
-Development outcome: Completed — owner accepted for the reviewed documentation scope. Full authority, history, evidence and delivery obligations remain in the [archived workstream](workstreams/archive/2026/2026-11-07-feat-autonomous-human-agent-workflow/workstream.md#owner-acceptance-and-closeout).
+Workflow: [Documentation Workflow](README.md)
 
-No merge or release is claimed. This is the maintainer checkpoint before neutral packaging, not an application starter.
+## Scope and authority
+
+No project workstream, implementation scope, decisions, approvals or delivery permissions recorded. The [standing agreement](context.md#standing-working-agreement) is not yet established; its enabled publication convention alone grants no authority. No current candidate or assigned team responsibilities.
+
+## Evidence and resumption
+
+Repository identity, branch/HEAD, working state, architecture, commands and constraints: Not yet inspected for this project. Inspect before initialization; preserve any existing work. Use the [workstream scaffold](workstreams/WORKSTREAM_TEMPLATE.md) only when an actual workstream is needed. Quick changes follow the policy's proportionate path.
+
+Tasks, dependencies, checks, failures, blockers and recovery needs: Not yet assessed. No checks or human acceptance claimed. [Context](context.md), [roadmap](roadmap.md) and [debt](techdebt.md) contain no inherited project commitments.
+
+The [human view](progress.md) derives from starter-1. Update this record first; then refresh that view. No automatic follow-up begins.
