@@ -1,9 +1,9 @@
 # Active workstream: feat-autonomous-human-agent-workflow
 
-State revision: check-1
-Status: Implementing
-Current gate: Authorized implementation; human acceptance remains pending
-Next action: Publish the verified correction/evidence candidate, then save and deliver its final review briefing.
+State revision: review-1
+Status: Ready for user validation
+Current gate: Human review of the published development candidate; acceptance pending
+Next action: Human reviews the candidate and accepts or requests corrections; coding agent verifies final record delivery before handing back.
 Workspace: [Supporting evidence](workstreams/active/feat-autonomous-human-agent-workflow/)
 Loop control: Off
 Repository / branch: edwardansberg/progress-driven-sdlc / codex/feat-autonomous-human-agent-workflow
@@ -26,7 +26,7 @@ Human-facing outcomes: understandable goal/status/next action; stable authority 
 
 - [x] Package 1 — Policy and working memory: place standing agreement, publication/recovery, two-level rolling plans and saved-briefing equality in the core; route from AGENTS; update the sole scaffold/conventions. Verify authority conditions, exceptions, selective reads and canonical homes. Publish a coherent checked increment.
 - [x] Package 2 — Experience and onboarding: add task-triggered application guidance and fictional briefings; reconcile new-project, adoption, continuation, handoff, Blueprint routing and upstream packaging. Preserve controller semantics and neutral starters. Verify links and requirement coverage; publish a checked increment.
-- [ ] Package 3 — Evidence and review candidate: inspect primary research/standards and limits; run scoped scenarios, clean-context recovery and before/after reading counts; inspect a disposable neutral release tree. Fix concrete findings, check the complete staged diff, publish the implementation candidate, then derive and deliver matching final records.
+- [x] Package 3 — Evidence and review candidate: inspect primary research/standards and limits; run scoped scenarios, clean-context recovery and before/after reading counts; inspect a disposable neutral release tree. Fix concrete findings, check the complete staged diff, publish the implementation candidate, then derive matching final records. Final record delivery is the handoff operation below, verified after those records are committed.
 
 Execution dependencies: Baseline and authority precede policy changes; canonical contracts precede cross-document reconciliation; final candidate precedes record-only delivery. Internal steps may be refined within fixed scope/criteria. Favor reversible document edits and preserve existing contracts unless explicitly changed here.
 
@@ -40,12 +40,22 @@ Verified current behavior: GitHub identity/default branch and empty open-PR coll
 
 Chosen target behavior: Commit/push convention enabled, but a neutral template cannot grant future authority; explicit kickoff/adoption or existing agreement must supply it. Technical checks never establish human acceptance, deployment or real usability.
 
-Checkpoint build-1: Packages 1 and 2 implemented; five primary research sources and current W3C guidance inspected by bounded assistants. Primary agent inspected the complete changed policy and guide contents. Local link/anchor check passed (22 Markdown files, 131 links); git diff --check passed after correcting CRLF in newly written records. Publication is the next operation. See [research and proposed evaluation](workstreams/active/feat-autonomous-human-agent-workflow/research.md).
+Historical build-1 check: Packages 1 and 2 implemented; five primary research sources and current W3C guidance inspected by bounded assistants. Primary agent inspected the complete changed policy and guide contents. Local link/anchor check passed (22 Markdown files, 131 links); git diff --check passed after correcting CRLF in newly written records. That increment was subsequently published as 751b14ab67351d6cc318bb553edeae6379285448. See [research and proposed evaluation](workstreams/active/feat-autonomous-human-agent-workflow/research.md).
 
-Verification checkpoint check-1: First increment 751b14ab67351d6cc318bb553edeae6379285448 verified on origin. All local policy/guide checks, 15 static scenarios, clean receiving-context comparison, reading counts and disposable neutral-tree checks are complete; see [verification and change map](workstreams/active/feat-autonomous-human-agent-workflow/verification.md). Two review findings (adoption portability and live-data authority) were corrected and affected checks passed. This working snapshot is 751b14a plus the three policy blob identities recorded there and the new supporting evidence.
+Historical check-1 verification: First increment 751b14ab67351d6cc318bb553edeae6379285448 verified on origin. All local policy/guide checks, 15 static scenarios, clean receiving-context comparison, reading counts and disposable neutral-tree checks are complete; see [verification and change map](workstreams/active/feat-autonomous-human-agent-workflow/verification.md). Two review findings (adoption portability and live-data authority) were corrected and affected checks passed. The inspected working snapshot was 751b14a plus the three policy blob identities recorded there and the new supporting evidence; it is now committed as the implementation candidate below.
 
-Reading regression: The core/entry policy floor increased from 2,956 to 4,383 whitespace-separated words; ordinary neutral-state resumption from 3,334 to 4,833. No runtime or token reduction is claimed. Human usability, accessibility, productivity, adoption execution and workplace evaluation remain unmeasured. No unresolved implementation finding; final candidate and record delivery remain to verify.
+Reading regression: The core/entry policy floor increased from 2,956 to 4,383 whitespace-separated words; ordinary neutral-state resumption from 3,334 to 4,833. No runtime or token reduction is claimed. Human usability, accessibility, productivity, adoption execution and workplace evaluation remain unmeasured. No unresolved implementation finding remains. Human acceptance and any later PR/merge/release remain separate; the optional controller stays Off.
 
 ## Human review and next gate
 
-Review candidate: Pending implementation and checks. Next human action after publication: assess the framework changes and accept or request corrections; PR/merge/release remain separate. Keep the actual development record intact; proposed neutral packaging is tested only in a disposable copy.
+Implementation candidate: f3e48c9b3b39627b8eca491d1cc8eaf0e20afaa4, cumulative base 04765e32d8832a9b80fddd0b3875234386891d14. Both intended commits reached origin/codex/feat-autonomous-human-agent-workflow; git ls-remote returned this exact candidate after the ordinary push. Author metadata checked before each push; configured committer/signing/credentials preserved. This candidate is not the later record-only commit.
+
+Final checks: Passed — 25 Markdown files / 180 local links and fragments; staged/unstaged whitespace checks; 15 static scenarios and reconciled clean-context recovery; product README portability; full proposed release inventory. Final candidate has 28 files: 7 maintainer evidence files retained on the development branch and excluded only from the proposed 21-file neutral release. All non-memory release files match the candidate exactly. Neutral manifest SHA-256 (sorted relative path plus file SHA-256, newline-separated): 6d84ce4d0af6d7b93e85f43745d8e576e72c957e020e1ae77b374943a21e68d8. Neutral starter patch reverse-check passed with git apply --reverse --check --unidiff-zero. The actual branch was not neutralized or archived.
+
+Briefing check: review-1 source, Ready for user validation, changed outcomes, static-check limits, reading regression, publication and human next action reconciled against this record. Save progress.md and reuse its visible text in the final response; only its local link format changes for transport.
+
+Handoff operation: Commit/push only the final detail and saved briefing, then compare remote ref with local HEAD and confirm the candidate is its ancestor. This operation is verified in the session after the records exist; no future containing hash is inserted here. If save/publication fails, refresh the affected records/briefing and disclose the unpublished work before final response. No further implementation or human decision is needed for this authorized delivery.
+
+Excluded local inputs: Original codex-sdlc-autonomous-collaboration-prompt.md remains untracked; the content-equivalent invoked request is published in the supporting bundle. Unrelated ste_communication_amendment.patch remains untouched/untracked. No other in-scope work is intentionally local-only.
+
+Next human action: Review the standing-authority choices and briefing/application guidance in the [change map](workstreams/active/feat-autonomous-human-agent-workflow/verification.md), then accept this identified candidate or request corrections. Expected review outcome is a business/policy decision, not rerunning agent checks. PR creation, merge, real release packaging and deployment need their applicable separate authority. No human acceptance, merge, deployment or framework-effectiveness claim is made.
