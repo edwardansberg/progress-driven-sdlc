@@ -1,9 +1,9 @@
 # Active workstream: feat-autonomous-human-agent-workflow
 
-State revision: correction-check-1
+State revision: correction-review-1
 Status: Ready for user validation
-Current gate: Corrections checked; publication and human review pending
-Next action: Agent publishes the checked corrections, then saves and delivers the final human briefing.
+Current gate: Published corrections await human acceptance
+Next action: Human reviews the initial agreement and progress examples, then accepts or requests corrections; agent verifies final-record delivery before handoff.
 Workspace: [Supporting evidence](workstreams/active/feat-autonomous-human-agent-workflow/)
 Loop control: Off
 Repository / branch: edwardansberg/progress-driven-sdlc / codex/feat-autonomous-human-agent-workflow
@@ -72,8 +72,21 @@ Bounded correction plan:
 - [x] Replace engineering-heavy briefing instructions with practical outcomes, useful checks/limits and a concrete human review; keep identifiers and evidence in linked detail, preserving exact saved/final briefing equality.
 - [x] Clarify compatible authorized edits to existing policy files versus genuine conflicts/unclear ownership, including related adoption conditions; allow inspected staging/commits/pushes under the agreement while preserving unrelated staged content and Git boundaries.
 - [x] Explain kickoff authority in plain language before technical permissions; correct booking-change terminology without unrelated example changes.
-- [ ] Verify links/whitespace and all seven requested scenarios; use a disposable local Git fixture for staged-change isolation and non-force publication, a fresh receiving-context review for resumption, and measured entry/core reading against c99f3fc. Publish the correction candidate, then save/publish the matching final review briefing.
+- [x] Verify links/whitespace and all seven requested scenarios; use a disposable local Git fixture for staged-change isolation and non-force publication, a fresh receiving-context review for resumption, and measured entry/core reading against c99f3fc. Publish the correction candidate and save the matching final review briefing; record delivery is the subsequent verified handoff operation below.
 
 Completion boundary: Ready for user validation, never accepted/Completed/Released without human evidence. Preserve earlier evidence with its original snapshot; append correction results here and retain focused supporting checks in the existing workspace. No human usability, autonomy or productivity improvement is inferred from document or fixture checks.
 
-Correction-check-1 results: Scoped policy edits are complete; [correction evidence](workstreams/active/feat-autonomous-human-agent-workflow/corrections.md) records the seven verification routes and policy blob identities. Static review and local Git staging/publication fixture passed; final saved-message equality and real publication are the remaining handoff operations. Mandatory entry/core reading changes from 4,383 to 4,405 words (+22, about 0.5%); adoption detail adds 100 task-triggered words. No new mandatory reading file. Earlier checks remain historical, not current runtime proof. No policy blocker remains.
+Historical correction-check-1 results: Scoped policy edits are complete; [correction evidence](workstreams/active/feat-autonomous-human-agent-workflow/corrections.md) records the seven verification routes and policy blob identities. Static review and local Git staging/publication fixture passed; final saved-message equality and real publication are the remaining handoff operations. Mandatory entry/core reading changes from 4,383 to 4,405 words (+22, about 0.5%); adoption detail adds 100 task-triggered words. No new mandatory reading file. Earlier checks remain historical, not current runtime proof. No policy blocker remains.
+
+
+## Correction review 1
+
+Current implementation candidate: 2a14acf2e815c5a888c5a7779b1ece9395a5e3f3; correction base c99f3fcdc539eb3c8bf1c479c80c4f2f1eb17f1c; original cumulative base remains 04765e32d8832a9b80fddd0b3875234386891d14. Ordinary push to origin/codex/feat-autonomous-human-agent-workflow succeeded and ls-remote returned that exact candidate. It contains all scoped policy, example, authority and retained verification changes. A later record-only commit delivers this checkpoint; it is not the implementation candidate.
+
+Checks: Passed — affected documentation consistency; all local links/fragments and whitespace; static scenarios 1/2/5 and fresh-session scenario 7; executable local Git scenarios 3/4. Final saved briefing and prepared response agree under the permitted link-format conversion (scenario 6), with actual publication, status, uncertainty and human next action checked against this record. The seven scenarios have their methods and limitations in corrections.md; no live adoption or human-usability experiment occurred. Core reading grew by 22 words (4,383 to 4,405), not a new mandatory document. Required checks have no unresolved failure.
+
+The earlier interim-state finding is resolved: corrections are implemented, checked and published; no implementation step remains pending. Status stays Ready for user validation and acceptance Pending, as requested. No PR, merge, protected-branch change or deployment occurred. Controller Off. Existing hooks/configuration unchanged; no active local hooks or tracked GitHub workflows observed before publication.
+
+Owner review: Read the initial agreement and progress examples linked from progress.md. Confirm that routine freedom versus retained human decisions matches the intended working relationship, and that each briefing explains the result, uncertainty and next action; accept this candidate or identify a needed correction. Technical identifiers, check mechanics and reading counts remain here or in the supporting note, rather than in the human briefing.
+
+Final record handoff: Commit/push only progress-agent.md and progress.md, inspect attribution, compare remote HEAD to local HEAD, confirm the candidate remains an ancestor and only these records differ, and verify the saved briefing is the published file. No future containing hash is inserted. If delivery fails, update the briefing honestly before handoff. The original input hashes in corrections.md must still match; both inputs remain untracked and all in-scope work is delivered. No authority for later acceptance, merge or deployment follows from these checks.

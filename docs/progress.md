@@ -1,5 +1,7 @@
-The guidance now explains when the agent can update existing instructions and save agreed changes without asking again, while protecting other people’s work and your important decisions.
+The guidance now tells the agent to carry out agreed updates to existing project instructions and save them online without repeated approval, while protecting other people’s work and leaving important decisions with you. The initial agreement and progress examples use simpler language, and the booking example now asks about the deadline for changing a booking.
 
-I also simplified the initial agreement and progress examples, and corrected the booking-change wording. Document checks and a local test of saving changes without disturbing someone else’s work passed.
+Checks of the wording and links passed. A local test confirmed that saving and uploading the agent’s changes left someone else’s pending work intact. The requested situations were reviewed; whether this makes work easier or faster remains untested.
 
-I’m publishing these corrections and preparing your review task. Your acceptance is still pending; no action is needed from you yet. [Work record](progress-agent.md#focused-correction-pass).
+The corrections are published to the existing development branch. Status: Ready for user validation.
+
+Please read the [initial agreement](../README.md#start-a-new-project) and [progress examples](ops/checkpoint-examples.md). Confirm that the permissions match how you want the agent to work and that the updates make the result and your next action clear, or identify what needs changing. [Detailed checks](progress-agent.md#correction-review-1).
