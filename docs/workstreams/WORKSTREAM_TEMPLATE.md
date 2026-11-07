@@ -23,14 +23,19 @@ Snapshot observation: [date/source/actor, HEAD or complete artifact, relevant di
 ## Decisions and Authorization
 
 [Human reference/date, scope/revision, direct execution or pending/partial approval.
-Separate proposals from decisions. Record named delivery permissions only when
-relevant; omitted actions are not authorized. Add loop grant details only for an
+Link the standing agreement in context; record this outcome's scope and exceptions,
+not another copy of policy. Separate proposals from decisions. Identify covered
+publication targets and missing authority. Add loop grant details only for an
 explicitly requested grant, using the existing full loop contract and a Delivery
 Permissions section for its named actions. Ordinary work needs no empty section.]
 
 ## Acceptance criteria and plan
 
-- [ ] [Observable criterion and bounded implementation/check steps.]
+Human-facing scope: [Meaningful outcomes, material choices, constraints, observable acceptance criteria and human review boundaries.]
+
+- [ ] [Coherent outcome package; dependencies, internal implementation/check cycles and fixed criteria.]
+
+Agent execution: [Next precise slice; later details refined from evidence; publication checkpoints, material reversible assumptions, recovery and next executable action. Internal increments are not approval gates.]
 
 ## Evidence and unresolved risks
 
@@ -46,7 +51,9 @@ not another authority record.]
 [Identified candidate, pending human checks/decision and next owner. Human cover
 stays short; complete relay material remains accessible, including relevant
 untracked work. A local path is not another session’s access. Update detail first,
-then its derived progress.md summary at material checkpoints.]
+then save its derived progress.md briefing and reuse it unchanged as the final
+checkpoint message. Identify candidate publication separately from later record
+delivery; disclose local-only work without chasing a future containing hash.]
 
 <!-- Add at closeout, not as routine paperwork:
 Development outcome: <accepted scope/candidate and human reference>

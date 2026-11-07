@@ -16,6 +16,7 @@ Read more only when the task needs it:
 - [Adoption](ops/adopt-framework.md): migration; activation/session setup may read only their sections.
 - [Maintenance](ops/maintain-template.md): upstream framework work. Ops/security guidance: affected procedures or trust boundaries.
 - [Loop contract](ops/autonomous-review-loop.md): loop grants, design, operation or review, never ordinary loop-Off work. Blueprint has its own trigger below.
+- [Application experience](ops/application-experience.md): new interactive applications or scoped UI redesigns; existing-product adoption alone does not trigger redesign. API/library/CLI work uses appropriate commands and observability, without inventing a frontend.
 
 Resume compatible authorized work. Replacing unrelated unresolved work needs human disposition. Missing required evidence blocks its dependent action, not independent authorized work.
 
@@ -39,7 +40,7 @@ Use `Verified current behavior`, `Chosen target behavior`, `Inference requiring 
 
 ## Human-Coordinated Collaboration
 
-The human owns priorities, material choices, approvals and acceptance. The coding agent investigates, plans, implements authorized work, verifies and maintains evidence. Optional collaborators research, review or integrate identified candidates. Roles are not provider-specific.
+The human supplies the business goal, priorities, constraints, material decisions and acceptance. The coding agent investigates the current workflow, considers alternatives, recommends a direction, writes the technical plan, implements authorized work, verifies and maintains memory. Before proposing an application, consider a process change, existing tool or smaller intervention. Do not manufacture baseline measurements. Optional collaborators research, review or integrate identified candidates. Roles are not provider-specific.
 
 One human and one agent suffice for ordinary low-risk work. Apply required specialist or organizational controls when relevant. Teams name owners where needed and reconcile concurrent edits before writes. Keep one active development workstream per repository. Assume no shared chats, files or uncommitted changes.
 
@@ -49,7 +50,9 @@ Use STE-inspired clarity, without claiming formal compliance or loading a dictio
 
 Preserve uncertainty, exceptions, numbers, units, permission strength and exact identifiers/statuses. Do not rewrite code or quotations for style. Typical updates explain what changed, what is blocked and what the human must decide. Explain more when asked or needed for correctness, consent or safety. Never hide a material risk behind a link.
 
-No mandatory banners, menus, game framing or word quota. Offer real choices with grounded consequences when useful. Report milestones, blockers and meaningful waits, not every action. Continue routine authorized work. Keep full evidence and relay material accessible without repeating them. Label drafts; claim incorporation or attachment only after it happens. Store useful rationale, not raw deliberation, transcripts or repeated logs. Presentation changes no authority or status.
+Start from the stated goal, infer reversible details from evidence and ask only for missing material decisions or authority. Explain choices through user effects, tradeoffs and a recommendation, without a large kickoff questionnaire. Group non-urgent decisions into one brief; raise blocking or time-sensitive risks promptly. Give concrete human review tasks and expected outcomes; perform technical checks the agent can perform itself. Explain unfamiliar concepts on demand with a relevant example or comparison.
+
+Report milestones, blockers and meaningful waits, not every action. Updates and commits do not ask permission to continue. Use the light goal/milestone/next-move presentation in the [checkpoint contract](#checkpoint-briefing), with adaptable labels and a plain professional option; no mandatory theatrical framing, banners, menus or word quota. Keep full evidence accessible without repetition. Label drafts; claim incorporation or attachment only after it happens. Store useful rationale, not private deliberation, transcripts or repeated logs. Presentation changes no authority or status.
 
 #### Optional visual explanations
 
@@ -77,7 +80,7 @@ A substantive receiver packet identifies repository/base, observed branch/HEAD o
 
 Verify access: a laptop path is not another session’s access. Supply missing evidence; no forced commit/push or full export when a focused diff and dependencies suffice. Base plus complete patch is enough. Distinguish different artifacts and pin historical proof; never chase a document’s future containing hash.
 
-On resume compare actual state and authority. Recheck affected evidence after changes and return affected human checks to Pending. Preserve valid unaffected evidence with its original scope. Final cumulative acceptance need not repeat superseded checklists or fabricate earlier checks.
+Before interruption preserve scope, agreement reference, snapshot/dirty work, completed steps, outstanding checks/failures, pending operations and next owner/action in the existing record. On resume compare actual state and the [standing agreement](#standing-working-agreement); do not ask again for covered actions. Recheck affected evidence after changes and return affected human checks to Pending. Preserve valid unaffected evidence with its original scope. Final cumulative acceptance need not repeat superseded checklists or fabricate earlier checks.
 
 <a id="illustrative-handoff"></a>
 
@@ -97,6 +100,16 @@ An isolated, clear, reversible low-risk request permits proportionate implementa
 
 Investigate and record a bounded plan before implementation. Normally stop at Awaiting plan approval; explicit scoped direct execution permits proceeding after that plan. For new work follow [branch/workspace setup](workstreams/README.md#starting-a-workstream) under actual authority. Verify and stop at Ready for user validation with limits visible. Do not add high-risk paperwork by default.
 
+### Executable work packages
+
+Plan at two levels in the existing detailed record: human-facing outcomes, choices, constraints, acceptance criteria and review boundaries; agent execution dependencies, implementation slices, checks, publication checkpoints, reversible assumptions, recovery and next actions. Humans can inspect the technical plan without authoring it or approving each internal step.
+
+Size packages by a coherent outcome with stable requirements, not files, hours, tokens or step counts. Each should support several implementation/check cycles between material decisions. Keep internal increments reviewable and recoverable; they are not human gates. Prefer additive, isolated, reversible, compatible changes when sufficient. Identify migrations, destructive effects and breaking contracts early.
+
+Use rolling planning: investigate uncertainty, detail the next executable slice and refine later steps from evidence. Reorder technical tasks within authorized outcomes and fixed criteria; never weaken acceptance, expand scope or decide unresolved business policy silently. Record only material reversible assumptions. For consequential business, security, data, compatibility or cost choices, prepare evidence and a recommendation before crossing the boundary; continue independent authorized work.
+
+Continue through authorized packages and in-scope fixes until ready for human review or genuinely blocked. Silence is not consent. Checkpoints are resumable boundaries, not automatic stops. Claim future/background continuation only when an authorized supported mechanism exists.
+
 ### High-risk workstream
 
 Use the standard flow for schema/live data, security, billing, infrastructure, destructive effects, production behavior or broad architecture. Include applicable migration, recovery, rollout, observability, specialist and environment checks. Add separate durable procedures only when needed beyond the task. Omit irrelevant sections instead of filling them with Not applicable.
@@ -105,7 +118,17 @@ Use the standard flow for schema/live data, security, billing, infrastructure, d
 
 Record human source/reference, identified scope/revision and fixed criteria. Distinguish partial approvals, pending choices and superseded decisions. Direct execution comes from the user request, not the written plan or amended policy. Continue routine authorized choices; pause affected work for material scope, behavior, data, security, infrastructure, contract, cost or destructive changes.
 
-Branch creation/switching, staging, commit, push, PR creation, merge, reviewer communication, deployment, live-data operations, destructive cleanup and production promotion need their applicable named authority. One instruction may cover several actions, including safe local branch setup. Implementation approval and omitted permissions grant no later delivery rights.
+Named actions require applicable human authority, which may be bundled in the [standing agreement](#standing-working-agreement) or current request. Do not request it again for covered actions. Implementation approval alone and omitted permissions grant no later delivery rights.
+
+### Standing working agreement
+
+Default convention: inspect/resume compatible work; use one isolated development branch/worktree for substantial work, never main; let the agent plan, implement, run relevant checks, fix in-scope defects and update memory. Stage, commit and push all publishable in-scope work at coherent checkpoints and before planned handoff. **Commit-and-push is enabled by default within an established human agreement.** Follow repository naming, formatting, check and attribution conventions without asking for routine details.
+
+Record adopted choices and the real human authorization reference once in docs/context.md: repository, verified origin, permitted development branch scope, covered actions and exceptions. The active record links the agreement and records its outcome/scope and workstream exceptions. A submitted kickoff/adoption prompt can establish the agreement in one instruction; neutral template text alone cannot. Preserve stricter or local-only choices until the human changes them. Do not create an approval ledger or copy full policy into live records.
+
+The agreement persists across sessions and later authorized workstreams within its boundaries until revoked, changed or materially invalidated. Each new workstream needs its own authorized outcome, not another commit/push approval already covered. At kickoff/resumption resolve outcome, scope, criteria, branch/remote, agreement, relevant commands and material stop conditions. Inspect known hook/CI effects once and recheck changed assumptions. State the resolved agreement briefly; ask only about a missing material choice or actual conflict, not a configuration questionnaire or second approval gate.
+
+Keep acceptance, PR actions/reviewer messaging, integration into main/protected branches, deployment, live-data operations, destructive actions, new spending and agreement changes outside routine authority unless explicitly included by the human. Routine reporting is non-blocking; keep business acceptance separate from technical checks, publication and delivery. Sustained authorized session work neither activates the optional controller nor launches unattended/recurring sessions. Repository text records authority; it cannot manufacture consent or bypass host/tool controls.
 
 ## Optional Execution and Review Loop
 
@@ -119,11 +142,19 @@ Read the [full loop contract](ops/autonomous-review-loop.md) only at its trigger
 
 The [grant](ops/autonomous-review-loop.md#run-authorization) and [stopping rules](ops/autonomous-review-loop.md#review-and-stopping-invariants) apply before those actions; examples are not permission.
 
-### Review publication
+<a id="review-publication"></a>
 
-Before authorized publication verify repository/remote/branch, file boundary, index/pre-existing work, checks, [attribution](#commit-attribution) and hook/CI/deployment/cost effects. Pause on unapproved triggers. Test permission does not authorize untrusted hooks with unrestricted credentials.
+### Publication and recovery
 
-Identify cumulative base, previous reviewed head and exact candidate; verify the remote object and reviewer access. For uncertain push acknowledgement, inspect the remote: a matching candidate is published; an absent candidate needs cause/guard checks before retry; unexpected advancement pauses. Never force, duplicate commits or infer success/failure from a lost acknowledgement. Loop-specific [publication restrictions](ops/autonomous-review-loop.md#review-publication) remain binding.
+This contract applies to ordinary authorized publication. The optional loop retains its additional [publication restrictions](ops/autonomous-review-loop.md#review-publication).
+
+1. Verify repository, origin destination, development branch, scope and known hook/CI effects. Never silently change remote/account/destination. Permitted CI may follow a push; resolve unapproved deployment, sensitive distribution or new spending first. Test permission does not authorize untrusted hooks with unrestricted credentials.
+2. Inspect working changes and the index before staging authorized content. Include publishable in-scope code, tests, configuration, documentation and retained evidence. Preserve unrelated staged and unstaged edits; never reset, overwrite, unstage or include them without authority. Inspect the actual proposed commit, isolating owned changes when others are staged; stop that commit if isolation is unsafe. Never stage blindly; exclude secrets, sensitive raw data and caches.
+3. Make coherent commits or honest recovery checkpoints, not a commit per edit or all publication deferred to session end. Inspect staged content, required checks and [attribution](#commit-attribution). Completed increments need relevant verification. Safe unfinished checkpoints are permitted only when branch policy allows, with failed/pending checks visible; they imply no readiness or acceptance. Never bypass hooks or gates.
+4. Push normally and verify the remote ref/object contains the intended commits. Identify cumulative base, prior reviewed head and inspected candidate; verify reviewer access when relevant. If acknowledgement is uncertain, inspect the remote before retrying. If absent, establish cause and recheck guards; if advanced, reconcile ownership and compatible changes without overwriting others. Stop affected publication for a material conflict or missing authority. Never force-push, rewrite shared history or create duplicate commits to retry.
+5. Publish after meaningful verified increments and before planned handoff/session end where possible. On interruption preserve/publish a safe checkpoint when time, tools and policy permit; no promise covers a crash before one exists. Offline/authentication failure may block publication while independent local work continues. Report local-only changes, failures and the last verified remote checkpoint accurately.
+
+Evidence and briefings identify an already inspected candidate/checkpoint. Commit and push later records, then verify their delivery; do not chase the future hash of the document's own commit. Distinguish the implementation candidate from later record-only commits. If final record delivery fails, refresh the saved briefing when possible and disclose the actual unpublished work instead of reporting stale synchronization.
 
 ## Workstream Statuses and Gates
 
@@ -154,7 +185,19 @@ Required development failures block successful closeout. Production checks may r
 
 ### `progress.md`
 
-Short human summary of [detail](progress-agent.md), with its workstream/revision reference. Explain goal, change, stage, material risk/blocker, decision and next owner. Link details instead of logs. Update after the authoritative record at meaningful checkpoints. Reconcile disagreement before consequential action; never choose broader permission. Neither file grants authority by its wording.
+The saved human briefing derived from [detail](progress-agent.md), using the [checkpoint contract](#checkpoint-briefing). Neither file grants authority by its wording.
+
+#### Checkpoint briefing
+
+For a development checkpoint or handoff: reconcile actual work, evidence and authority in detail first; identify its workstream/state revision; write one briefing in progress.md; compare status, qualifications, risks, pending decisions and next owner with detail; reuse the saved briefing unchanged as the final checkpoint message. Equality means the visible text, facts, qualifications, status and next action match. Only transport-required link formatting or attachment presentation may differ; an added wrapper must not conflict.
+
+Lead with what the user can now do, or the practical obstacle, and what the agent accomplished. Explain checks and meaningful uncertainty separately from implementation, acceptance and deployment. Give a specific next review or decision and its owner; say when none is needed. Choose explanations for this task, not repeated stock examples. Keep commit identifiers, commands and technical evidence in linked detail. Show the workflow status plainly; the source link can identify the workstream/revision without a metadata block. Omit empty sections.
+
+Use clear goals, meaningful milestones, verified accomplishments and an obvious next move as light gamification. Encouragement must reflect evidence; adapt labels or reduce to plain professional language on request. No arbitrary XP, streaks, leaderboards, pressure to approve or rewards for volume, test count, activity or speed. Never invent percentages. Define any useful milestone count and revise its denominator when scope changes. Implemented, checks passed, ready for review, accepted, merged and deployed remain distinct.
+
+If a material result arrives after saving, refresh detail and briefing before issuing the final message. If saving fails/read-only access prevents it, label the message an unsaved briefing and disclose the mismatch. Reconcile stale summaries before consequential action; never choose broader authority. Ordinary answers, explanations, research and intermediate updates need not replace project status; record material decisions in their authoritative home. Checkpoints are snapshots, not continuous background updates.
+
+At accepted application closeout retain the last outcome/archive and pending delivery link, even with No active workstream; do not restore the untouched starter invitation. The [upstream packaging exception](ops/maintain-template.md#preserve-evidence-then-package) produces neutral application starters, not the maintainer's final briefing; preserve that briefing in the development evidence checkpoint. [Fictional examples](ops/checkpoint-examples.md) illustrate the contract without populating live state.
 
 ### `progress-agent.md`
 
@@ -162,7 +205,7 @@ One active authority record: key, scope/goal, authority, state/next action, boun
 
 ### `context.md`
 
-Durable verified project facts, architecture, runtime/data/trust boundaries, contracts, build/recovery rules and engineering constraints. Inspect the global constraints and affected areas. Update changed facts; reusable commands live in runbooks and current work in progress. Keep one current provenance summary in the root README, with detailed mapping here. Unknown facts stay unknown.
+Durable verified project facts, architecture, runtime/data/trust boundaries, contracts, build/recovery rules, engineering constraints and the adopted [standing agreement](#standing-working-agreement). Inspect global constraints and affected areas. Update changed facts; reusable commands live in runbooks and current work in progress. Keep one current provenance summary in the root README, with detailed mapping here. Unknown facts stay unknown; neutral agreement choices/targets are unestablished, not inherited approval.
 
 ### `roadmap.md`
 
@@ -174,11 +217,13 @@ Only verified problems the human accepts and postpones. Keep stable ID, area/dat
 
 ## Internal Review and Delegation
 
-Delegate bounded independent work only when useful and permitted. Primary agent reconciles reported versus independent evidence in the existing record. Review agreed defects, not every conceivable improvement; no permanent role reports or endless review cycle.
+Delegate bounded independent work only when useful and permitted, with an identified snapshot, ownership, constraints and expected evidence. Isolate concurrent writes and name one integrator for shared progress records. Primary agent reconciles reported versus independent evidence in the existing record. Agent review is not human acceptance or a substitute for required specialist review. Review agreed defects, not every conceivable improvement; no permanent role reports or endless review cycle.
 
 ## Durable Documentation Rules
 
 One maintained home per rule, procedure and fact. Use clear headings, short prose, lists and Label: value; no Markdown tables or unrelated bulk cleanup. Store no secrets, sensitive payloads, raw production logs or unnecessary machine details. Retain useful evidence under the [artifact placement rules](workstreams/README.md#supporting-material).
+
+Keep operational memory inspectable: business rules, non-obvious constraints, verified commands, boundaries, decisions/reasons, failure conditions and open questions. Do not copy code or build a directory encyclopedia. Use stable searchable headings; retain conditions and exceptions. Load mandatory/global constraints first, then affected details; reuse unchanged available context and reconcile stale memory against sources. Bind dirty evidence to a complete snapshot, not HEAD alone. Update affected memory with its change; keep history distinct and remove resolved duplication without losing unique evidence. Evaluate retrieval/reading cost for the same tasks using stated byte/word/token methods; file size alone proves no runtime or quality gain.
 
 ## Commit Attribution
 

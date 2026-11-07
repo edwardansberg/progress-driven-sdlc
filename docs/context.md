@@ -28,3 +28,9 @@ Detailed adoption path mapping and durable local design decisions: Not yet asses
 ## Constraints and open decisions
 
 No project-specific choices or approvals recorded. Initialize from evidence and human decisions; history or framework examples grant no project authority.
+
+## Standing working agreement
+
+Default convention: Commit-and-push enabled under the [core agreement](README.md#standing-working-agreement), once established by a real human instruction.
+Human authorization / repository / origin / permitted development branches: Not established.
+Adopted choices and exceptions: Not established; preserve any existing stricter or local-only instructions. Record the actual kickoff/adoption reference and scoped targets here; active work references this home.

@@ -6,7 +6,7 @@ Optional reference: read for explicit creation, schema/renderer changes, corrupt
 
 `docs/project-blueprint.html` is a persistent, revision-bound human mental model of roadmap, major components, relationships and important business/data/integration flows. It favors comprehension over completeness; benefits are untested. One human and one agent suffice; optional collaborators follow existing ownership rules.
 
-It is derived, never authoritative: progress-agent.md owns operational detail, progress.md summarizes current status, and the blueprint explains project-wide structure. Decisions return to authoritative records. UI actions grant no acceptance, merge, deployment or other permission. Creation and every refresh require explicit human requests; no automatic updates or milestone offers. Track it once created, with staging/commit/publication separately authorized. Removal follows normal change authority after preserving any unique decisions in their proper records.
+It is derived, never authoritative: progress-agent.md owns operational detail, progress.md supplies the saved human checkpoint briefing, and the blueprint explains project-wide structure. It is neither the application's control panel nor an execution controller. Decisions return to authoritative records. UI actions grant no acceptance, merge, deployment or other permission. Creation and every refresh require explicit human requests; no automatic updates or milestone offers. Track it once created; staging/commit/publication follow the applicable [standing agreement](../README.md#standing-working-agreement) and [publication contract](../README.md#publication-and-recovery), without a repeated approval for covered actions. Removal follows normal change authority after preserving any unique decisions in their proper records.
 
 Ad-hoc explainers remain separate: question-specific, usually temporary/untracked and free-form under the core visual-explanation rules. Do not force them into this schema.
 
@@ -39,7 +39,7 @@ For dirty work, distinguish HEAD evidence from uncommitted observations. By defa
 
 ## Create or refresh
 
-Before writes inspect identity, instructions, authority, branch/HEAD and staged/unstaged/untracked work; preserve occupied artifacts and concurrent changes. Record scope/checks in the existing workstream, not a new status register. No dependency installation or extra delivery authority follows from a request.
+Before writes inspect identity, instructions, authority, branch/HEAD and staged/unstaged/untracked work; preserve occupied artifacts and concurrent changes. Recover the target agreement from context and record scope/checks in the existing workstream, not a new status register. No dependency installation or extra delivery authority follows from a request. Development handoffs use the exact saved [checkpoint briefing](../README.md#checkpoint-briefing); this does not make the blueprint a status record.
 
 Creation: read this contract and template; inspect relevant authoritative records and implementation for major concepts. Build and validate data, safely embed it, then create `docs/project-blueprint.html`. Keep it absent from the upstream neutral starter. Inspect HTML/scripts before local preview. Hand off actual evidence and limitations for human review.
 

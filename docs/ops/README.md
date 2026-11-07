@@ -4,6 +4,9 @@ Store reusable deployment, recovery, maintenance, observability, and incident pr
 
 ## References
 
+- [Application experience](application-experience.md): First working interaction shell, navigation, truthful status and accessible controls; read for new interactive applications or scoped interaction changes, not unrelated coding tasks.
+- [Checkpoint examples](checkpoint-examples.md): Fictional planning, progress, failed-check, human-validation and pending-delivery briefings; the [core briefing contract](../README.md#checkpoint-briefing) owns policy.
+
 - [Project Blueprint](project-blueprint.md) and [neutral renderer template](project-blueprint-template.html): Optional persistent project model; explicit creation/refresh only, no ordinary context loading.
 
 - [Maintain the template](maintain-template.md): Upstream-only branch development, evidence preservation and neutral release checks. Application adopters need not follow its PR release rule.
