@@ -2,64 +2,37 @@
 
 These fictional snapshots illustrate the [canonical checkpoint briefing](../README.md#checkpoint-briefing). Read when a concrete example helps; they are not live project state, permission or a second briefing template. Source references name imaginary records, not existing files or verified results. In a real briefing, link the detailed record for revision identifiers and technical evidence.
 
-Adapt the labels and tone to the person and decision. Milestones describe useful outcomes. The core owns presentation and save-and-reuse rules; these examples illustrate the visible briefing text.
+The core owns format, exceptions and save-and-reuse rules, including all decision options. These examples show ordinary summaries with a direct next action or real choices. The planning and implementation examples are non-blocking intermediate updates while the session remains active; they are not reasons to end it or promises of background work.
 
 ## Planning: choose a business rule
 
-This checkpoint: The existing booking flow is mapped. One business rule remains open: allow moves until the class starts, or stop them two hours earlier. The earlier cutoff gives staff preparation time but gives customers less flexibility. No product change has been implemented.
+Planning has identified one open rule before customers can move bookings without calling reception. The current screen gives no cutoff, but the staff schedule reserves two hours for preparation. Choose one of the alternatives below; independent navigation investigation continues while this decision is pending.
 
-Current goal: Let customers move a class booking without calling reception.
+1. **Stop changes two hours before class — recommended.** This protects the preparation time in the staff schedule. Customers lose late flexibility and would need to contact reception after the cutoff.
+2. **Allow changes until class starts.** Customers retain more flexibility, but staff must handle changes during preparation. Choose this if that disruption is acceptable.
 
-Status: Planning. Source: Fictional booking work record, checkpoint 2.
-
-Needs attention: The agent cannot infer the booking-change cutoff from the current screen. A documented rule is needed before implementing it.
-
-Your next move: Business owner chooses the cutoff. The agent will continue the independent navigation investigation while that decision is pending.
+Source: Fictional booking work record, checkpoint 2.
 
 ## Implementation: a useful milestone
 
-This checkpoint: Staff can now open a saved pickup and start packing without re-entering its items. Checks passed for saving, reopening and keeping the correct quantities. This is ready to try in the review version; label printing is still being connected.
+Staff can now reopen a saved pickup without re-entering its items; the printing connection is still being implemented. Sample-order checks passed for saving, reopening and quantities. The warehouse printer and staff experience remain untested. No decision is needed now; I am continuing the authorized printing work and checks before requesting review.
 
-Current goal: Help warehouse staff prepare a pickup without re-entering item details.
+Source: Fictional packing work record, checkpoint 3.
 
-Status: Implementing. Source: Fictional packing work record, checkpoint 3.
+## Failed verification: early handoff
 
-Needs attention: The checks used sample orders. They do not establish that the warehouse printer works or that staff find the screen easy to use.
+The membership export is not ready for review: a name containing a comma became two columns. The required check failed; original member records are unchanged. Tool access ended before correction, and the saved record contains the reproduction, local patch and remaining checks; nothing was uploaded. Resume this task when access returns so the agent can fix and recheck it under the existing agreement; no background work is running.
 
-Your next move: Nothing is needed from you now. The agent will finish the authorized printing connection and run its agreed checks before requesting review.
-
-## Failed verification: explain the consequence
-
-This checkpoint: Verification failed: a name containing a comma became two columns in the exported file. The export is not ready for your review. The check found a defect before publication; it did not change the original member records.
-
-Current goal: Export a monthly membership list without losing names.
-
-Status: Implementing. Source: Fictional export work record, checkpoint 4.
-
-Needs attention: The required quoted-field check is Failed. A successful export of simple names does not cover this case.
-
-Your next move: Nothing is needed from you now. The agent will repair the field quoting and rerun the affected checks within the approved scope.
+Source: Fictional export work record, checkpoint 4, with resumption details.
 
 ## Human validation: ready to try
 
-This checkpoint: In the tested review environment, repeated clicks reused the same report job. The duplicate-request and error-recovery checks passed for the identified build. The source candidate is published; production is unchanged.
+Repeated clicks now reuse one report job, and the candidate is Ready for user validation. Duplicate-request and error-recovery checks passed, but the waiting message still needs your team's review. The candidate is published; production is unchanged and deployment needs separate authority. Try repeated clicks and the waiting message in the review version, then accept the result or describe the needed correction.
 
-Current goal: Prevent a repeated click from starting the same report twice.
-
-Status: Ready for user validation. Source: Fictional report work record, checkpoint 5.
-
-Needs attention: Human acceptance is Pending. Automated checks do not establish that the waiting message is clear to your team. Deployment needs its separate release decision.
-
-Your next move: Business owner tries repeated clicks and the waiting message in the review environment, then accepts this candidate or describes the needed correction.
+Source: Fictional report work record, checkpoint 5.
 
 ## Accepted development: delivery still pending
 
-This checkpoint: You accepted the corrected hours and mobile layout in the review version. Development is Completed and archived. Customers still see the previous hours because deployment is pending.
+You accepted the corrected hours and mobile layout; development is Completed and archived, with no active workstream. Customers still see the previous hours because deployment is pending. Production content and mobile-layout checks remain Pending and still govern release acceptance. No action is needed from you now; the assigned release owner has the authorized deployment and verification handoff.
 
-Current goal: Make corrected opening hours available to customers.
-
-Status: No active workstream. Source: Fictional opening-hours archive, checkpoint 6, with its pending delivery record.
-
-Needs attention: The delivery owner has the agreed handoff. Production content and mobile-layout checks remain Pending in that delivery record and still govern release acceptance.
-
-Your next move: Nothing is needed from you now. The assigned release owner will deploy the accepted artifact under the recorded release authority, run those checks and update the delivery record. The archive keeps its original closeout observation.
+Source: Fictional opening-hours archive, checkpoint 6, linked to its delivery record for later results.

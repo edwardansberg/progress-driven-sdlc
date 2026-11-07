@@ -33,9 +33,9 @@ Permissions section for its named actions. Ordinary work needs no empty section.
 
 Human-facing scope: [Meaningful outcomes, material choices, constraints, observable acceptance criteria and human review boundaries.]
 
-- [ ] [Coherent outcome package; dependencies, internal implementation/check cycles and fixed criteria.]
+- [ ] [Coherent outcome package through implementation, checks, corrections, documentation and authorized publication; completion evidence and fixed criteria.]
 
-Agent execution: [Next precise slice; later details refined from evidence; publication checkpoints, material reversible assumptions, recovery and next executable action. Internal increments are not approval gates.]
+Agent execution: [Precise next slice/action; likely later dependencies and integration points; material assumptions and cheap early tests; conditional alternatives and triggers for changing approach or consulting the human; recovery/publication checkpoints. Scale detail to risk and refine from evidence. Internal increments and in-scope plan revisions are not new approval gates.]
 
 ## Evidence and unresolved risks
 
@@ -48,11 +48,12 @@ not another authority record.]
 
 ## Human review and next gate
 
-[Identified candidate, pending human checks/decision and next owner. Human cover
-stays short; complete relay material remains accessible, including relevant
+[Next meaningful human decision/review boundary, needed evidence, identified
+candidate and next owner. Use the core checkpoint format for the human cover;
+complete relay material remains accessible, including relevant
 untracked work. A local path is not another session’s access. Update detail first,
-then save its derived progress.md briefing and reuse it unchanged as the final
-checkpoint message. Identify candidate publication separately from later record
+then save its complete progress.md briefing, including choices, and reuse it
+unchanged as the final checkpoint message. Identify candidate publication separately from later record
 delivery; disclose local-only work without chasing a future containing hash.]
 
 <!-- Add at closeout, not as routine paperwork:
