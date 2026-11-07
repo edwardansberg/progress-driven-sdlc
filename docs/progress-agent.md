@@ -1,9 +1,9 @@
 # Active workstream: feat-autonomous-human-agent-workflow
 
-State revision: build-1
+State revision: check-1
 Status: Implementing
 Current gate: Authorized implementation; human acceptance remains pending
-Next action: Publish the checked policy/experience increment, then complete scenarios, neutral-tree inspection and recovery review.
+Next action: Publish the verified correction/evidence candidate, then save and deliver its final review briefing.
 Workspace: [Supporting evidence](workstreams/active/feat-autonomous-human-agent-workflow/)
 Loop control: Off
 Repository / branch: edwardansberg/progress-driven-sdlc / codex/feat-autonomous-human-agent-workflow
@@ -24,8 +24,8 @@ Direct execution: Investigate and record this plan, then implement/check/fix/pub
 
 Human-facing outcomes: understandable goal/status/next action; stable authority across sessions; coherent application controls; recoverable published evidence. Human review occurs at the final review candidate, or earlier only for a material unresolved choice.
 
-- [ ] Package 1 — Policy and working memory: place standing agreement, publication/recovery, two-level rolling plans and saved-briefing equality in the core; route from AGENTS; update the sole scaffold/conventions. Verify authority conditions, exceptions, selective reads and canonical homes. Publish a coherent checked increment.
-- [ ] Package 2 — Experience and onboarding: add task-triggered application guidance and fictional briefings; reconcile new-project, adoption, continuation, handoff, Blueprint routing and upstream packaging. Preserve controller semantics and neutral starters. Verify links and requirement coverage; publish a checked increment.
+- [x] Package 1 — Policy and working memory: place standing agreement, publication/recovery, two-level rolling plans and saved-briefing equality in the core; route from AGENTS; update the sole scaffold/conventions. Verify authority conditions, exceptions, selective reads and canonical homes. Publish a coherent checked increment.
+- [x] Package 2 — Experience and onboarding: add task-triggered application guidance and fictional briefings; reconcile new-project, adoption, continuation, handoff, Blueprint routing and upstream packaging. Preserve controller semantics and neutral starters. Verify links and requirement coverage; publish a checked increment.
 - [ ] Package 3 — Evidence and review candidate: inspect primary research/standards and limits; run scoped scenarios, clean-context recovery and before/after reading counts; inspect a disposable neutral release tree. Fix concrete findings, check the complete staged diff, publish the implementation candidate, then derive and deliver matching final records.
 
 Execution dependencies: Baseline and authority precede policy changes; canonical contracts precede cross-document reconciliation; final candidate precedes record-only delivery. Internal steps may be refined within fixed scope/criteria. Favor reversible document edits and preserve existing contracts unless explicitly changed here.
@@ -42,7 +42,9 @@ Chosen target behavior: Commit/push convention enabled, but a neutral template c
 
 Checkpoint build-1: Packages 1 and 2 implemented; five primary research sources and current W3C guidance inspected by bounded assistants. Primary agent inspected the complete changed policy and guide contents. Local link/anchor check passed (22 Markdown files, 131 links); git diff --check passed after correcting CRLF in newly written records. Publication is the next operation. See [research and proposed evaluation](workstreams/active/feat-autonomous-human-agent-workflow/research.md).
 
-Remaining checks: Full scenarios, clean-context recovery, reading comparison, disposable neutral release inventory and final publication verification. No productivity, human usability or runtime accessibility outcome is claimed from prose.
+Verification checkpoint check-1: First increment 751b14ab67351d6cc318bb553edeae6379285448 verified on origin. All local policy/guide checks, 15 static scenarios, clean receiving-context comparison, reading counts and disposable neutral-tree checks are complete; see [verification and change map](workstreams/active/feat-autonomous-human-agent-workflow/verification.md). Two review findings (adoption portability and live-data authority) were corrected and affected checks passed. This working snapshot is 751b14a plus the three policy blob identities recorded there and the new supporting evidence.
+
+Reading regression: The core/entry policy floor increased from 2,956 to 4,383 whitespace-separated words; ordinary neutral-state resumption from 3,334 to 4,833. No runtime or token reduction is claimed. Human usability, accessibility, productivity, adoption execution and workplace evaluation remain unmeasured. No unresolved implementation finding; final candidate and record delivery remain to verify.
 
 ## Human review and next gate
 

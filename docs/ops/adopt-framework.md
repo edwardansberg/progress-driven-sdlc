@@ -4,7 +4,7 @@ Purpose: Adopt/update documentation without importing upstream identity, memory 
 
 Source: `https://github.com/edwardansberg/progress-driven-sdlc`.
 
-New repository: Use GitHub’s template feature with default branch only, then inspect and initialize the supplied neutral files from project evidence and the human's [kickoff](../../README.md#start-a-new-project). Do not repeat this migration. Cloning upstream retains framework history. Existing projects/non-Git directories use the complete procedure below before writes; ordinary session setup may read only the activation/bootstrap sections.
+New repository: Use GitHub’s template feature with default branch only, then inspect and initialize the supplied neutral files from project evidence and the human's kickoff under the [standing agreement contract](../README.md#standing-working-agreement). Do not repeat this migration. Cloning upstream retains framework history. Existing projects/non-Git directories use the complete procedure below before writes; ordinary session setup may read only the activation/bootstrap sections.
 
 ## 1. Identify the target before writing
 
@@ -53,7 +53,7 @@ Preserve unrelated dirty files; never stash/reset/clean/restore another actor’
 
 ### Establish the target working agreement
 
-Apply the [standing agreement contract](../README.md#standing-working-agreement) using real target authorization. Human submission of the root [adoption prompt](../../README.md#add-to-an-existing-project) explicitly covers bounded planning, implementation, checks, memory, safe branch setup and commit/push; retrieving or copying that prompt grants nothing. Record the human source, exact target repository/origin, permitted development branch scope and actual choices once in target context. Reference the agreement from the migration record. It persists across sessions and later human-authorized outcomes within those boundaries; adoption itself authorizes no unrelated outcome.
+Apply the [standing agreement contract](../README.md#standing-working-agreement) using real target authorization. The reusable onboarding adoption prompt explicitly covers bounded planning, implementation, checks, memory, safe branch setup and commit/push only when submitted by the human; retrieving or copying it grants nothing. Recover the actual instruction, without depending on upstream onboarding sections in the preserved product README. Record the human source, exact target repository/origin, permitted development branch scope and actual choices once in target context. Reference the agreement from the migration record. It persists across sessions and later human-authorized outcomes within those boundaries; adoption itself authorizes no unrelated outcome.
 
 Preserve stricter target rules and local-only choices until the human changes them. An update does not replace an agreement, enable publishing against a prior restriction or import maintainer approval. Missing Git/origin or ambiguous targets do not authorize configuration changes; continue independent permitted documentation work and report the publication limit. Resolve only missing material authority or conflicts; do not ask again for covered routine actions. Keep the execution/review controller Off and existing acceptance, PR, integration and deployment gates intact.
 

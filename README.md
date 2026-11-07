@@ -46,8 +46,8 @@ choice unless I explicitly change it. Missing or conflicting targets require
 resolution; do not change remotes or infer authority from starter text.
 
 Keep unrelated work intact. Follow the core publication and recovery contract.
-PR actions, merge, deployment, destructive actions, new spending and changes to
-the agreement need separate authority. Keep the execution/review controller Off.
+PR actions, merge, deployment, live-data operations, destructive actions, new
+spending and agreement changes need separate authority. Keep the execution/review controller Off.
 Continue routine authorized work through a reviewable result, save the human
 checkpoint in docs/progress.md, and reuse that exact briefing in your handoff.
 Human acceptance remains mine.
