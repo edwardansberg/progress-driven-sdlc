@@ -1,6 +1,6 @@
 # Project Context
 
-Status: Not initialized from project evidence
+Status: Upstream framework development; application facts remain uninitialized
 Workflow: [Documentation Workflow](README.md)
 
 ## Purpose and boundaries
@@ -27,4 +27,15 @@ Detailed adoption path mapping and durable local design decisions: Not yet asses
 
 ## Constraints and open decisions
 
-No project-specific choices or approvals recorded. Initialize from evidence and human decisions; history or framework examples grant no project authority.
+The current task changes reusable documentation only. Maintainer records remain on the development branch; the proposed release tree uses neutral application memory.
+
+## Standing working agreement
+
+Human authorization: Current 2026-11-07 request explicitly invokes the [retained request](workstreams/active/feat-autonomous-human-agent-workflow/request.md), including execution and publication authority; plan auto-approved. Task-bounded, not an assumed grant for future upstream workstreams.
+Repository: edwardansberg/progress-driven-sdlc.
+Origin: https://github.com/edwardansberg/progress-driven-sdlc.git (fetch and push verified).
+Permitted branch: codex/feat-autonomous-human-agent-workflow, created from released main 04765e32d8832a9b80fddd0b3875234386891d14.
+Routine actions: Inspection/research, safe branch setup, written plan, scoped documentation implementation and repairs, local checks/disposable fixtures, memory maintenance, inspected staging, attributed commits and ordinary non-force pushes to that origin branch through review handoff.
+Exclusions: PR creation/messages, merge/integration, deployment, repository settings, live-data operations, new spending, destructive operations and workplace pilots. Human acceptance remains separate. Execution/review controller Off.
+Publication effects: No active local hooks, configured hooks path or tracked GitHub workflows observed at baseline. Recheck if assumptions change; unapproved deployment/spending/sensitive distribution stops affected publication.
+Persistence: Recoverable across sessions for this workstream until revoked or materially invalidated; grants no unrelated outcome. Preserve stricter human overrides. Reusable policy cannot broaden this actual grant.

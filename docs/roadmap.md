@@ -1,12 +1,12 @@
 # Product Roadmap
 
-Status: Not initialized
+Status: Upstream maintenance only; application direction uninitialized
 Authority: Human-confirmed direction; not implementation or release authorization
 Workflow: [Documentation Workflow](README.md)
 
 ## Current
 
-No confirmed outcome or active workstream.
+Current authorized upstream outcome: standing agreements, autonomous collaboration guidance and clear progress; scope and acceptance remain in the [active record](progress-agent.md). No application roadmap is implied.
 
 ## Next
 

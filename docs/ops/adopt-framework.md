@@ -4,7 +4,7 @@ Purpose: Adopt/update documentation without importing upstream identity, memory 
 
 Source: `https://github.com/edwardansberg/progress-driven-sdlc`.
 
-New repository: Use GitHub’s template feature with default branch only, then inspect and initialize the supplied neutral files from project evidence. Do not repeat this migration. Cloning upstream retains framework history. Existing projects/non-Git directories use the complete procedure below before writes; ordinary session setup may read only the activation/bootstrap sections.
+New repository: Use GitHub’s template feature with default branch only, then inspect and initialize the supplied neutral files from project evidence and the human's [kickoff](../../README.md#start-a-new-project). Do not repeat this migration. Cloning upstream retains framework history. Existing projects/non-Git directories use the complete procedure below before writes; ordinary session setup may read only the activation/bootstrap sections.
 
 ## 1. Identify the target before writing
 
@@ -51,6 +51,12 @@ Check active-record ownership, workspace/archive paths, branch-key mapping, scaf
 
 Preserve unrelated dirty files; never stash/reset/clean/restore another actor’s work. Record the plan in existing authoritative progress without losing identity, approved scope or pending gates. If no record exists, present the plan before creating one. If recording would displace work, retain a response/disposable proposal until the human decides, not a new permanent register. Scoped direct execution allows the investigated plan then implementation; otherwise await plan approval. Adoption permission is not unrelated application authority.
 
+### Establish the target working agreement
+
+Apply the [standing agreement contract](../README.md#standing-working-agreement) using real target authorization. Human submission of the root [adoption prompt](../../README.md#add-to-an-existing-project) explicitly covers bounded planning, implementation, checks, memory, safe branch setup and commit/push; retrieving or copying that prompt grants nothing. Record the human source, exact target repository/origin, permitted development branch scope and actual choices once in target context. Reference the agreement from the migration record. It persists across sessions and later human-authorized outcomes within those boundaries; adoption itself authorizes no unrelated outcome.
+
+Preserve stricter target rules and local-only choices until the human changes them. An update does not replace an agreement, enable publishing against a prior restriction or import maintainer approval. Missing Git/origin or ambiguous targets do not authorize configuration changes; continue independent permitted documentation work and report the publication limit. Resolve only missing material authority or conflicts; do not ask again for covered routine actions. Keep the execution/review controller Off and existing acceptance, PR, integration and deployment gates intact.
+
 ## 4. Import policy, not project history
 
 Use the explicit map below for existing-project integration, not a complete tree replacement or a Git merge of upstream history. A new template-generated project already has the neutral files and needs only inspected initialization. Required references are not runtime activation. A source clone remains source material; do not treat its history or development records as the target’s task.
@@ -64,16 +70,17 @@ Inspect every destination first; the map is an allowlist, not overwrite permissi
 - docs/workstreams/WORKSTREAM_TEMPLATE.md and docs/workstreams/README.md.
 - docs/workstreams/archive/README.md, the directory guide only, not upstream active or archived bundles. Per-workstream directories contain target supporting material only when needed; do not copy upstream maintenance files or create empty report trees.
 - docs/ops/README.md, docs/ops/adopt-framework.md, docs/ops/maintain-template.md (upstream-only reference), and docs/ops/autonomous-review-loop.md (optional advanced specification, Off).
+- docs/ops/application-experience.md and docs/ops/checkpoint-examples.md: Reusable task-triggered application guidance and fictional checkpoint examples. Adoption alone authorizes no product UI redesign; examples are not target state or authority.
 - docs/ops/project-blueprint.md and docs/ops/project-blueprint-template.html: Reusable optional contract/neutral renderer; adoption does not create or refresh docs/project-blueprint.html. Preserve any existing project blueprint; reconcile compatibility only under explicit scope.
 - docs/security/README.md and docs/old/README.md, reusable conventions only; merge target-specific procedures rather than copying upstream observations as project facts.
 
 Initialize missing live files instead of importing them:
 
-- docs/context.md: Target purpose, boundaries, verified repository facts, detailed adoption mapping and durable local decisions. Link the root README provenance summary rather than maintaining independent current source/revision values. Unknown facts stay unknown.
+- docs/context.md: Target purpose, boundaries, verified repository facts, detailed adoption mapping, durable local decisions and the actual standing agreement above. Neutral/unused starters retain the enabled commit/push convention but no established human agreement, repository/origin or branch grant. Link the root README provenance summary rather than maintaining independent current source/revision values. Unknown facts stay unknown.
 - docs/roadmap.md: Only the target human’s confirmed direction; otherwise no confirmed commitments.
 - docs/techdebt.md: Only target-accepted postponed items; otherwise no accepted deferred debt.
 - docs/progress-agent.md: The target’s one authoritative record. With authorized adoption underway, instantiate the sole scaffold for that actual adoption, with its own identity/authority and pending human validation. If preparing unused starter documents and no effort is active, record No active workstream, no current gate/authority, human next-task selection, and Loop Off. Never invent project identity or approvals.
-- docs/progress.md: Derive the short human view from that detailed record under the [live contracts](../README.md#live-document-contracts); identify its source/workstream/revision. No separate summary template or status ledger.
+- docs/progress.md: Derive the human [checkpoint briefing](../README.md#checkpoint-briefing) from that detailed record; identify its source/workstream/revision and reuse the saved text for the development checkpoint/handoff. No separate summary template or status ledger. An unused starter invites the first goal; an established project retains its last outcome and pending delivery.
 
 Existing live documents are preserved and deliberately migrated, never neutralized. An older single progress.md can transfer its authoritative content to progress-agent.md only under an approved migration map: preserve identity, decisions, pending gates, evidence and retrievable history, then write the source-identified summary. An occupied progress-agent.md or uncertain authority requires resolution before either file changes. Keep the records synchronized detail-first; disclose disagreement before consequential action.
 
@@ -107,13 +114,13 @@ Fresh adoption keeps automation Off. Governing changes during an active loop req
 
 Stay within the inspected map and per-write guards. Inspect the full diff/new and untracked files; verify preserved rules/authority/active work/product files/Git state, README provenance against actual adopted content and evidence (with no competing current revision field), destination links/anchors/dependencies, entry routing, the classified stale-framework-reference scan and absence of upstream memory. Use relevant static/whitespace checks; no Markdown tables. Non-Git targets need equivalent content checks, not invented HEAD/Git results.
 
-Compare a second pass at the same source/target: it should propose no changes. This is a document-level check, not a guarantee of agent behavior. Run no product scripts/hooks/browser sessions/model evaluations or network side effects beyond permitted source reads merely to verify documentation.
+Compare a second pass at the same source/target: it should propose no changes. This is a document-level check, not a guarantee of agent behavior. Do not add product-script, browser or model-evaluation runs merely to verify documentation. Authorized commits/pushes follow the core [publication and recovery contract](../README.md#publication-and-recovery), including inspected hooks/CI effects and remote confirmation; source retrieval alone grants no such actions.
 
 Report actual results/limits. Rollback reverses only adoption changes after inspecting intervening work. Failure does not authorize broad cleanup, source/recovery deletion or tidy-up commits.
 
 ## 6. Handoff and activation
 
-Give the result, preserved work/conflicts, limits and next action, with detail in the existing record/review artifact. Blocked migration needs a human decision; finished local setup awaits human validation, not acceptance/release. Adoption grants no commit/push/PR/deployment/follow-up or loop activation. Preserve an unrelated workstream’s gate and report adoption separately within its permitted record. Acceptance/archive follow target rules.
+Reconcile detail, then save and reuse the exact [checkpoint briefing](../README.md#checkpoint-briefing): result, preserved work/conflicts, checks/limits, actual publication and next owner/action. Follow its unsaved/stale-briefing recovery rules when needed. Blocked migration needs the specific missing decision; a reviewable candidate awaits human validation, not acceptance/release. Perform publication already covered by the target agreement without a new approval wait; adoption alone grants no PR, deployment, unrelated follow-up or loop activation. Preserve an unrelated workstream’s gate and report adoption separately within its permitted record. Acceptance/archive follow target rules.
 
 ### Activating updated guidance
 
@@ -130,14 +137,20 @@ Use only when adding/transferring to another session or reviewer; solo use needs
 ```text
 Repository/snapshot: <target and full commit or complete bundle/base>.
 Task/workstream: <objective/scope>. Authority: <human reference or read-only>.
+Standing agreement: <target context reference, repository/origin/branch scope,
+and any stricter or local-only choices>. Saved briefing: <exact checkpoint>.
 Read applicable entry instructions and the target's core policy at this snapshot.
 Follow Start Here's task triggers: recover authority and unresolved constraints
 from detailed progress plus global/affected context. Read summary, roadmap/debt,
 scaffold, adoption or loop detail only at their stated triggers.
 Respect an approved mapped layout. No inherited cross-project approvals.
 Verify candidate access; distinguish reports from independent checks.
-State missing evidence; label drafts when unable to write memory.
-This packet grants no implementation, acceptance, delivery or loop activation.
+Reconcile actual state before continuing compatible work under existing valid
+authority; do not ask again for covered routine actions. A new outcome needs
+human direction. State missing evidence and preserve pending operations.
+Save and reuse the exact checkpoint briefing for a development handoff; label
+unsaved briefings and failed publication accurately. This packet grants no new
+implementation, acceptance, delivery or loop authority.
 ```
 
 A local path is not another session’s access. Supply a complete sanitized packet when remote references lack the candidate. Adoption neither synchronizes chats nor configures other sessions. Legacy Web-bootstrap links refer to this provider-neutral ordinary setup; the separate loop wire protocol is unchanged.

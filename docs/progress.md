@@ -1,15 +1,5 @@
-# Project progress
+Standing agreements, recoverable publication, application navigation guidance and shared checkpoint briefings are implemented; initial documentation checks passed.
 
-Source: [Detailed work record](progress-agent.md), starter-0; no active workstream.
+Source: [Detailed work record](progress-agent.md), feat-autonomous-human-agent-workflow / build-1. Status: Implementing. Automation: Off.
 
-## Goal and current state
-
-Your project goal has not been set. Project memory is ready to initialize, but no project facts have been verified and no work has started.
-
-## What changed, and what needs attention
-
-This is the neutral starter state. Risks, blockers and required safeguards have not yet been assessed. No implementation or delivery is approved. Automation is Off.
-
-## Your decision and next step
-
-Tell your coding agent the first goal. It will inspect the repository, preserve existing work and prepare a scoped plan for your authorization. You remain responsible for accepting the result.
+Scenario, recovery and neutral-release checks remain. The agent will publish this increment and complete verification; no human action is needed now.

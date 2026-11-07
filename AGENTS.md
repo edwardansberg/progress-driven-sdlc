@@ -10,11 +10,11 @@ Resume compatible work; never replace unresolved unrelated work. New substantial
 
 ## Act
 
-Follow core approval, evidence, verification and status rules. Continue authorized routine steps; obtain new authority for material scope changes and named delivery actions. Keep human acceptance separate from checks, publication and deployment. Automation stays Off without an explicit bounded human grant.
+Recover the [standing agreement](docs/README.md#standing-working-agreement) from context and the current authorized outcome from detail. Default actions are inspection/resumption, isolated branch setup, agent-owned planning, implementation, checks, fixes and memory maintenance, plus inspected stage/commit/push at coherent checkpoints. Commit-and-push is enabled within a real human agreement; preserve local-only overrides and follow [publication/recovery](docs/README.md#publication-and-recovery). Do not ask again for covered steps. New material scope and uncovered delivery actions need authority; acceptance remains human. Automation stays Off without a bounded grant.
 
 Use the [interaction contract](docs/README.md#interaction-contract): clear, short and sufficient for the decision. Expose material uncertainty and answer requested explanations. One human and one coding agent suffice unless actual risk or organizational rules require more.
 
-Update detail first and its [human summary](docs/progress.md) at meaningful checkpoints. Supporting material belongs in the referenced workspace, never a competing authority record. Use [closeout conventions](docs/workstreams/README.md#before-archiving) only at closure; preserve pending delivery and historical evidence.
+Update detail first, save its [human briefing](docs/progress.md), then reuse it unchanged for the final development checkpoint under the [equality contract](docs/README.md#checkpoint-briefing). Continue authorized packages between material decisions. Supporting material belongs in the workspace, never a competing authority record. Use [closeout conventions](docs/workstreams/README.md#before-archiving) only at closure; preserve pending delivery and history.
 
 ## Repository mode and hygiene
 
